@@ -1,0 +1,346 @@
+.desktop {
+  background-color: #f8f6ef;
+  width: 100%;
+  min-width: 1440px;
+  min-height: 1489px;
+  position: relative;
+}
+
+.desktop .rectangle {
+  top: 47px;
+  left: 119px;
+  width: 281px;
+  height: 65px;
+  background-color: #f8f6ef;
+  position: absolute;
+  border-radius: 47px;
+}
+
+.desktop .div {
+  left: 437px;
+  width: 240px;
+  position: absolute;
+  top: 47px;
+  height: 65px;
+  background-color: #243b4a;
+  border-radius: 47px;
+}
+
+.desktop .rectangle-2 {
+  top: 47px;
+  left: 697px;
+  width: 240px;
+  height: 65px;
+  background-color: #243b4a;
+  position: absolute;
+  border-radius: 47px;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  top: 55px;
+  left: 484px;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-2 {
+  position: absolute;
+  top: 55px;
+  left: 755px;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .rectangle-3 {
+  left: 957px;
+  width: 319px;
+  position: absolute;
+  top: 47px;
+  height: 65px;
+  background-color: #243b4a;
+  border-radius: 47px;
+}
+
+.desktop .text-wrapper-3 {
+  position: absolute;
+  top: 55px;
+  left: 992px;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .group {
+  position: absolute;
+  top: 47px;
+  left: 1319px;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.desktop .rectangle-4 {
+  height: 15px;
+  background-color: #243b4a;
+  border-radius: 47px;
+}
+
+.desktop .text-wrapper-4 {
+  position: absolute;
+  top: 51px;
+  left: 127px;
+  width: 266px;
+  font-family: "Playfair Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .image {
+  position: absolute;
+  top: 47px;
+  left: 21px;
+  width: 69px;
+  height: 65px;
+  aspect-ratio: 1.07;
+  object-fit: cover;
+}
+
+.desktop .text-wrapper-5 {
+  position: absolute;
+  top: 55px;
+  left: 742px;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .nos-artistes {
+  position: absolute;
+  top: 164px;
+  left: 35px;
+  width: 1189px;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+  color: #243b4a;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .artistes {
+  position: absolute;
+  top: 282px;
+  left: 35px;
+  width: 1354px;
+  height: 588px;
+}
+
+.desktop .pexels-munis-asadov {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 365px;
+  height: 456px;
+  aspect-ratio: 0.8;
+  object-fit: cover;
+}
+
+.desktop .pexels-cottonbro {
+  position: absolute;
+  top: 0;
+  left: 983px;
+  width: 365px;
+  height: 456px;
+}
+
+.desktop .text-wrapper-6 {
+  position: absolute;
+  top: 482px;
+  left: 55px;
+  font-family: "Playfair Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .p {
+  left: 534px;
+  width: 301px;
+  position: absolute;
+  top: 482px;
+  font-family: "Playfair Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .img {
+  position: absolute;
+  top: 0;
+  left: 502px;
+  width: 365px;
+  height: 456px;
+}
+
+.desktop .text-wrapper-7 {
+  left: 1021px;
+  position: absolute;
+  top: 482px;
+  font-family: "Playfair Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .n-le-mai {
+  position: absolute;
+  top: 827px;
+  left: 1018px;
+  width: 371px;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .n-e-le-novembre {
+  position: absolute;
+  top: 827px;
+  left: 25px;
+  width: 371px;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .n-le-mars {
+  position: absolute;
+  top: 875px;
+  left: 529px;
+  width: 371px;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .rectangle-5 {
+  top: 1439px;
+  left: 35px;
+  width: 1354px;
+  height: 23px;
+  background-color: #e7c9bc;
+  position: absolute;
+  border-radius: 47px;
+}
+
+.desktop .mentions-l-gales {
+  position: absolute;
+  top: 1423px;
+  left: 74px;
+  width: 154px;
+  font-family: "Playfair Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .span {
+  font-family: "Playfair Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+.desktop .text-wrapper-8 {
+  font-size: 32px;
+}
+
+.desktop .text-wrapper-9 {
+  position: absolute;
+  top: 1436px;
+  left: 357px;
+  width: 248px;
+  font-family: "Playfair Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-10 {
+  position: absolute;
+  top: 1436px;
+  left: 775px;
+  width: 107px;
+  font-family: "Playfair Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper-11 {
+  position: absolute;
+  top: 1435px;
+  left: 1034px;
+  width: 306px;
+  font-family: "Playfair Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
