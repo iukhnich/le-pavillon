@@ -40,7 +40,7 @@
   position: absolute;
   top: 55px;
   left: 484px;
-  font-family: "Montserrat-Regular", Helvetica;
+  font-family: "Montserrat", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 40px;
@@ -53,7 +53,7 @@
   position: absolute;
   top: 55px;
   left: 755px;
-  font-family: "Montserrat-Regular", Helvetica;
+  font-family: "Montserrat", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 40px;
@@ -76,7 +76,7 @@
   position: absolute;
   top: 55px;
   left: 992px;
-  font-family: "Montserrat-Regular", Helvetica;
+  font-family: "Montserrat", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 40px;
@@ -107,7 +107,7 @@
   top: 51px;
   left: 127px;
   width: 266px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 40px;
@@ -129,7 +129,7 @@
   position: absolute;
   top: 55px;
   left: 742px;
-  font-family: "Montserrat-Regular", Helvetica;
+  font-family: "Montserrat", Helvetica;
   font-weight: 400;
   color: #ffffff;
   font-size: 40px;
@@ -143,12 +143,15 @@
   top: 164px;
   left: 35px;
   width: 1189px;
-  font-family: "Montserrat-Bold", Helvetica;
+
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #243b4a;
   font-size: 48px;
+  color: #243b4a;
+
   letter-spacing: 0;
   line-height: normal;
+  z-index: 10;
 }
 
 .desktop .artistes {
@@ -181,7 +184,7 @@
   position: absolute;
   top: 482px;
   left: 55px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 40px;
@@ -195,7 +198,7 @@
   width: 301px;
   position: absolute;
   top: 482px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 40px;
@@ -216,7 +219,7 @@
   left: 1021px;
   position: absolute;
   top: 482px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 40px;
@@ -230,7 +233,7 @@
   top: 827px;
   left: 1018px;
   width: 371px;
-  font-family: "Montserrat-Regular", Helvetica;
+  font-family: "Montserrat", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 20px;
@@ -244,7 +247,7 @@
   top: 827px;
   left: 25px;
   width: 371px;
-  font-family: "Montserrat-Regular", Helvetica;
+  font-family: "Montserrat", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 20px;
@@ -258,7 +261,7 @@
   top: 875px;
   left: 529px;
   width: 371px;
-  font-family: "Montserrat-Regular", Helvetica;
+  font-family: "Montserrat", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 20px;
@@ -282,7 +285,7 @@
   top: 1423px;
   left: 74px;
   width: 154px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 20px;
@@ -292,7 +295,7 @@
 }
 
 .desktop .span {
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 20px;
@@ -308,7 +311,7 @@
   top: 1436px;
   left: 357px;
   width: 248px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 20px;
@@ -322,7 +325,7 @@
   top: 1436px;
   left: 775px;
   width: 107px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 20px;
@@ -336,7 +339,7 @@
   top: 1435px;
   left: 1034px;
   width: 306px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 20px;
