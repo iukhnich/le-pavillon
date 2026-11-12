@@ -1300,3 +1300,46 @@
   font-family: "Playfair Display-Bold", Helvetica;
   font-weight: 700;
 }
+
+/* NAVIGATION FIXE */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* DÉFILEMENT FLUIDE */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+#adresse {
+  scroll-margin-top: 160px;
+}
+
+
+/* BOUTONS DE NAVIGATION INTERNE */
+
+.btn-visiter,
+.btn-contact {
+  display: contents;
+}
+
+.btn-visiter .rectangle-7,
+.btn-contact .rectangle-8 {
+  cursor: pointer;
+}
+
+.btn-visiter .text-wrapper-4,
+.btn-contact .text-wrapper-5 {
+  cursor: pointer;
+  z-index: 2;
+}
+
+#contact,
+#oeuvres {
+  scroll-margin-top: 160px;
+}
