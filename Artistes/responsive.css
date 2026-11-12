@@ -1,0 +1,225 @@
+
+@media (max-width: 767px) {
+
+  /* Основная страница */
+  .desktop {
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    padding-top: 100px;
+    box-sizing: border-box;
+  }
+
+  /* Заголовок */
+  .desktop .nos-artistes {
+    position: static;
+    width: auto;
+    margin: 0 20px 25px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  /* Располагаем элементы по вертикали */
+  .desktop .artists-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: 0;
+    padding: 0 20px;
+  }
+
+  /* Убираем промежуточный контейнер из сетки */
+  .desktop .artistes {
+    display: contents;
+  }
+
+  /* Общие настройки фотографий */
+ .desktop .artists-content img {
+  position: static;
+  display: block;
+
+  width: 100%;
+  max-width: 370px;
+  height: auto;
+  aspect-ratio: 365 / 456;
+
+  object-fit: contain;
+  border-radius: 35px;
+  margin: 0 auto;
+}
+
+  /* Имена */
+  .desktop .artistes .text-wrapper-6,
+  .desktop .artistes .p,
+  .desktop .artistes .text-wrapper-7 {
+    position: static;
+    width: 100%;
+    margin: 12px 0 8px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  /* Биографии */
+  .desktop .n-e-le-novembre,
+  .desktop .n-le-mars,
+  .desktop .n-le-mai {
+    position: static;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 0 36px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  /* Elise */
+  .desktop .pexels-munis-asadov { order: 1; }
+  .desktop .text-wrapper-6 { order: 2; }
+  .desktop .n-e-le-novembre { order: 3; }
+
+  /* Joseph */
+  .desktop .img { order: 4; }
+  .desktop .artistes .p { order: 5; }
+  .desktop .n-le-mars { order: 6; }
+
+  /* Gabriel */
+  .desktop .pexels-cottonbro { order: 7; }
+  .desktop .text-wrapper-7 { order: 8; }
+  .desktop .n-le-mai { order: 9; }
+
+  /* Футер */
+  .desktop .rectangle-5 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: calc(100% - 40px);
+    height: 10px;
+    margin: 30px 20px 0;
+  }
+
+  .desktop .mentions-l-gales,
+  .desktop .text-wrapper-9,
+  .desktop .text-wrapper-10,
+  .desktop .text-wrapper-11 {
+    position: static;
+    width: auto;
+    margin: 8px 0;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+/* ===== MOBILE NAVBAR ===== */
+
+  .navbar {
+    width: 100%;
+    height: 90px;
+    min-width: 0;
+  }
+
+  .navbar-content {
+    width: 100%;
+    height: 100%;
+    padding: 0 5%;
+    gap: 12px;
+  }
+
+  .navbar-brand {
+    gap: 12px;
+    flex-shrink: 0;
+  }
+
+  .navbar-brand img {
+    width: 35px;
+    height: 40px;
+  }
+
+  .navbar-brand span {
+    font-size: clamp(15px, 3.6vw, 24px);
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+  }
+
+  .navbar-links a {
+    height: 38px;
+    padding: 0 20px;
+    font-size: clamp(12px, 2.7vw, 18px);
+    border-radius: 25px;
+  }
+
+  .navbar-links a:nth-child(3) {
+    display: none;
+  }
+
+  .navbar-menu {
+    width: 38px;
+    gap: 6px;
+    margin-left: 10px;
+    flex-shrink: 0;
+  }
+
+  .navbar-menu span {
+    width: 38px;
+    height: 7px;
+  }
+ 
+
+  /* ===== MOBILE TITLE ===== */
+
+  .desktop .nos-artistes {
+    position: relative;
+    display: block;
+    top: auto;
+    left: auto;
+    width: auto;
+
+    margin: 0 20px 25px;
+    padding-top: 95px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #243b4a;
+    text-align: center;
+
+    z-index: 2;
+  }
+
+  .desktop {
+    padding-top: 0;
+  }
+
+  /* ===== MOBILE FOOTER ===== */
+
+  .desktop .rectangle-5 {
+    position: relative;
+    display: block;
+
+    top: auto;
+    left: auto;
+
+    width: calc(100% - 30px);
+    height: 12px;
+
+    margin: 30px 15px 0;
+    background-color: #e7c9bc;
+    border-radius: 47px;
+  }
+
+  .desktop .mentions-l-gales,
+  .desktop .text-wrapper-9,
+  .desktop .text-wrapper-10,
+  .desktop .text-wrapper-11 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+
+    margin: 8px 0;
+    font-size: 11px;
+    text-align: center;
+  }
