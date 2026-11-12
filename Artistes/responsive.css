@@ -227,7 +227,7 @@
   }
 /* ===== DESKTOP NAVIGATION ===== */
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
 
   .navbar {
     height: 145px;
@@ -298,7 +298,7 @@
 
 /* ===== FOOTER DESKTOP ===== */
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .desktop .footer-bottom {
     position: absolute;
     top: 1439px;
@@ -359,39 +359,415 @@
 }
 /* ===== DESKTOP FOOTER FIX ===== */
 
-@media (min-width: 768px) {
-
+@media (min-width: 1440px) {
   .desktop {
     position: relative;
     min-height: 1489px;
   }
 
   .desktop .footer-bottom {
-    display: flex !important;
-    position: absolute !important;
-
-    top: 1439px !important;
-    left: 35px !important;
-
+    position: absolute;
+    top: 1439px;
+    left: 35px;
     width: 1354px;
     height: 23px;
     margin: 0;
     padding: 0 15px;
-    box-sizing: border-box;
-
+    display: flex;
     justify-content: space-between;
     align-items: center;
-
     background-color: #e7c9bc;
     border-radius: 47px;
     z-index: 20;
   }
 
   .desktop .footer-bottom span {
-    font-family: "Playfair Display", Georgia, serif;
     font-size: 16px;
-    line-height: 1;
     white-space: nowrap;
-    color: #000;
+  }
+}
+
+
+/* ===== TABLET VERSION ===== */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  /* NAVIGATION */
+
+  .navbar {
+    height: 95px;
+    min-width: 0;
+  }
+
+  .navbar-content {
+    width: 100%;
+    padding: 0 25px;
+    gap: 15px;
+  }
+
+  .navbar-brand {
+    gap: 10px;
+    flex-shrink: 0;
+  }
+
+  .navbar-brand img {
+    width: 40px;
+    height: 43px;
+  }
+
+  .navbar-brand span {
+    font-size: 23px;
+  }
+
+  .navbar-links {
+    gap: 10px;
+    margin-left: auto;
+  }
+
+  .navbar-links a {
+    height: 42px;
+    padding: 0 15px;
+    font-size: 19px;
+    border-radius: 25px;
+  }
+
+  .navbar-links a:nth-child(3) {
+    display: none;
+  }
+
+  .navbar-menu {
+    width: 38px;
+    gap: 6px;
+    margin-left: 5px;
+    flex-shrink: 0;
+  }
+
+  .navbar-menu span {
+    width: 38px;
+    height: 7px;
+  }
+
+  /* PAGE */
+
+  .desktop {
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    padding-top: 125px;
+    box-sizing: border-box;
+  }
+
+  .desktop .nos-artistes {
+    position: static;
+    width: auto;
+    margin: 0 30px 45px;
+    padding: 0;
+    font-size: 38px;
+    text-align: left;
+  }
+
+  /* ARTISTES */
+
+  .desktop .artists-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 35px;
+    row-gap: 0;
+    padding: 0 30px;
+    align-items: start;
+  }
+
+  .desktop .artistes {
+    display: contents;
+  }
+
+  .desktop .artists-content img {
+    position: static;
+    display: block;
+    width: 100%;
+    max-width: 365px;
+    height: auto;
+    aspect-ratio: 365 / 456;
+    object-fit: contain;
+    border-radius: 35px;
+    margin: 0 auto;
+  }
+
+  .desktop .artistes .text-wrapper-6,
+  .desktop .artistes .p,
+  .desktop .artistes .text-wrapper-7 {
+    position: static;
+    width: 100%;
+    margin: 15px 0 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .desktop .n-e-le-novembre,
+  .desktop .n-le-mars,
+  .desktop .n-le-mai {
+    position: static;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 45px;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  /* ELISE */
+
+  .desktop .pexels-munis-asadov {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .desktop .text-wrapper-6 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .desktop .n-e-le-novembre {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  /* JOSEPH */
+
+  .desktop .img {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .desktop .artistes .p {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .desktop .n-le-mars {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  /* GABRIEL */
+
+  .desktop .pexels-cottonbro {
+    grid-column: 1 / -1;
+    grid-row: 4;
+  }
+
+  .desktop .text-wrapper-7 {
+    grid-column: 1 / -1;
+    grid-row: 5;
+  }
+
+  .desktop .n-le-mai {
+    grid-column: 1 / -1;
+    grid-row: 6;
+  }
+
+  /* FOOTER */
+
+  .desktop .footer-bottom {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+
+    width: calc(100% - 60px);
+    height: auto;
+    min-height: 23px;
+    margin: 30px 30px 25px;
+    padding: 4px 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+    background-color: #e7c9bc;
+    border-radius: 47px;
+  }
+
+  .desktop .footer-bottom span {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+}
+/* ===== ПРОМЕЖУТОЧНЫЙ РЕЖИМ: 1200–1350px ===== */
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+  /* Навигацию оставляем без изменений */
+
+  /* Две колонки с более компактным содержимым */
+  .desktop .artists-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 35px;
+    padding: 0 35px;
+    box-sizing: border-box;
+  }
+
+  /* Фотографии */
+  .desktop .artists-content img {
+    max-width: 330px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Имена художников */
+  .desktop .artistes .text-wrapper-6,
+  .desktop .artistes .p,
+  .desktop .artistes .text-wrapper-7 {
+    font-size: 30px;
+  }
+
+  /* Биографии */
+  .desktop .n-e-le-novembre,
+  .desktop .n-le-mars,
+  .desktop .n-le-mai {
+    font-size: 17px;
+    line-height: 1.5;
+    max-width: 400px;
+  }
+
+  /* Заголовок */
+  .desktop .nos-artistes {
+    font-size: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+
+  .desktop {
+    min-width: 0;
+    min-height: 0;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .desktop .artists-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 15px 30px;
+    padding: 0 35px;
+    box-sizing: border-box;
+    align-items: start;
+  }
+
+  .desktop .artistes {
+    display: contents;
+  }
+
+  .desktop .artists-content img,
+  .desktop .artists-content p,
+  .desktop .artists-content .text-wrapper-6,
+  .desktop .artists-content .text-wrapper-7 {
+    position: static;
+    top: auto;
+    left: auto;
+  }
+
+  .desktop .artists-content img {
+    width: 100%;
+    max-width: 365px;
+    height: auto;
+    aspect-ratio: 365 / 456;
+    object-fit: contain;
+    justify-self: center;
+  }
+
+  .desktop .artistes .text-wrapper-6,
+  .desktop .artistes .p,
+  .desktop .artistes .text-wrapper-7 {
+    width: 100%;
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .desktop .n-e-le-novembre,
+  .desktop .n-le-mars,
+  .desktop .n-le-mai {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 35px;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  /* Первая художница */
+  .desktop .pexels-munis-asadov { grid-column: 1; grid-row: 1 / 3; }
+  .desktop .text-wrapper-6 { grid-column: 2; grid-row: 1; }
+  .desktop .n-e-le-novembre { grid-column: 2; grid-row: 2; }
+
+  /* Второй художник */
+  .desktop .img { grid-column: 1; grid-row: 3 / 5; }
+  .desktop .artistes .p { grid-column: 2; grid-row: 3; }
+  .desktop .n-le-mars { grid-column: 2; grid-row: 4; }
+
+  /* Третий художник */
+  .desktop .pexels-cottonbro { grid-column: 1; grid-row: 5 / 7; }
+  .desktop .text-wrapper-7 { grid-column: 2; grid-row: 5; }
+  .desktop .n-le-mai { grid-column: 2; grid-row: 6; }
+
+  .desktop .footer-bottom {
+    position: relative;
+    width: calc(100% - 70px);
+    margin: 50px 35px 20px;
+  }
+}
+/* ===== ОТСТУПЫ ВЕРХНЕЙ ЧАСТИ ПЛАНШЕТА ===== */
+
+@media (min-width: 768px) and (max-width: 1439px) {
+
+  .desktop .nos-artistes {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    width: auto;
+    margin: 0 35px 45px;
+    padding: 0;
+
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .desktop {
+    padding-top: 190px;
+  }
+
+  .desktop .artists-content {
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+
+  .desktop .artists-content {
+    position: relative;
+    height: auto;
+    min-height: 0;
+  }
+
+  .desktop .footer-bottom {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+
+    width: calc(100% - 70px);
+    margin: 70px 35px 30px;
+    z-index: 1;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .desktop .footer-bottom {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    width: calc(100% - 70px);
+    margin: 70px 35px 30px;
   }
 }
