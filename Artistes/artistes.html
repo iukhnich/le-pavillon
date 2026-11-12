@@ -32,13 +32,26 @@
 
 
 
-    <div class="navbar-menu" aria-hidden="true">
-      <span></span>
-      <span></span>
-      <span></span>
+    <button class="navbar-menu"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="navbar-dropdown">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
     </div>
 
+  <div class="navbar-dropdown" id="navbar-dropdown">
+    <a href="../Acceuil/index.html">accueil</a>
+    <a href="../Artistes/artistes.html">artistes</a>
+    <a href="../Accueil/index.html#oeuvres">œuvres</a>
+    <a href="../Accueil/index.html#evenements">événements</a>
+    <a href="../Accueil/index.html#contact">contact</a>
   </div>
+
 </nav>
 
 <div class="desktop">
@@ -73,5 +86,41 @@
   <span>Le Pavillon - Tous droits réservés</span>
 </div>
 </div> <!-- fin desktop -->
+
+<script>
+  const burger = document.querySelector('.navbar-menu');
+  const dropdown = document.querySelector('.navbar-dropdown');
+
+  burger.addEventListener('click', () => {
+    const isOpen = burger.classList.toggle('is-open');
+
+    dropdown.classList.toggle('is-open', isOpen);
+    burger.setAttribute('aria-expanded', String(isOpen));
+    burger.setAttribute(
+      'aria-label',
+      isOpen ? 'Fermer le menu' : 'Ouvrir le menu'
+    );
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.navbar-menu') &&
+        !event.target.closest('.navbar-dropdown')) {
+      burger.classList.remove('is-open');
+      dropdown.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Ouvrir le menu');
+    }
+  });
+
+  dropdown.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      burger.classList.remove('is-open');
+      dropdown.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Ouvrir le menu');
+    });
+  });
+</script>
+
 </body>
 </html>
