@@ -1,0 +1,341 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    min-height: 100%;
+}
+
+/* a blue color as a generic focus style */
+button:focus-visible {
+    outline: 2px solid #4a90e2 !important;
+    outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Playfair Display-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+    font-family: "Playfair Display-Regular";
+    src: local("Playfair Display-Regular");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Montserrat-Regular", "weight": "400", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: local("Montserrat-Regular");
+}
+
+/* @FONTWARNING[{"type": "restricted", "family": "Montserrat-Bold", "weight": "700", "style": "normal", "allowsCrossOrigin": false}] */
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: local("Montserrat-Bold");
+}
+
+.iphone {
+    background-color: #f8f6ef;
+    width: 100%;
+    min-width: 402px;
+    min-height: 2582px;
+    position: relative;
+}
+
+.iphone .rectangle {
+    position: absolute;
+    top: 34px;
+    left: 193px;
+    width: 68px;
+    height: 24px;
+    background-color: #243b4a;
+    border-radius: 47px;
+}
+
+.iphone .div {
+    position: absolute;
+    top: 34px;
+    left: 275px;
+    width: 68px;
+    height: 24px;
+    background-color: #243b4a;
+    border-radius: 47px;
+}
+
+.iphone .group {
+    position: absolute;
+    top: 34px;
+    left: 357px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 3.7px;
+}
+
+.iphone .rectangle-2 {
+    height: 5.54px;
+    background-color: #243b4a;
+    border-radius: 47px;
+}
+
+.iphone .rectangle-3 {
+    margin-left: 0;
+    height: 5.54px;
+    background-color: #243b4a;
+    border-radius: 47px;
+}
+
+.iphone .image {
+    position: absolute;
+    top: 34px;
+    left: 15px;
+    width: 26px;
+    height: 24px;
+    aspect-ratio: 1.07;
+    object-fit: cover;
+}
+
+.iphone .text-wrapper {
+    position: absolute;
+    top: 36px;
+    left: 48px;
+    width: 102px;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.iphone .text-wrapper-2 {
+    position: absolute;
+    top: 38px;
+    left: 205px;
+    font-family: "Montserrat-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.iphone .text-wrapper-3 {
+    position: absolute;
+    top: 38px;
+    left: 291px;
+    font-family: "Montserrat-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.iphone .nos-artistes {
+    position: absolute;
+    top: 85px;
+    left: 27px;
+    width: 348px;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-weight: 700;
+    color: #243b4a;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.iphone .pexels-munis-asadov {
+    position: absolute;
+    top: 136px;
+    left: 82px;
+    width: 238px;
+    height: 297px;
+    aspect-ratio: 0.8;
+    object-fit: cover;
+}
+
+.iphone .text-wrapper-4 {
+    position: absolute;
+    top: 433px;
+    left: 143px;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.iphone .img {
+    position: absolute;
+    top: 953px;
+    left: 82px;
+    width: 238px;
+    height: 297px;
+}
+
+.iphone .pexels-cottonbro {
+    position: absolute;
+    top: 1786px;
+    left: 81px;
+    width: 238px;
+    height: 297px;
+    aspect-ratio: 0.8;
+}
+
+.iphone .p {
+    top: 1250px;
+    left: 123px;
+    width: 157px;
+    position: absolute;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.iphone .rectangle-4 {
+    position: absolute;
+    top: 2572px;
+    left: 16px;
+    width: 371px;
+    height: 8px;
+    background-color: #e7c9bc;
+    border-radius: 47px;
+}
+
+.iphone .text-wrapper-5 {
+    position: absolute;
+    top: 2572px;
+    left: 20px;
+    width: 54px;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 6px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.iphone .text-wrapper-6 {
+    position: absolute;
+    top: 2572px;
+    left: 84px;
+    width: 87px;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 6px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.iphone .text-wrapper-7 {
+    position: absolute;
+    top: 2572px;
+    left: 181px;
+    width: 38px;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 6px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.iphone .text-wrapper-8 {
+    position: absolute;
+    top: 2572px;
+    left: 229px;
+    width: 106px;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 6px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.iphone .n-le-mars {
+    position: absolute;
+    top: 1322px;
+    left: 81px;
+    width: 240px;
+    font-family: "Montserrat-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.iphone .n-le-mai {
+    position: absolute;
+    top: 2122px;
+    left: 71px;
+    width: 259px;
+    font-family: "Montserrat-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.iphone .text-wrapper-9 {
+    top: 2084px;
+    left: 128px;
+    position: absolute;
+    font-family: "Playfair Display-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.iphone .n-e-le-novembre {
+    position: absolute;
+    top: 466px;
+    left: 81px;
+    width: 240px;
+    font-family: "Montserrat-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.iphone .text-wrapper {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+    z-index: 10;
+}
