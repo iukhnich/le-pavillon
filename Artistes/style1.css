@@ -148,6 +148,7 @@
   font-weight: 700;
   font-size: 48px;
   color: #243b4a;
+  text-align: left;
 
   letter-spacing: 0;
   line-height: normal;
@@ -347,18 +348,23 @@
   letter-spacing: 0;
   line-height: normal;
 }
+/* ===== FOOTER DESKTOP ===== */
+
   .desktop .footer-bottom {
-    position: relative;
-    width: calc(100% - 30px);
-    min-height: 14px;
-    margin: 35px 15px 20px;
-    padding: 2px 8px;
+    position: absolute;
+    top: 1439px;
+    left: 35px;
+    width: 1354px;
+    height: 23px;
+    min-height: 0;
+    margin: 0;
+    padding: 0 15px;
     box-sizing: border-box;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 4px;
+    gap: 0;
 
     background-color: #e7c9bc;
     border-radius: 47px;
@@ -366,8 +372,8 @@
 
   .desktop .footer-bottom span {
     font-family: "Playfair Display", Georgia, serif;
-    font-size: clamp(7px, 1.5vw, 11px);
-    line-height: 1.1;
+    font-size: 16px;
+    line-height: 1;
     white-space: nowrap;
     color: #000;
   }

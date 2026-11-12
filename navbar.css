@@ -86,3 +86,70 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 160px;
 }
+
+/* ===== MENU BURGER INTERACTIF ===== */
+
+.navbar-menu {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.navbar-menu span {
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-menu.is-open span:nth-child(1) {
+  transform: translateY(25px) rotate(45deg);
+}
+
+.navbar-menu.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-menu.is-open span:nth-child(3) {
+  transform: translateY(-25px) rotate(-45deg);
+}
+
+/* MENU DÉROULANT */
+
+.navbar-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 35px;
+  width: 260px;
+  padding: 18px;
+  box-sizing: border-box;
+
+  background-color: #f8f6ef;
+  border: 1px solid #e7c9bc;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  flex-direction: column;
+  gap: 8px;
+  z-index: 10000;
+}
+
+.navbar-dropdown.is-open {
+  display: flex;
+}
+
+.navbar-dropdown a {
+  display: block;
+  padding: 12px 16px;
+  border-radius: 12px;
+
+  color: #243b4a;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navbar-dropdown a:hover {
+  background-color: #e7c9bc;
+}

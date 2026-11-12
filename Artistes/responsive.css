@@ -223,3 +223,74 @@
     font-size: 11px;
     text-align: center;
   }
+/* ===== DESKTOP NAVIGATION ===== */
+
+@media (min-width: 768px) {
+
+  .navbar {
+    height: 145px;
+  }
+
+  .navbar-content {
+    width: 1440px;
+    padding: 0 56px 0 21px;
+    gap: 0;
+  }
+
+  .navbar-brand {
+    gap: 29px;
+  }
+
+  .navbar-brand img {
+    width: 69px;
+    height: 65px;
+  }
+
+  .navbar-brand span {
+    font-size: 40px;
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+    margin-left: 0;
+  }
+
+  .navbar-links a {
+    display: flex;
+    height: 65px;
+    padding: 0 30px;
+    font-size: 40px;
+    border-radius: 47px;
+  }
+
+  .navbar-links a:nth-child(3) {
+    display: flex;
+  }
+
+  .navbar-menu {
+    width: 65px;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .navbar-menu span {
+    width: 65px;
+    height: 15px;
+  }
+  .desktop .nos-artistes {
+    position: absolute;
+    top: 164px;
+    left: 35px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #243b4a;
+  }
+}
+}

@@ -29,13 +29,28 @@
   <a href="#evenements">événements</a>
 </div>
 
-    <div class="navbar-menu" aria-hidden="true">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+   <button class="navbar-menu"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="navbar-dropdown">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
 
   </div>
+    </div>
+
+  <div class="navbar-dropdown" id="navbar-dropdown">
+    <a href="#accueil">accueil</a>
+    <a href="../Artistes/artistes.html">artistes</a>
+    <a href="#oeuvres">œuvres</a>
+    <a href="#evenements">événements</a>
+    <a href="#contact">contact</a>
+  </div>
+
+</nav>
 </nav>
 
     <div class="deckstop" id="accueil"><div class="rectangle" ></div>
@@ -177,5 +192,41 @@
 <span class="text-wrapper-32" > pour les étudiants, les familles et les groupes. Inscrivez-vous à nos ateliers annuels et bénéficiez de </span>
 <span class="text-wrapper-33" >-20 % sur votre première session</span>
 <span class="text-wrapper-32" > !</span></p></div>
+
+<script>
+  const burger = document.querySelector('.navbar-menu');
+  const dropdown = document.querySelector('.navbar-dropdown');
+
+  burger.addEventListener('click', () => {
+    const isOpen = burger.classList.toggle('is-open');
+
+    dropdown.classList.toggle('is-open', isOpen);
+    burger.setAttribute('aria-expanded', String(isOpen));
+    burger.setAttribute(
+      'aria-label',
+      isOpen ? 'Fermer le menu' : 'Ouvrir le menu'
+    );
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.navbar-menu') &&
+        !event.target.closest('.navbar-dropdown')) {
+      burger.classList.remove('is-open');
+      dropdown.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Ouvrir le menu');
+    }
+  });
+
+  dropdown.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      burger.classList.remove('is-open');
+      dropdown.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Ouvrir le menu');
+    });
+  });
+</script>
+
 </body>
 </html>
