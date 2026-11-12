@@ -111,6 +111,7 @@
 
 /* ===== MOBILE NAVBAR ===== */
 
+@media (max-width: 767px) {
   .navbar {
     width: 100%;
     height: 90px;
@@ -166,6 +167,7 @@
     width: 38px;
     height: 7px;
   }
+   }
  
 
   /* ===== MOBILE TITLE ===== */
@@ -293,4 +295,103 @@
     color: #243b4a;
   }
 }
+
+/* ===== FOOTER DESKTOP ===== */
+
+@media (min-width: 768px) {
+  .desktop .footer-bottom {
+    position: absolute;
+    top: 1439px;
+    left: 35px;
+    width: 1354px;
+    height: 23px;
+
+    margin: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #e7c9bc;
+    border-radius: 47px;
+  }
+
+  .desktop .footer-bottom span {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 16px;
+    line-height: 1;
+    white-space: nowrap;
+    color: #000;
+  }
+}
+
+/* ===== FOOTER MOBILE ===== */
+
+.desktop .footer-bottom {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: calc(100% - 30px);
+  height: auto;
+  min-height: 14px;
+
+  margin: 35px 15px 20px;
+  padding: 2px 8px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+
+  background-color: #e7c9bc;
+  border-radius: 47px;
+}
+
+.desktop .footer-bottom span {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(7px, 1.5vw, 11px);
+  line-height: 1.1;
+  white-space: nowrap;
+  color: #000;
+}
+/* ===== DESKTOP FOOTER FIX ===== */
+
+@media (min-width: 768px) {
+
+  .desktop {
+    position: relative;
+    min-height: 1489px;
+  }
+
+  .desktop .footer-bottom {
+    display: flex !important;
+    position: absolute !important;
+
+    top: 1439px !important;
+    left: 35px !important;
+
+    width: 1354px;
+    height: 23px;
+    margin: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #e7c9bc;
+    border-radius: 47px;
+    z-index: 20;
+  }
+
+  .desktop .footer-bottom span {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 16px;
+    line-height: 1;
+    white-space: nowrap;
+    color: #000;
+  }
 }
