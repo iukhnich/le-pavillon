@@ -1,0 +1,509 @@
+@media (max-width: 767px) {
+
+  html, body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* Навигация */
+
+  .navbar {
+    width: 100%;
+    height: 75px;
+  }
+
+  .navbar-content {
+    width: 100%;
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .navbar-brand {
+    gap: 8px;
+  }
+
+  .navbar-brand img {
+    width: 30px;
+    height: 35px;
+  }
+
+  .navbar-brand span {
+    font-size: 16px;
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: 6px;
+    margin-left: auto;
+  }
+
+  .navbar-links a {
+    height: 30px;
+    padding: 0 9px;
+    font-size: 11px;
+    border-radius: 20px;
+  }
+
+  .navbar-links a:nth-child(3) {
+    display: none;
+  }
+
+  .navbar-menu {
+    display: flex;
+    width: 28px;
+    gap: 5px;
+    margin-left: 4px;
+  }
+
+  .navbar-menu span {
+    width: 28px;
+    height: 5px;
+  }
+
+  /* Первый экран */
+
+  .deckstop {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .mobile-hero {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    margin-top: 90px;
+    background: #f8f6ef;
+  }
+
+  /* Фон */
+
+  .deckstop .mobile-hero .group {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .deckstop .mobile-hero .mask-group {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Светлая карточка слева */
+
+  .deckstop .mobile-hero .rectangle-6 {
+    position: absolute;
+    top: 7%;
+    left: 4%;
+    width: 50%;
+    height: 70%;
+    border-radius: 22px;
+  }
+
+  .deckstop .mobile-hero .bienvenue-au {
+    position: absolute;
+    top: 13%;
+    left: 7%;
+    width: 44%;
+    margin: 0;
+    font-size: clamp(9px, 2.5vw, 14px);
+    line-height: 1.35;
+    text-align: center;
+  }
+
+  .deckstop .mobile-hero .bienvenue-au br {
+    display: none;
+  }
+
+  /* Фотография справа */
+
+  .deckstop .mobile-hero .rectangle-15 {
+    position: absolute;
+    top: 7%;
+    left: 60%;
+    width: 35%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 22px;
+  }
+
+  /* Кнопки */
+
+  .deckstop .mobile-hero .btn-visiter,
+  .deckstop .mobile-hero .btn-contact {
+    position: absolute;
+    top: 82%;
+    width: 25%;
+    height: 32px;
+  }
+
+  .deckstop .mobile-hero .btn-visiter {
+    left: 4%;
+  }
+
+  .deckstop .mobile-hero .btn-contact {
+    left: 31%;
+  }
+
+  .deckstop .mobile-hero .rectangle-7,
+  .deckstop .mobile-hero .rectangle-8 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    border-radius: 20px;
+  }
+
+  .deckstop .mobile-hero .text-wrapper-4,
+  .deckstop .mobile-hero .text-wrapper-5 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(9px, 2.3vw, 13px);
+    white-space: nowrap;
+  }
+
+  /* Убираем старые элементы навигации */
+
+  .deckstop .text-wrapper-18,
+  .deckstop .text-wrapper-19,
+  .deckstop .text-wrapper-20,
+  .deckstop .group-2,
+  .deckstop .rectangle-40 {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+
+  .navbar {
+    height: 90px;
+  }
+
+  .navbar-content {
+    width: 100%;
+    height: 100%;
+    padding: 0 5%;
+    gap: 12px;
+  }
+
+  .navbar-brand {
+    gap: 12px;
+    flex-shrink: 0;
+  }
+
+  .navbar-brand img {
+    width: 35px;
+    height: 40px;
+  }
+
+  .navbar-brand span {
+    font-size: clamp(15px, 3.6vw, 24px);
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+  }
+
+  .navbar-links a {
+    height: 38px;
+    padding: 0 20px;
+    font-size: clamp(12px, 2.7vw, 18px);
+    border-radius: 25px;
+  }
+
+  .navbar-links a:nth-child(3) {
+    display: none;
+  }
+
+  .navbar-menu {
+    width: 38px;
+    gap: 6px;
+    margin-left: 10px;
+    flex-shrink: 0;
+  }
+
+  .navbar-menu span {
+    width: 38px;
+    height: 7px;
+  }
+}
+@media (max-width: 767px) {
+
+  /* Восстанавливаем фон */
+  .deckstop .mobile-hero .group {
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .deckstop .mobile-hero .mask-group {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Светлая карточка */
+  .deckstop .mobile-hero .rectangle-6 {
+    display: block;
+    background-color: #f8f6ef;
+    z-index: 1;
+  }
+
+  /* Текст поверх карточки */
+  .deckstop .mobile-hero .bienvenue-au {
+    display: block;
+    z-index: 2;
+  }
+
+  /* Фотография */
+  .deckstop .mobile-hero .rectangle-15 {
+    display: block;
+    z-index: 2;
+  }
+
+  /* Кнопки поверх фона */
+  .deckstop .mobile-hero .btn-visiter,
+  .deckstop .mobile-hero .btn-contact {
+    display: block;
+    z-index: 3;
+  }
+}
+@media (max-width: 767px) {
+
+  /* Светлая карточка */
+  .deckstop .mobile-hero .rectangle-6 {
+    top: 7%;
+    left: 4%;
+    width: 50%;
+    height: 70%;
+  }
+
+  /* Поднимаем начало текста */
+  .deckstop .mobile-hero .bienvenue-au {
+    top: 12%;
+    left: 7%;
+    width: 44%;
+    font-size: clamp(10px, 2.2vw, 16px);
+    line-height: 1.3;
+  }
+
+  /* Делаем фотографию немного уже */
+  .deckstop .mobile-hero .rectangle-15 {
+    top: 7%;
+    left: 60%;
+    width: 35%;
+    height: 75%;
+    object-fit: cover;
+  }
+
+  /* Кнопки */
+  .deckstop .mobile-hero .btn-visiter,
+  .deckstop .mobile-hero .btn-contact {
+    top: 82%;
+  }
+}
+@media (max-width: 767px) {
+
+  /* Исправляем положение приветственной карточки */
+  .deckstop .mobile-hero .rectangle-6 {
+    top: 7%;
+    left: 4%;
+    width: 50%;
+    height: 70%;
+    background-color: #f8f6ef;
+    border-radius: 22px;
+  }
+
+  /* Исправляем обрезанный текст */
+  .deckstop .mobile-hero .bienvenue-au {
+    position: absolute;
+    top: 12%;
+    left: 7%;
+    width: 44%;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: clamp(10px, 2.2vw, 16px);
+    line-height: 1.3;
+    text-align: center;
+
+    transform: none;
+    overflow: visible;
+    z-index: 2;
+  }
+
+}
+@media (max-width: 767px) {
+
+  /* Фоновое изображение */
+  .deckstop .mobile-hero .group {
+    left: 0;
+    width: 100%;
+  }
+
+  /* Светлая карточка */
+  .deckstop .mobile-hero .rectangle-6 {
+    top: 8%;
+    left: 4%;
+    width: 50%;
+    height: 70%;
+    border-radius: 22px;
+  }
+
+  /* Текст внутри карточки */
+  .deckstop .mobile-hero .bienvenue-au {
+    top: 14%;
+    left: 7%;
+    width: 44%;
+    font-size: clamp(10px, 2.2vw, 16px);
+    line-height: 1.35;
+  }
+
+  /* Фотография — на одной линии с карточкой */
+  .deckstop .mobile-hero .rectangle-15 {
+    top: 8%;
+    left: 60%;
+    width: 35%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 22px;
+  }
+
+  /* Кнопки под карточкой */
+  .deckstop .mobile-hero .btn-visiter,
+  .deckstop .mobile-hero .btn-contact {
+    top: 84%;
+    height: 32px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .deckstop .mobile-hero {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .deckstop .mobile-hero .group {
+    left: 0;
+    width: 100%;
+  }
+
+  .deckstop .mobile-hero .rectangle-6 {
+    left: 3%;
+  }
+
+  .deckstop .mobile-hero .bienvenue-au {
+    left: 6%;
+  }
+}
+@media (max-width: 767px) {
+
+  .deckstop {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+  }
+
+  .deckstop .mobile-hero {
+    position: relative;
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .deckstop .mobile-hero .group {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: block;
+  }
+
+  .deckstop .mobile-hero .mask-group {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+  }
+
+}
+@media (max-width: 767px) {
+
+  /* Бежевая карточка */
+  .deckstop .mobile-hero .rectangle-6 {
+    top: 7%;
+    left: 2.5%;
+    width: 50%;
+    height: 70%;
+    border-radius: 45px;
+  }
+
+  /* Текст внутри карточки */
+  .deckstop .mobile-hero .bienvenue-au {
+    position: absolute;
+
+    top: 7%;
+    left: 5%;
+    width: 45%;
+    height: 70%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: clamp(12px, 2.9vw, 30px);
+    line-height: 1.3;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+}
+@media (max-width: 767px) {
+
+  /* Фотография */
+  .deckstop .mobile-hero .rectangle-15 {
+    top: 7%;
+    left: 58.5%;
+    width: 35%;
+    height: 70%;
+    border-radius: 45px;
+  }
+
+  /* Кнопки */
+  .deckstop .mobile-hero .btn-visiter,
+  .deckstop .mobile-hero .btn-contact {
+    top: 84%;
+  }
+
+  .deckstop .mobile-hero .btn-visiter {
+    left: 2.5%;
+  }
+
+  .deckstop .mobile-hero .btn-contact {
+    left: 29%;
+  }
+
+}
