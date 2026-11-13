@@ -507,3 +507,23 @@
   }
 
 }
+
+@media (max-width: 767px) {
+
+  .navbar-content {
+    gap: 4px;
+    padding: 0 10px;
+  }
+
+  .navbar-links {
+    gap: 6px;
+    margin-left: auto;
+  }
+
+  .navbar-menu {
+    margin-left: 2px;
+    margin-right: 0;
+    flex-shrink: 0;
+  }
+
+}
