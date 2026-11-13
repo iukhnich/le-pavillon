@@ -2339,3 +2339,104 @@
         padding: 12px;
     }
 }
+
+/* Section Nos articles et publications */
+@media screen and (max-width: 600px) {
+
+    .articles-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 25px;
+        padding: 20px 15px;
+        box-sizing: border-box;
+        overflow: visible;
+    }
+
+    /* Cartes des articles */
+    .article-card {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        flex: none;
+        box-sizing: border-box;
+    }
+
+    /* Images */
+    .article-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Boutons sur les images */
+    .article-card a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Empêche le débordement horizontal */
+    .nos-articles {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+/* Section Explorez notre collection d'art */
+@media screen and (max-width: 600px) {
+
+    .collection-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        overflow: visible;
+    }
+
+    /* Colonnes des œuvres */
+    .collection-colonne {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        min-width: 0;
+        width: 100%;
+    }
+
+    /* Images des œuvres */
+    .collection-colonne img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Bouton découvrir la collection */
+    .collection-bouton {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+
+    /* Titre de la section */
+    .nos-oeuvres h2 {
+        font-size: 23px;
+        text-align: center;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    /* Évite les débordements horizontaux */
+    .nos-oeuvres {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
