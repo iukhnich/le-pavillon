@@ -174,6 +174,44 @@
   }
 }
 
+
+@media (max-width: 767px) {
+
+  /* Логотип */
+  .navbar-brand img {
+    width: 29px;
+    height: 34px;
+  }
+
+  .navbar-brand span {
+    font-size: 17px;
+  }
+
+  /* Кнопки */
+  .navbar-links {
+    gap: 7px;
+  }
+
+  .navbar-links a {
+    height: 35px;
+    padding: 0 11px;
+    font-size: 13px;
+    border-radius: 22px;
+  }
+
+  /* Бургер */
+  .navbar-menu {
+    width: 28px;
+    margin-left: 4px;
+  }
+
+  .navbar-menu span {
+    width: 28px;
+    height: 5px;
+  }
+}
+
+
   /* ===== MOBILE TITLE ===== */
 
   .desktop .nos-artistes {
