@@ -508,22 +508,1293 @@
 
 }
 
+/* ===== ACCUEIL : 6 BLOCS MOBILE ===== */
+
 @media (max-width: 767px) {
 
-  .navbar-content {
-    gap: 4px;
-    padding: 0 10px;
+  /* Les 6 images */
+  .deckstop .rectangle-14,
+  .deckstop .rectangle-9,
+  .deckstop .rectangle-12,
+  .deckstop .rectangle-11,
+  .deckstop .rectangle-10,
+  .deckstop .rectangle-13 {
+    position: absolute;
+    width: 44%;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 18px;
   }
 
-  .navbar-links {
-    gap: 6px;
-    margin-left: auto;
+  /* Première ligne */
+  .deckstop .rectangle-14 {
+    top: 520px;
+    left: 4%;
   }
 
-  .navbar-menu {
-    margin-left: 2px;
-    margin-right: 0;
-    flex-shrink: 0;
+  .deckstop .rectangle-9 {
+    top: 520px;
+    left: 52%;
   }
 
+  /* Deuxième ligne */
+  .deckstop .rectangle-12 {
+    top: 750px;
+    left: 4%;
+  }
+
+  .deckstop .rectangle-11 {
+    top: 750px;
+    left: 52%;
+  }
+
+  /* Troisième ligne */
+  .deckstop .rectangle-10 {
+    top: 980px;
+    left: 4%;
+  }
+
+  .deckstop .rectangle-13 {
+    top: 980px;
+    left: 52%;
+  }
+
+  /* Textes sous les images */
+  .deckstop .text-wrapper-7,
+  .deckstop .text-wrapper-8,
+  .deckstop .text-wrapper-9,
+  .deckstop .text-wrapper-10,
+  .deckstop .text-wrapper-11,
+  .deckstop .conf-rence-talks {
+    position: absolute;
+    width: 44%;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  /* Première ligne */
+  .deckstop .text-wrapper-7 {
+    top: 675px;
+    left: 4%;
+  }
+
+  .deckstop .text-wrapper-11 {
+    top: 675px;
+    left: 52%;
+  }
+
+  /* Deuxième ligne */
+  .deckstop .text-wrapper-10 {
+    top: 905px;
+    left: 4%;
+  }
+
+  .deckstop .text-wrapper-8 {
+    top: 905px;
+    left: 52%;
+  }
+
+  /* Troisième ligne */
+  .deckstop .text-wrapper-9 {
+    top: 1135px;
+    left: 4%;
+  }
+
+  .deckstop .conf-rence-talks {
+    top: 1135px;
+    left: 52%;
+  }
+
+  /* Citation sous les 6 blocs */
+  .deckstop .l-art-ne-reproduit {
+    top: 1250px;
+    left: 5%;
+    width: 90%;
+    font-size: 19px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  /* Ligne de séparation */
+  .deckstop .group-3 {
+    top: 1210px;
+    width: 100%;
+  }
+
+}
+
+/* ===== CITATION ET EVENEMENTS MOBILE ===== */
+
+@media (max-width: 767px) {
+
+  /* Citation */
+  .deckstop .l-art-ne-reproduit {
+    position: absolute;
+    top: 1250px;
+    left: 5%;
+    width: 90%;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    white-space: normal;
+  }
+
+  /* Séparateurs autour de la citation */
+  .deckstop .group-3 {
+    position: absolute;
+    top: 1200px;
+    left: 0;
+    width: 100%;
+    height: 170px;
+    display: block;
+  }
+
+  .deckstop .group-3 .line,
+  .deckstop .group-3 .line-2 {
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background-color: #243b4a;
+  }
+
+  .deckstop .group-3 .line {
+    top: 0;
+  }
+
+  .deckstop .group-3 .line-2 {
+    top: 170px;
+  }
+
+  /* Section événements */
+  .deckstop .group-4 {
+    position: absolute;
+    top: 1450px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    display: block;
+  }
+
+  /* Enlever la ligne qui traverse le titre */
+  .deckstop .group-4 .line {
+    display: none;
+  }
+
+  /* Titre */
+  .deckstop .group-4 .les-v-nements-venir {
+    position: absolute;
+    top: 37px;
+    left: 0;
+    width: 100%;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  /* Ligne dorée sous les événements */
+  .deckstop .group-4 .line-3 {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    margin: 0;
+    background-color: #d4a85a;
+  }
+
+}
+
+/* ===== CITATION ET EVENEMENTS MOBILE ===== */
+
+@media (max-width: 767px) {
+
+  /* Citation */
+  .deckstop .l-art-ne-reproduit {
+    position: absolute;
+    top: 1250px;
+    left: 5%;
+    width: 90%;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    white-space: normal;
+  }
+
+  /* Séparateurs autour de la citation */
+  .deckstop .group-3 {
+    position: absolute;
+    top: 1200px;
+    left: 0;
+    width: 100%;
+    height: 170px;
+    display: block;
+  }
+
+  .deckstop .group-3 .line,
+  .deckstop .group-3 .line-2 {
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background-color: #243b4a;
+  }
+
+  .deckstop .group-3 .line {
+    top: 0;
+  }
+
+  .deckstop .group-3 .line-2 {
+    top: 170px;
+  }
+
+  /* Section événements */
+  .deckstop .group-4 {
+    position: absolute;
+    top: 1450px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    display: block;
+  }
+
+  /* Enlever la ligne qui traverse le titre */
+  .deckstop .group-4 .line {
+    display: none;
+  }
+
+  /* Titre */
+  .deckstop .group-4 .les-v-nements-venir {
+    position: absolute;
+    top: 35px;
+    left: 3%;
+    width: 94%;
+    height: auto;
+    margin: 0;
+    font-size: clamp(20px, 4.5vw, 28px);
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  /* Ligne dorée sous les événements */
+  .deckstop .group-4 .line-3 {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    margin: 0;
+    background-color: #d4a85a;
+  }
+
+}
+
+/* ===== EVENEMENTS MOBILE - VERSION PROPRE ===== */
+
+@media (max-width: 767px) {
+
+  .deckstop .gallerie {
+    position: absolute;
+    top: 1640px;
+    left: 0;
+    width: 100%;
+    height: 1450px;
+  }
+
+  .deckstop .gallerie .img,
+  .deckstop .gallerie .rectangle-5,
+  .deckstop .gallerie .rectangle-4 {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    max-width: none;
+    height: 350px;
+    transform: none;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+
+  .deckstop .gallerie .img {
+    top: 0;
+  }
+
+  .deckstop .gallerie .rectangle-5 {
+    top: 460px;
+  }
+
+  .deckstop .gallerie .rectangle-4 {
+    top: 920px;
+  }
+
+  .deckstop .gallerie .div,
+  .deckstop .gallerie .rectangle-2,
+  .deckstop .gallerie .rectangle-3 {
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    max-width: none;
+    height: 45px;
+    transform: none;
+    background: #d4a85a;
+    border-radius: 30px;
+  }
+
+  .deckstop .gallerie .div {
+    top: 365px;
+  }
+
+  .deckstop .gallerie .rectangle-2 {
+    top: 825px;
+  }
+
+  .deckstop .gallerie .rectangle-3 {
+    top: 1285px;
+  }
+
+  .deckstop .gallerie .text-wrapper,
+  .deckstop .gallerie .text-wrapper-2,
+  .deckstop .gallerie .text-wrapper-3 {
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    max-width: none;
+    height: 45px;
+    transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .deckstop .gallerie .text-wrapper {
+    top: 365px;
+  }
+
+  .deckstop .gallerie .text-wrapper-2 {
+    top: 825px;
+  }
+
+  .deckstop .gallerie .text-wrapper-3 {
+    top: 1285px;
+  }
+
+}
+
+
+
+/* ===== REMONTER LES EVENEMENTS MOBILE ===== */
+
+@media (max-width: 767px) {
+
+  .deckstop .gallerie {
+    top: 1540px;
+  }
+
+}
+
+/* ===== REDUCTIONS MOBILE ===== */
+
+@media (max-width: 767px) {
+
+  /* Fond avec les fleurs */
+  .deckstop .mask-group-2 {
+    position: absolute;
+    top: 1810px;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    transform: none;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Rectangle beige */
+  .deckstop .rectangle-42 {
+    position: absolute;
+    top: 1830px;
+    left: 5%;
+    width: 90%;
+    height: 160px;
+    transform: none;
+    border-radius: 25px;
+  }
+
+  /* Texte des réductions */
+  .deckstop .profitez-de-r {
+    position: absolute;
+    top: 1860px;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    margin: 0;
+    transform: none;
+    font-size: 19px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  /* Même taille pour tous les mots */
+  .deckstop .profitez-de-r span,
+  .deckstop .text-wrapper-32,
+  .deckstop .text-wrapper-33 {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+}
+
+/* ===== COLLECTION D'ART MOBILE ===== */
+
+@media (max-width: 767px) {
+
+  /* Ligne de séparation */
+  .deckstop .group-wrapper {
+    position: absolute;
+    top: 3300px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+  }
+
+  .deckstop .group-wrapper .group-5 {
+    width: 100%;
+    height: 10px;
+  }
+
+  .deckstop .group-wrapper .line,
+  .deckstop .group-wrapper .line-2 {
+    width: 100%;
+  }
+
+  /* Titre */
+  .deckstop .explorez-notre {
+    position: absolute;
+    top: 3370px;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    font-size: clamp(22px, 5vw, 30px);
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  /* Toutes les images */
+  .deckstop .rectangle-16,
+  .deckstop .rectangle-17,
+  .deckstop .rectangle-18,
+  .deckstop .rectangle-19,
+  .deckstop .rectangle-28,
+  .deckstop .rectangle-32,
+  .deckstop .rectangle-33,
+  .deckstop .rectangle-34 {
+    position: absolute;
+    width: 44%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 18px;
+  }
+
+  /* Ligne 1 */
+  .deckstop .rectangle-16 {
+    top: 3490px;
+    left: 4%;
+  }
+
+  .deckstop .rectangle-18 {
+    top: 3490px;
+    left: 52%;
+  }
+
+  /* Ligne 2 */
+  .deckstop .rectangle-17 {
+    top: 3720px;
+    left: 4%;
+  }
+
+  .deckstop .rectangle-34 {
+    top: 3720px;
+    left: 52%;
+  }
+
+  /* Ligne 3 */
+  .deckstop .rectangle-28 {
+    top: 3950px;
+    left: 4%;
+  }
+
+  .deckstop .rectangle-33 {
+    top: 3950px;
+    left: 52%;
+  }
+
+  /* Ligne 4 */
+  .deckstop .rectangle-19 {
+    top: 4180px;
+    left: 4%;
+  }
+
+  .deckstop .rectangle-32 {
+    top: 4180px;
+    left: 52%;
+  }
+
+  /* Bouton découvrir la collection */
+  .deckstop .rectangle-20 {
+    position: absolute;
+    top: 4430px;
+    left: 15%;
+    width: 70%;
+    height: 80px;
+    border-radius: 25px;
+  }
+
+  .deckstop .decouvrir-toute-la {
+    position: absolute;
+    top: 4430px;
+    left: 15%;
+    width: 70%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+}
+
+/* ===== CORRECTION LIGNE COLLECTION ===== */
+
+@media (max-width: 767px) {
+
+  .deckstop .group-wrapper {
+    position: absolute;
+    top: 3300px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+  }
+
+  .deckstop .group-wrapper .group-5 {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    display: block;
+  }
+
+  .deckstop .group-wrapper .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #6b8f82;
+  }
+
+
+  .deckstop .group-wrapper .line-2 {
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #6b8f82;
+  }
+
+  /* ===== BOUTON COLLECTION MOBILE ===== */
+
+  @media (max-width: 767px) {
+
+    .deckstop .rectangle-20,
+    .deckstop .decouvrir-toute-la {
+      position: absolute;
+      top: 4430px;
+      left: 25%;
+      width: 50%;
+      height: 65px;
+    }
+
+    .deckstop .rectangle-20 {
+      background-color: #6b8f82;
+      border-radius: 25px;
+    }
+
+    .deckstop .decouvrir-toute-la {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+      line-height: 1.3;
+      text-align: center;
+      color: #fff;
+    }
+
+  }
+
+  /* ===== ARTICLES ET PUBLICATIONS MOBILE ===== */
+
+  @media (max-width: 767px) {
+
+    /* Lignes de séparation */
+    .deckstop .div-wrapper {
+      position: absolute;
+      top: 4570px;
+      left: 0;
+      width: 100%;
+      height: 160px;
+    }
+
+    .deckstop .div-wrapper .group-5 {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 160px;
+    }
+
+    .deckstop .div-wrapper .line,
+    .deckstop .div-wrapper .line-2 {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background: #243b4a;
+    }
+
+    .deckstop .div-wrapper .line {
+      top: 0;
+    }
+
+    .deckstop .div-wrapper .line-2 {
+      top: 160px;
+    }
+
+    /* Titre centré */
+    .deckstop .nos-articles-et {
+      position: absolute;
+      top: 4630px;
+      left: 0;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0 12px;
+      font-size: clamp(20px, 4.5vw, 28px);
+      line-height: 1.3;
+      text-align: center;
+    }
+
+    /* Les trois images */
+    .deckstop .rectangle-30,
+    .deckstop .rectangle-29,
+    .deckstop .rectangle-31 {
+      position: absolute;
+      left: 10%;
+      width: 80%;
+      height: 320px;
+      object-fit: contain;
+      border-radius: 20px;
+    }
+
+    .deckstop .rectangle-30 {
+      top: 4790px;
+    }
+
+    .deckstop .rectangle-29 {
+      top: 5230px;
+    }
+
+    .deckstop .rectangle-31 {
+      top: 5670px;
+    }
+
+    /* Boutons sous les articles */
+    .deckstop .telecharger-le-pdf,
+    .deckstop .lire-l-histoire,
+    .deckstop .lire-l-article {
+      position: absolute;
+      left: 20%;
+      width: 60%;
+      height: 48px;
+    }
+
+    .deckstop .telecharger-le-pdf {
+      top: 5120px;
+    }
+
+    .deckstop .lire-l-histoire {
+      top: 5560px;
+    }
+
+    .deckstop .lire-l-article {
+      top: 6000px;
+    }
+
+    /* Fond des boutons */
+    .deckstop .rectangle-35,
+    .deckstop .rectangle-36 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 48px;
+      border-radius: 25px;
+      opacity: 1;
+      background-color: #243b4a;
+    }
+
+    /* Textes des boutons */
+    .deckstop .text-wrapper-15,
+    .deckstop .text-wrapper-16,
+    .deckstop .text-wrapper-17 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      text-align: center;
+      color: white;
+      white-space: normal;
+    }
+
+  }
+
+  /* ===== CONTACT ET ADRESSE MOBILE ===== */
+
+  @media (max-width: 767px) {
+
+    /* Image de localisation */
+    .deckstop .IMG {
+      position: absolute;
+      top: 6170px;
+      left: 10%;
+      width: 80%;
+      height: 260px;
+      object-fit: contain;
+      border-radius: 20px;
+    }
+
+    /* Titre de l'adresse */
+    .deckstop .venez-nous-voir {
+      position: absolute;
+      top: 6460px;
+      left: 5%;
+      width: 90%;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    /* Adresse */
+    .deckstop .p {
+      position: absolute;
+      top: 6510px;
+      left: 8%;
+      width: 84%;
+      font-size: 17px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    /* Horaires */
+    .deckstop .horaires-d-ouverture {
+      position: absolute;
+      top: 6600px;
+      left: 8%;
+      width: 84%;
+      font-size: 17px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /* Fond bleu du formulaire */
+    .deckstop .rectangle-21 {
+      position: absolute;
+      top: 6770px;
+      left: 5%;
+      width: 90%;
+      height: 530px;
+      border-radius: 25px;
+    }
+
+    /* Titre du formulaire */
+    .deckstop .nous-conctacter {
+      position: absolute;
+      top: 6800px;
+      left: 5%;
+      width: 90%;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    /* Champs du formulaire */
+    .deckstop .rectangle-22,
+    .deckstop .rectangle-24,
+    .deckstop .rectangle-25,
+    .deckstop .rectangle-26,
+    .deckstop .rectangle-27 {
+      position: absolute;
+      left: 10%;
+      width: 80%;
+      height: 48px;
+      border-radius: 25px;
+    }
+
+    .deckstop .rectangle-22 {
+      top: 6870px;
+    }
+
+    .deckstop .rectangle-24 {
+      top: 6935px;
+    }
+
+    .deckstop .rectangle-25 {
+      top: 7000px;
+    }
+
+    .deckstop .rectangle-26 {
+      top: 7065px;
+    }
+
+    .deckstop .rectangle-27 {
+      top: 7130px;
+    }
+
+    /* Textes à l'intérieur des champs */
+    .deckstop .nom-pr-nom,
+    .deckstop .text-wrapper-30,
+    .deckstop .text-wrapper-12,
+    .deckstop .text-wrapper-13,
+    .deckstop .text-wrapper-14 {
+      position: absolute;
+      left: 14%;
+      width: 72%;
+      font-size: 15px;
+      text-align: left;
+    }
+
+    .deckstop .nom-pr-nom {
+      top: 6885px;
+    }
+
+    .deckstop .text-wrapper-30 {
+      top: 6950px;
+    }
+
+    .deckstop .text-wrapper-12 {
+      top: 7015px;
+    }
+
+    .deckstop .text-wrapper-13 {
+      top: 7080px;
+    }
+
+    .deckstop .text-wrapper-14 {
+      top: 7145px;
+    }
+
+    /* Bouton envoyer */
+    .deckstop .rectangle-23 {
+      position: absolute;
+      top: 7210px;
+      left: 25%;
+      width: 50%;
+      height: 55px;
+      border-radius: 30px;
+    }
+
+    .deckstop .envoyer {
+      position: absolute;
+      top: 7225px;
+      left: 25%;
+      width: 50%;
+      font-size: 20px;
+      text-align: center;
+    }
+
+  }
+
+
+  /* ===== FOOTER MOBILE CORRIGE ===== */
+
+  @media (max-width: 767px) {
+
+    /* Image au-dessus des réseaux */
+    .deckstop .unnamed {
+      position: absolute;
+      top: 7340px;
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      transform: translateX(-50%);
+      object-fit: contain;
+    }
+
+    /* Réseaux sociaux */
+    .deckstop .footer-icons {
+      position: absolute;
+      top: 7470px;
+      left: 0;
+      width: 100%;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+    }
+
+    .deckstop .footer-icons img {
+      display: block;
+      width: 35px;
+      height: 35px;
+      object-fit: contain;
+      font-size: 0;
+      color: transparent;
+    }
+
+    /* Mentions et informations */
+    .deckstop .mentions-l-gales,
+    .deckstop .text-wrapper-27,
+    .deckstop .text-wrapper-28,
+    .deckstop .text-wrapper-29 {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    .deckstop .mentions-l-gales {
+      top: 7550px;
+    }
+
+    .deckstop .text-wrapper-27 {
+      top: 7590px;
+    }
+
+    .deckstop .text-wrapper-28 {
+      top: 7630px;
+    }
+
+    .deckstop .text-wrapper-29 {
+      top: 7670px;
+    }
+
+    /* Ligne rose */
+    .deckstop .rectangle {
+      position: absolute;
+      top: 7720px;
+      left: 5%;
+      width: 90%;
+      height: 10px;
+      border-radius: 20px;
+    }
+
+    /* Hauteur totale */
+    .deckstop {
+      min-height: 7800px;
+    }
+
+  }
+
+  /* ===== ORDRE CITATION ET 6 BLOCS MOBILE ===== */
+
+  @media (max-width: 767px) {
+
+
+    /* Citation : deux lignes rapprochées */
+    .deckstop .group-3 {
+      position: absolute;
+      top: 490px;
+      left: 0;
+      width: 100%;
+      height: 130px;
+    }
+
+    .deckstop .group-3 .line {
+      top: 0;
+    }
+
+    .deckstop .group-3 .line-2 {
+      top: 130px;
+    }
+
+    /* Citation alignée à gauche */
+    .deckstop .l-art-ne-reproduit {
+      position: absolute;
+      top: 515px;
+      left: 4%;
+      width: 92%;
+      height: auto;
+      font-size: 24px;
+      line-height: 1.3;
+      text-align: left;
+    }
+
+    /* Signature à droite */
+    .deckstop .text-wrapper-6 {
+      position: absolute;
+      top: 575px;
+      right: 4%;
+      left: auto;
+      width: auto;
+      font-size: 20px;
+      text-align: right;
+    }
+
+
+    /* Remonter les 6 blocs dans leur nouvelle position */
+    .deckstop .rectangle-14,
+    .deckstop .rectangle-9 {
+      top: 665px;
+    }
+
+    .deckstop .text-wrapper-7,
+    .deckstop .text-wrapper-11 {
+      top: 820px;
+    }
+
+    .deckstop .rectangle-12,
+    .deckstop .rectangle-11 {
+      top: 895px;
+    }
+
+    .deckstop .text-wrapper-10,
+    .deckstop .text-wrapper-8 {
+      top: 1050px;
+    }
+
+    .deckstop .rectangle-10,
+    .deckstop .rectangle-13 {
+      top: 1125px;
+    }
+
+    .deckstop .text-wrapper-9,
+    .deckstop .conf-rence-talks {
+      top: 1280px;
+    }
+
+    /* Titre des événements après les 6 blocs */
+    .deckstop .group-4 {
+      top: 1170px;
+    }
+
+  }
+
+  /* ===== 6 BULLES OVALES MOBILE ===== */
+
+  @media (max-width: 767px) {
+
+    /* Les 6 images en forme de bulles */
+    .deckstop .rectangle-14,
+    .deckstop .rectangle-9,
+    .deckstop .rectangle-12,
+    .deckstop .rectangle-11,
+    .deckstop .rectangle-10,
+    .deckstop .rectangle-13 {
+      width: 42%;
+      height: 85px;
+      border-radius: 999px;
+      object-fit: cover;
+    }
+
+    /* Colonne gauche */
+    .deckstop .rectangle-14,
+    .deckstop .rectangle-12,
+    .deckstop .rectangle-10 {
+      left: 4%;
+    }
+
+    /* Colonne droite */
+    .deckstop .rectangle-9,
+    .deckstop .rectangle-11,
+    .deckstop .rectangle-13 {
+      left: 54%;
+    }
+
+    /* Position des 3 rangées */
+    .deckstop .rectangle-14,
+    .deckstop .rectangle-9 {
+      top: 665px;
+    }
+
+    .deckstop .rectangle-12,
+    .deckstop .rectangle-11 {
+      top: 820px;
+    }
+
+    .deckstop .rectangle-10,
+    .deckstop .rectangle-13 {
+      top: 975px;
+    }
+
+    /* Textes sous les bulles */
+    .deckstop .text-wrapper-7,
+    .deckstop .text-wrapper-8,
+    .deckstop .text-wrapper-9,
+    .deckstop .text-wrapper-10,
+    .deckstop .text-wrapper-11,
+    .deckstop .conf-rence-talks {
+      width: 46%;
+      font-size: 17px;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    /* Textes première rangée */
+    .deckstop .text-wrapper-7 {
+      top: 755px;
+      left: 2%;
+    }
+
+    .deckstop .text-wrapper-11 {
+      top: 755px;
+      left: 52%;
+    }
+
+    /* Textes deuxième rangée */
+    .deckstop .text-wrapper-10 {
+      top: 910px;
+      left: 2%;
+    }
+
+    .deckstop .text-wrapper-8 {
+      top: 910px;
+      left: 52%;
+    }
+
+    /* Textes troisième rangée */
+    .deckstop .text-wrapper-9 {
+      top: 1065px;
+      left: 2%;
+    }
+
+    .deckstop .conf-rence-talks {
+      top: 1065px;
+      left: 52%;
+    }
+
+  }
+
+  @media (max-width: 767px) {
+    .deckstop .gallerie {
+      top: 1390px;
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    .deckstop .group-4 .line {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      background-color: #d4a85a;
+    }
+
+  }
+}
+
+
+/* ===== 3 AFFICHES HORIZONTALES MOBILE ===== */
+
+@media (max-width: 767px) {
+
+  .deckstop .gallerie {
+    position: absolute;
+    top: 1230px;
+    left: 0;
+    width: 100%;
+    height: 365px;
+    display: block;
+    overflow: hidden;
+  }
+
+  /* Les trois affiches */
+  .deckstop .gallerie .img,
+  .deckstop .gallerie .rectangle-5,
+  .deckstop .gallerie .rectangle-4 {
+    position: absolute;
+    top: 0;
+    width: 43%;
+    height: 300px;
+    object-fit: contain;
+    transform: none;
+    max-width: none;
+  }
+
+  /* Atelier à gauche */
+  .deckstop .gallerie .img {
+    left: -19%;
+  }
+
+
+  /* Exposition au centre */
+  .deckstop .gallerie .rectangle-5 {
+    left: 28.5%;
+    width: 43%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+  }
+
+
+  /* Conférence à droite */
+  .deckstop .gallerie .rectangle-4 {
+    left: 76%;
+  }
+
+  /* Boutons et leurs textes */
+  .deckstop .gallerie .div,
+  .deckstop .gallerie .rectangle-2,
+  .deckstop .gallerie .rectangle-3,
+  .deckstop .gallerie .text-wrapper,
+  .deckstop .gallerie .text-wrapper-2,
+  .deckstop .gallerie .text-wrapper-3 {
+    position: absolute;
+    top: 310px;
+    width: 43%;
+    height: 42px;
+    transform: none;
+    max-width: none;
+    border-radius: 25px;
+  }
+
+  /* Bouton atelier */
+  .deckstop .gallerie .div,
+  .deckstop .gallerie .text-wrapper {
+    left: -19%;
+  }
+
+  /* Bouton exposition */
+  .deckstop .gallerie .rectangle-2,
+  .deckstop .gallerie .text-wrapper-2 {
+    left: 28.5%;
+  }
+
+  /* Bouton conférence */
+  .deckstop .gallerie .rectangle-3,
+  .deckstop .gallerie .text-wrapper-3 {
+    left: 76%;
+  }
+
+  /* Centrer les textes */
+  .deckstop .gallerie .text-wrapper,
+  .deckstop .gallerie .text-wrapper-2,
+  .deckstop .gallerie .text-wrapper-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    z-index: 2;
+  }
 }
