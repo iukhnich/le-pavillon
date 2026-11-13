@@ -1798,3 +1798,447 @@
     z-index: 2;
   }
 }
+* ===== ESPACEMENT EVENEMENTS ET REDUCTIONS ===== */
+
+@media (max-width: 767px) {
+
+  /* Fond fleuri */
+  .deckstop .mask-group-2 {
+    top: 1750px;
+  }
+
+  /* Rectangle beige */
+  .deckstop .rectangle-42 {
+    top: 1770px;
+  }
+
+  /* Texte des réductions */
+  .deckstop .profitez-de-r {
+    top: 1800px;
+  }
+
+}
+
+/* ===== COLLECTION MOBILE FINALE ===== */
+
+@media (max-width: 767px) {
+
+  /* Titre et lignes vertes */
+  .deckstop .group-wrapper {
+    top: 2050px;
+  }
+
+  .deckstop .explorez-notre {
+    top: 2120px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Dimensions communes */
+  .deckstop .rectangle-16,
+  .deckstop .rectangle-18,
+  .deckstop .rectangle-19,
+  .deckstop .rectangle-33,
+  .deckstop .rectangle-34,
+  .deckstop .rectangle-28 {
+    position: absolute;
+    width: 43%;
+    max-width: none;
+    border-radius: 0;
+    transform: none;
+    object-fit: cover;
+  }
+
+  /* COLONNE GAUCHE */
+
+  /* Paysage avec maison */
+  .deckstop .rectangle-16 {
+    top: 2240px;
+    left: 3%;
+    height: 175px;
+  }
+
+  /* Jardin fleuri */
+  .deckstop .rectangle-18 {
+    top: 2430px;
+    left: 3%;
+    height: 250px;
+  }
+
+  /* Ballerine entière */
+  .deckstop .rectangle-19 {
+    top: 2695px;
+    left: 3%;
+    height: 250px;
+    object-fit: contain;
+    object-position: center top;
+  }
+
+  /* COLONNE DROITE */
+
+  /* Femme au chapeau */
+  .deckstop .rectangle-33 {
+    top: 2240px;
+    left: 52%;
+    width: 45%;
+    height: 250px;
+    object-fit: cover;
+    object-position: cente top;
+  }
+
+  /* Bouton vert */
+  .deckstop .rectangle-20,
+  .deckstop .decouvrir-toute-la {
+    position: absolute;
+    top: 2530px;
+    left: 52%;
+    width: 45%;
+    height: 60px;
+    border-radius: 35px;
+    transform: none;
+  }
+
+  .deckstop .rectangle-20 {
+    background: #6b8f82;
+  }
+
+  .deckstop .decouvrir-toute-la {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: white;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  /* Pont japonais */
+  .deckstop .rectangle-34 {
+    top: 2605px;
+    left: 52%;
+    width: 45%;
+    height: 202px;
+  }
+
+  /* Champ */
+  .deckstop .rectangle-28 {
+    top: 2822px;
+    left: 52%;
+    width: 45%;
+    height: 123px;
+  }
+
+  /* Images inutiles sur mobile */
+  .deckstop .rectangle-17,
+  .deckstop .rectangle-32 {
+    display: none;
+  }
+
+}
+
+/* ===== TITRE ARTICLES MOBILE ===== */
+
+@media (max-width: 767px) {
+
+  .deckstop .div-wrapper {
+    top: 2980px;
+    height: 105px;
+  }
+
+  .deckstop .div-wrapper .group-5 {
+    height: 105px;
+  }
+
+  .deckstop .div-wrapper .line {
+    top: 0;
+    height: 4px;
+  }
+
+  .deckstop .div-wrapper .line-2 {
+    top: 105px;
+    height: 4px;
+  }
+
+  .deckstop .nos-articles-et {
+    top: 3015px;
+    left: 0;
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0;
+  }
+
+}
+
+/* ===== ARTICLES AVEC BANDES TRANSPARENTES ===== */
+
+@media (max-width: 767px) {
+
+  /* Images des articles */
+  .deckstop .rectangle-30,
+  .deckstop .rectangle-29,
+  .deckstop .rectangle-31 {
+    top: 3120px;
+    width: 43%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  .deckstop .rectangle-30 {
+    left: -19%;
+  }
+
+  .deckstop .rectangle-29 {
+    left: 28.5%;
+  }
+
+  .deckstop .rectangle-31 {
+    left: 76%;
+  }
+
+  /* Position des bandes sur les images */
+  .deckstop .telecharger-le-pdf,
+  .deckstop .lire-l-histoire,
+  .deckstop .lire-l-article {
+    position: absolute;
+    top: 3285px;
+    width: 43%;
+    height: 45px;
+    z-index: 5;
+    border-radius: 0;
+  }
+
+  .deckstop .telecharger-le-pdf {
+    left: -19%;
+  }
+
+  .deckstop .lire-l-histoire {
+    left: 28.5%;
+  }
+
+  .deckstop .lire-l-article {
+    left: 76%;
+  }
+
+  /* Fond bleu transparent */
+  .deckstop .telecharger-le-pdf .rectangle-35,
+  .deckstop .lire-l-histoire .rectangle-36,
+  .deckstop .lire-l-article .rectangle-36 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(36, 59, 74, 0.45);
+    border-radius: 30px 30px 0 0;
+    opacity: 1;
+  }
+
+  /* Écritures blanches */
+  .deckstop .text-wrapper-15,
+  .deckstop .text-wrapper-16,
+  .deckstop .text-wrapper-17 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2;
+  }
+
+}
+
+/* ===== TROIS POINTS ARTICLES ===== */
+
+@media (max-width: 767px) {
+
+  .deckstop .articles-dots {
+    position: absolute;
+    top: 3355px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .deckstop .articles-dots span {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #243b4a;
+  }
+
+  .deckstop .articles-dots .active {
+    background: #d4a85a;
+    border: 2px solid #243b4a;
+    box-sizing: border-box;
+  }
+
+}
+
+/* ===== NAVIGATION MOBILE ===== */
+
+@media (max-width: 767px) {
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background: #f8f6ef;
+    z-index: 1000;
+  }
+
+  .navbar-content {
+    height: 75px;
+    padding: 0 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Logo à gauche */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .navbar-brand img {
+    width: 30px;
+    height: 35px;
+    object-fit: contain;
+  }
+
+  .navbar-brand span {
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    color: #171717;
+  }
+
+  /* Boutons artistes et œuvres */
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .navbar-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #243b4a;
+    color: white;
+    border-radius: 25px;
+    padding: 8px 13px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  /* Événements reste dans le menu déroulant */
+  .navbar-links a:nth-child(3) {
+    display: none;
+  }
+
+  /* Menu hamburger */
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    flex-shrink: 0;
+    background: transparent;
+    border: none;
+    padding: 4px;
+  }
+
+  .navbar-menu span {
+    display: block;
+    width: 27px;
+    height: 5px;
+    background: #243b4a;
+    border-radius: 5px;
+  }
+
+  /* Supprimer les anciens textes superposés */
+  .deckstop .text-wrapper-18,
+  .deckstop .text-wrapper-19,
+  .deckstop .text-wrapper-20,
+  .deckstop .rectangle-40,
+  .deckstop .group-2 {
+    display: none;
+  }
+
+}
+
+/* ===== CORRECTION MENU MOBILE ===== */
+
+@media (max-width: 767px) {
+
+  /* Cacher le menu déroulant */
+  .navbar-dropdown {
+    display: none !important;
+  }
+
+  /* L'afficher uniquement au clic */
+  .navbar-dropdown.is-open {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: #f8f6ef;
+    box-sizing: border-box;
+    z-index: 1001;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .deckstop>.events-dots {
+    position: absolute;
+    top: 1685px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    z-index: 20;
+  }
+
+  .deckstop>.events-dots span {
+    display: block;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #243b4a;
+  }
+
+  .deckstop>.events-dots .active {
+    background: #d4a85a;
+    border: 2px solid #243b4a;
+    box-sizing: border-box;
+  }
+}
