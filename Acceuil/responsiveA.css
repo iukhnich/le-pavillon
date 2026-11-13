@@ -2440,3 +2440,35 @@
         overflow-x: hidden;
     }
 }
+
+/* ===== CORRECTION ESPACE ARTICLES / LOCALISATION ===== */
+
+@media (max-width: 767px) {
+
+    /* Articles */
+    .deckstop .articles-dots {
+        top: 3355px;
+    }
+
+    /* Image de localisation */
+    .deckstop .IMG {
+        top: 3430px !important;
+        margin-top: 0 !important;
+    }
+
+    /* Titre localisation */
+    .deckstop .venez-nous-voir {
+        top: 3710px !important;
+    }
+
+    /* Adresse */
+    .deckstop .p {
+        top: 3760px !important;
+    }
+
+    /* Horaires */
+    .deckstop .horaires-d-ouverture {
+        top: 3850px !important;
+    }
+
+}
