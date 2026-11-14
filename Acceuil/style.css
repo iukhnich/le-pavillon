@@ -843,28 +843,6 @@
   letter-spacing: 0;
   line-height: normal;
 }
-.deckstop .les-v-nements-venir {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
-    font-size: 42px;
-}
-
-.group-4 {
-    width: 1440px !important;
-}
-
-.group-4 .les-v-nements-venir {
-    position: absolute !important;
-    top: 121px !important;
-    left: 0 !important;
-    width: 100% !important;
-    margin: 0 !important;
-    text-align: center !important;
-    font-size: 40px !important;
-    line-height: 1.2 !important;
-}
 
 .deckstop .span {
   color: #243b4a;
