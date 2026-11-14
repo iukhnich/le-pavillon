@@ -1404,5 +1404,31 @@ body {
   height: 55px;
   object-fit: contain;
 }
+/* Empêche l'image d'être zoomée et coupée sur les bords */
+.carte-image img, 
+.article-card img, 
+.event-card img {
+  width: 100%;
+  height: auto;          /* Laisse la hauteur s'adapter naturellement à la largeur */
+  max-height: 350px;     /* Optionnel : limite la hauteur maximale sur grand écran */
+  object-fit: contain;   /* Affiche l'image en entier sans la couper */
+  display: block;
+}
+@media (max-width: 768px) {
+  /* Conteneur du carrousel */
+  .carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 0 20px; /* Ajoute de l'espace sur les côtés pour ne pas coller aux bords */
+  }
 
+  /* Chaque carte (affiche ou article) */
+  .carousel-item {
+    flex: 0 0 80%;   /* La carte prend 80% de la largeur de l'écran pour bien voir les textes */
+    scroll-snap-align: center;
+    height: auto;    /* Supprime toute hauteur fixe qui forcerait un découpage */
+  }
+}
   
