@@ -1439,7 +1439,6 @@ body {
   object-fit: contain;
 }
 
-/* UNIFORMISATION DES IMAGES */
 .deckstop .rectangle-9,
 .deckstop .rectangle-10,
 .deckstop .rectangle-11,
@@ -1451,7 +1450,6 @@ body {
     object-fit: cover;
 }
 
-/* UNIFORMISATION DES TEXTES */
 .deckstop .text-wrapper-7,
 .deckstop .text-wrapper-8,
 .deckstop .text-wrapper-9,
@@ -1464,4 +1462,24 @@ body {
     color: #243b4a !important;
     letter-spacing: 0 !important;
     line-height: normal;
+}
+
+.deckstop .profitez-de-r {
+    position: absolute;
+    top: 3145px;
+    left: 120px;
+    width: 1200px;
+
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0;
+
+    color: #000000;
+}
+
+.deckstop .profitez-de-r .text-wrapper-33 {
+    font-weight: 700;
 }
