@@ -851,6 +851,21 @@
     font-size: 42px;
 }
 
+.group-4 {
+    width: 1440px !important;
+}
+
+.group-4 .les-v-nements-venir {
+    position: absolute !important;
+    top: 121px !important;
+    left: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    text-align: center !important;
+    font-size: 40px !important;
+    line-height: 1.2 !important;
+}
+
 .deckstop .span {
   color: #243b4a;
 }
@@ -904,17 +919,13 @@
   line-height: normal;
 }
 
-.deckstop .l-art-ne-reproduit {
-  position: absolute;
-  top: 1051px;
-  left: 55px;
-  width: 1189px;
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  color: #000000;
-  font-size: 30px;
-  letter-spacing: 1;
-  line-height: normal;
+.l-art-ne-reproduit {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 22px !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+    width: 100% !important;
+    left: 0 !important;
 }
 
 .deckstop .explorez-notre {
@@ -1445,30 +1456,26 @@ body {
     line-height: normal;
 }
 
-/* BLOC PROMOTION */
-.deckstop .profitez-de-r {
+.profitez-de-r {
     position: absolute !important;
-    top: 3145px !important;
-    left: 120px !important;
-    width: 1200px !important;
+    top: 3150px !important;
+    left: 160px !important;
+    width: 1120px !important;
     text-align: center !important;
-    font-family: "Playfair Display", Georgia, serif !important;
-    font-size: 18px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.7 !important;
     font-weight: 400 !important;
-    line-height: 1.5 !important;
-    letter-spacing: 0 !important;
+    white-space: normal !important;
 }
 
-/* Texte à l'intérieur de la promotion */
-.deckstop .profitez-de-r * {
-    font-family: "Playfair Display", Georgia, serif !important;
-    font-size: 18px !important;
-    line-height: 1.5 !important;
-    letter-spacing: 0 !important;
+.profitez-de-r span {
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
-/* Mettre en valeur les réductions */
-.deckstop .profitez-de-r .text-wrapper-33 {
+.profitez-de-r .text-wrapper-33 {
     font-weight: 700 !important;
 }
 
