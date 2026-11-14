@@ -2675,7 +2675,19 @@
   .deckstop .envoyer {
   top: 4455px !important;
 }
+@media (min-width: 769px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
+  .deckstop {
+    width: 1440px;
+    min-width: 1440px;
+    transform: scale(calc(100vw / 1440));
+    transform-origin: top left;
+  }
+}
 }
 
 
