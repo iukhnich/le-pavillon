@@ -1437,24 +1437,21 @@ body {
     line-height: normal;
 }
 
-/* OFFRE PROMOTIONNELLE */
 .deckstop .profitez-de-r,
 .deckstop .profitez-de-r .text-wrapper-32,
 .deckstop .profitez-de-r .text-wrapper-33 {
     font-family: "Playfair Display", Georgia, serif ;
-    font-size: 30px ;
+    font-size: 20px ;
     line-height: 1.4 ;
     text-align: center;
     letter-spacing: 0 ;
     color: #000000;
 }
 
-/* Conserver les expressions importantes en gras */
 .deckstop .profitez-de-r .text-wrapper-33 {
     font-weight: 700 ;
 }
 
-/* Positionnement dans le cadre */
 .deckstop .profitez-de-r {
     top: 3145px;
     left: 120px;
