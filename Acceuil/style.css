@@ -289,7 +289,7 @@
   color: #243b4a;
   font-size: 36px;
   text-align: center;
-  letter-spacing: 2;
+  letter-spacing: 1;
   line-height: normal;
   border-color: var(--colors-backgrounds-primary-elevated);
 }
@@ -303,7 +303,7 @@
   color: #000000;
   font-size: 36px;
   text-align: center;
-  letter-spacing: 2;
+  letter-spacing: 1;
   line-height: normal;
 }
 
@@ -316,7 +316,7 @@
   color: #000000;
   font-size: 36px;
   text-align: center;
-  letter-spacing: 2;
+  letter-spacing: 1;
   line-height: normal;
 }
 
@@ -329,7 +329,7 @@
   color: #000000;
   font-size: 36px;
   text-align: center;
-  letter-spacing: 2;
+  letter-spacing: 1;
   line-height: normal;
 }
 
@@ -337,12 +337,12 @@
   position: absolute;
   top: 1396px;
   left: 1194px;
-  font-family: "Montserrat", Helvetica, sans-serif;
+  font-family: "Montserrat", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: 40px;
   text-align: center;
-  letter-spacing: 2;
+  letter-spacing: 1;
   line-height: normal;
 }
 
@@ -355,7 +355,7 @@
   position: absolute;
   font-weight: 400;
   color: #000000;
-  letter-spacing: 2;
+  letter-spacing: 1;
   line-height: normal;
 }
 
@@ -369,7 +369,7 @@
   color: #000000;
   font-size: 36px;
   text-align: center;
-  letter-spacing: 2;
+  letter-spacing: 1;
   line-height: normal;
 }
 
