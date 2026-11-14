@@ -2632,43 +2632,44 @@
 
   @media (max-width: 767px) {
 
-    /* Rapprocher le formulaire de la localisation */
-    .deckstop .rectangle-21 {
-        top: 4000px !important;
-    }
+  /* REMONTER LE FORMULAIRE DE CONTACT SUR MOBILE */
+@media (max-width: 767px) {
 
-    .deckstop .nous-conctacter {
-        top: 4030px !important;
-    }
+  .deckstop .rectangle-21 {
+    top: 4000px !important;
+  }
 
-    .deckstop .rectangle-22 {
-        top: 4100px !important;
-    }
+  .deckstop .nous-conctacter {
+    top: 4030px !important;
+  }
 
-    .deckstop .rectangle-24 {
-        top: 4165px !important;
-    }
+  .deckstop .rectangle-22 {
+    top: 4100px !important;
+  }
 
-    .deckstop .rectangle-25 {
-        top: 4230px !important;
-    }
+  .deckstop .rectangle-24 {
+    top: 4165px !important;
+  }
 
-    .deckstop .rectangle-26 {
-        top: 4295px !important;
-    }
+  .deckstop .rectangle-25 {
+    top: 4230px !important;
+  }
 
-    .deckstop .rectangle-27 {
-        top: 4360px !important;
-    }
+  .deckstop .rectangle-26 {
+    top: 4165px !important;
+  }
 
-    .deckstop .rectangle-23 {
-        top: 4440px !important;
-    }
+  .deckstop .rectangle-27 {
+    top: 4230px !important;
+  }
 
-    .deckstop .envoyer {
-        top: 4455px !important;
-    }
-}
+  .deckstop .rectangle-23 {
+    top: 4330px !important;
+  }
+
+  .deckstop .envoyer {
+    top: 4345px !important;
+  }
 }
 
 
