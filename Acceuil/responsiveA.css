@@ -2689,6 +2689,27 @@
   transform: translateX(-50%) scale(calc(100vw / 1440));
   transform-origin: top left;
 }
+  @media (min-width: 769px) {
+
+  .deckstop .rectangle-14,
+  .deckstop .rectangle-11,
+  .deckstop .img {
+    left: 57px;
+  }
+
+  .deckstop .rectangle-9,
+  .deckstop .rectangle-10,
+  .deckstop .rectangle-5 {
+    left: 501px;
+  }
+
+  .deckstop .rectangle-12,
+  .deckstop .rectangle-13,
+  .deckstop .rectangle-4 {
+    left: 945px;
+  }
+
+}
 }
 
 
