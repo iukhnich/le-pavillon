@@ -2675,20 +2675,7 @@
   .deckstop .envoyer {
   top: 4455px !important;
 }
-    @media (min-width: 769px) {
-  .deckstop .l-art-ne-reproduit {
-    display: block !important;
-    position: absolute;
-    top: 1147px;
-    left: 0;
-    width: 100%;
-    font-family: "Playfair Display", serif;
-    font-size: 22px;
-    line-height: 1.5;
-    text-align: center;
-    color: #000;
-    z-index: 10;
-  }
+   
 }
 }
 
