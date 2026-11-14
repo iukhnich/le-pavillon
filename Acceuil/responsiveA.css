@@ -2495,5 +2495,21 @@
     .deckstop .horaires-d-ouverture {
         top: 3850px !important;
     }
+  
+  /* Uniformiser les intitulés des activités */
+.text-wrapper-7,
+.text-wrapper-8,
+.text-wrapper-9,
+.text-wrapper-10,
+.text-wrapper-11,
+.conf-rence-talks {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    color: #243b4a !important;
+    text-align: center !important;
+    line-height: 1.4 !important;
+}
 
 }
+
