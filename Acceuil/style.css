@@ -2,7 +2,7 @@
   background-color: #f8f6ef;
   overflow: hidden;
   width: 100%;
-  min-width: 0;
+  min-width: 1400px;
   min-height: 7692px;
   position: relative;
 }
