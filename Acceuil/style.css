@@ -1442,18 +1442,23 @@ body {
     object-fit: cover;
 }
 
-.deckstop .text-wrapper-7,
-.deckstop .text-wrapper-8,
-.deckstop .text-wrapper-9,
-.deckstop .text-wrapper-10,
-.deckstop .text-wrapper-11,
-.deckstop .conf-rence-talks {
-    font-family: "Montserrat", sans-serif ;
-    font-size: 22px ;
-    font-weight: 400 ;
-    color: #243b4a ;
-    letter-spacing: 0 ;
-    line-height: normal;
+@media (max-width: 767px) {
+
+  .deckstop .text-wrapper-7,
+  .deckstop .text-wrapper-8,
+  .deckstop .text-wrapper-9,
+  .deckstop .text-wrapper-10,
+  .deckstop .text-wrapper-11,
+  .deckstop .conf-rence-talks {
+    width: 46% !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 500 !important;
+    color: #243b4a !important;
+    text-align: center !important;
+    line-height: 1.3 !important;
+  }
+
 }
 
 .profitez-de-r {
