@@ -284,12 +284,12 @@
   left: 98px;
   width: 294px;
   -webkit-text-stroke: 0;
-  font-family: "Playfair Display", Helvetica;
+  font-family: "Montserrat", Helvetica;
   font-weight: 400;
   color: var(--colors-grays-black);
   font-size: 36px;
   text-align: center;
-  letter-spacing: 0;
+  letter-spacing: 1;
   line-height: normal;
   border-color: var(--colors-backgrounds-primary-elevated);
 }
