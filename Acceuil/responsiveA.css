@@ -2566,20 +2566,7 @@
         left: 52% !important;
     }
 }
-@media (max-width: 767px) {
 
-  .deckstop .text-wrapper-7,
-  .deckstop .text-wrapper-8,
-  .deckstop .text-wrapper-9,
-  .deckstop .text-wrapper-10,
-  .deckstop .text-wrapper-11,
-  .deckstop .conf-rence-talks {
-    width: 100% !important;
-    left: 0 !important;
-    right: auto !important;
-    text-align: center !important;
-    box-sizing: border-box;
-  }
 }
 }
 
