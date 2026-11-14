@@ -1430,5 +1430,33 @@ body {
     scroll-snap-align: center;
     height: auto;    /* Supprime toute hauteur fixe qui forcerait un découpage */
   }
+  /* CADRE PROMOTION */
+.deckstop .profitez-de-r {
+  position: absolute;
+  top: 3150px;
+  left: 90px;
+  width: 1260px;
+  height: 190px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 1.6;
+  text-align: center;
+  color: #243b4a;
+}
+
+.deckstop .profitez-de-r .text-wrapper-32 {
+  font-weight: 400;
+}
+
+.deckstop .profitez-de-r .text-wrapper-33 {
+  font-weight: 700;
+}
+  
 }
 
