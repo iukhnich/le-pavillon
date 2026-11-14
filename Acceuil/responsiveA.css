@@ -2682,11 +2682,12 @@
   }
 
   .deckstop {
-    width: 1440px;
-    min-width: 1440px;
-    transform: scale(calc(100vw / 1440));
-    transform-origin: top left;
-  }
+  width: 1440px;
+  min-width: 1440px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%) scale(calc(100vw / 1440));
+  transform-origin: top left;
 }
 }
 
