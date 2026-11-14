@@ -2159,7 +2159,32 @@
   .navbar-links a:nth-child(3) {
     display: none;
   }
+  @media (max-width: 767px) {
+    .deckstop>.events-dots {
+      position: absolute;
+      top: 1730px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      z-index: 20;
+    }
 
+    .deckstop>.events-dots span {
+      display: block;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      background: #243b4a;
+    }
+
+    .deckstop>.events-dots .active {
+      background: #d4a85a;
+      border: 2px solid #243b4a;
+      box-sizing: border-box;
+    }
+  }
   /* Menu hamburger */
   .navbar-menu {
     display: flex;
