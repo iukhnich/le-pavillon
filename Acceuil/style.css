@@ -1441,4 +1441,38 @@ body {
     height: 144px;
     object-fit: cover;
 }
+/* ADAPTATION MOBILE */
+@media screen and (max-width: 767px) {
 
+  html,
+  body {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .deckstop {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .deckstop .group-3,
+  .deckstop .group-4,
+  .deckstop .group-wrapper,
+  .deckstop .div-wrapper {
+    width: 100%;
+  }
+
+  .deckstop .group-3 .line,
+  .deckstop .group-3 .line-2,
+  .deckstop .group-4 .line,
+  .deckstop .group-4 .line-3,
+  .deckstop .group-5 .line,
+  .deckstop .group-5 .line-2 {
+    max-width: 100%;
+  }
+}
