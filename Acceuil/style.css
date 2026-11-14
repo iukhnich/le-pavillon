@@ -1438,3 +1438,30 @@ body {
   height: 55px;
   object-fit: contain;
 }
+
+/* UNIFORMISATION DES IMAGES */
+.deckstop .rectangle-9,
+.deckstop .rectangle-10,
+.deckstop .rectangle-11,
+.deckstop .rectangle-12,
+.deckstop .rectangle-13,
+.deckstop .rectangle-14 {
+    width: 437px;
+    height: 144px;
+    object-fit: cover;
+}
+
+/* UNIFORMISATION DES TEXTES */
+.deckstop .text-wrapper-7,
+.deckstop .text-wrapper-8,
+.deckstop .text-wrapper-9,
+.deckstop .text-wrapper-10,
+.deckstop .text-wrapper-11,
+.deckstop .conf-rence-talks {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 400 !important;
+    color: #243b4a !important;
+    letter-spacing: 0 !important;
+    line-height: normal;
+}
