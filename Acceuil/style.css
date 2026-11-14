@@ -1434,18 +1434,7 @@ body {
 /* --- CORRECTIF DÉFINITIF : Empêcher le rognage des images et affiches --- */
 
 /* 1. On cible toutes les images de ton code (événements, galerie, articles) */
-.deckstop img.rectangle-4,
-.deckstop img.rectangle-5,
-.deckstop img.rectangle-9,
-.deckstop img.rectangle-10,
-.deckstop img.rectangle-11,
-.deckstop img.rectangle-12,
-.deckstop img.rectangle-13,
-.deckstop img.rectangle-14,
-.deckstop img.rectangle-15,
-.deckstop img.rectangle-16,
-.deckstop img.rectangle-17,
-.deckstop img.rectangle-18,
+.img/Rectangle 46.png
 .deckstop img.rectangle-28,
 .deckstop img.rectangle-30,
 .deckstop img.rectangle-31,
