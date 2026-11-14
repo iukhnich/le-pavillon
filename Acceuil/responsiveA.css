@@ -2675,40 +2675,23 @@
   .deckstop .envoyer {
   top: 4455px !important;
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   html, body {
     width: 100%;
+    margin: 0;
     overflow-x: hidden;
   }
 
   .deckstop {
-  width: 1440px;
-  min-width: 1440px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%) scale(calc(100vw / 1440));
-  transform-origin: top left;
-}
-  @media (min-width: 769px) {
-
-  .deckstop .rectangle-14,
-  .deckstop .rectangle-11,
-  .deckstop .img {
-    left: 57px;
+    width: 1440px;
+    min-width: 1440px;
+    position: relative;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(calc(100vw / 1440));
+    transform-origin: top center;
   }
-
-  .deckstop .rectangle-9,
-  .deckstop .rectangle-10,
-  .deckstop .rectangle-5 {
-    left: 501px;
-  }
-
-  .deckstop .rectangle-12,
-  .deckstop .rectangle-13,
-  .deckstop .rectangle-4 {
-    left: 945px;
-  }
-
 }
 }
 
