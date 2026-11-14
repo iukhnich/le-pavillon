@@ -2510,6 +2510,37 @@
     text-align: center !important;
     line-height: 1.4 !important;
 }
+  /* Première ligne */
+.text-wrapper-7,
+.text-wrapper-11,
+.text-wrapper-10 {
+    width: 437px !important;
+    text-align: center !important;
+}
+
+/* Deuxième ligne */
+.text-wrapper-8,
+.text-wrapper-9,
+.conf-rence-talks {
+    width: 437px !important;
+    text-align: center !important;
+}
+
+/* Positionnement des intitulés */
+.text-wrapper-7,
+.text-wrapper-8 {
+    left: 31.5px !important;
+}
+
+.text-wrapper-11,
+.text-wrapper-9 {
+    left: 501.5px !important;
+}
+
+.text-wrapper-10,
+.conf-rence-talks {
+    left: 971.5px !important;
+}
 
 }
 
