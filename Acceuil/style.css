@@ -1363,11 +1363,7 @@ html {
   background-color: #6b8f82;
   border: none;
 }
-.deckstop {
-  width: 1440px;
-  min-width: 1440px;
-  margin: 0 auto;
-}
+
 /* Декоративные линии */
 .deckstop > .group-3,
 .deckstop > .group-4,
@@ -1409,48 +1405,4 @@ body {
   object-fit: contain;
 }
 
-.deckstop .rectangle-9,
-.deckstop .rectangle-10,
-.deckstop .rectangle-11,
-.deckstop .rectangle-12,
-.deckstop .rectangle-13,
-.deckstop .rectangle-14 {
-    width: 437px;
-    height: 144px;
-    object-fit: cover;
-}
-/* ADAPTATION MOBILE */
-@media screen and (max-width: 767px) {
-
-  html,
-  body {
-    width: 100%;
-    min-width: 0;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-
-  .deckstop {
-    width: 100%;
-    min-width: 0;
-    margin: 0;
-    overflow-x: hidden;
-  }
-
-  .deckstop .group-3,
-  .deckstop .group-4,
-  .deckstop .group-wrapper,
-  .deckstop .div-wrapper {
-    width: 100%;
-  }
-
-  .deckstop .group-3 .line,
-  .deckstop .group-3 .line-2,
-  .deckstop .group-4 .line,
-  .deckstop .group-4 .line-3,
-  .deckstop .group-5 .line,
-  .deckstop .group-5 .line-2 {
-    max-width: 100%;
-  }
-}
+  
