@@ -2675,7 +2675,12 @@
   .deckstop .envoyer {
   top: 4455px !important;
 }
-   
+@media (min-width: 769px) {
+  .deckstop {
+    transform: scale(0.85);
+    transform-origin: top left;
+    width: 117.647%;
+  }
 }
 }
 
