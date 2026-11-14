@@ -1431,4 +1431,39 @@ body {
     height: auto;    /* Supprime toute hauteur fixe qui forcerait un découpage */
   }
 }
-  
+/* --- CORRECTIF DÉFINITIF : Empêcher le rognage des images et affiches --- */
+
+/* 1. On cible toutes les images de ton code (événements, galerie, articles) */
+.deckstop img.rectangle-4,
+.deckstop img.rectangle-5,
+.deckstop img.rectangle-9,
+.deckstop img.rectangle-10,
+.deckstop img.rectangle-11,
+.deckstop img.rectangle-12,
+.deckstop img.rectangle-13,
+.deckstop img.rectangle-14,
+.deckstop img.rectangle-15,
+.deckstop img.rectangle-16,
+.deckstop img.rectangle-17,
+.deckstop img.rectangle-18,
+.deckstop img.rectangle-28,
+.deckstop img.rectangle-30,
+.deckstop img.rectangle-31,
+.deckstop img.rectangle-32,
+.deckstop img.rectangle-33,
+.deckstop img.rectangle-34,
+.deckstop .img {
+  object-fit: contain !important; /* Affiche l'image entière sans rogner les bords */
+  background-color: #f8f6ef;     /* Remplit l'espace vide éventuel avec la couleur de fond du site */
+}
+
+/* 2. Adaptation spécifique pour les miniatures d'articles / bannières si besoin */
+.deckstop .rectangle-9,
+.deckstop .rectangle-10,
+.deckstop .rectangle-11,
+.deckstop .rectangle-12,
+.deckstop .rectangle-13,
+.deckstop .rectangle-14 {
+  height: auto !important;
+  max-height: 190px;
+}  
