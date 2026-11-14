@@ -2510,36 +2510,61 @@
     text-align: center !important;
     line-height: 1.4 !important;
 }
-  /* Première ligne */
-.text-wrapper-7,
-.text-wrapper-11,
-.text-wrapper-10 {
-    width: 437px !important;
-    text-align: center !important;
-}
+ /* ===== CORRECTION DEFINITIVE DES 6 ACTIVITES ===== */
 
-/* Deuxième ligne */
-.text-wrapper-8,
-.text-wrapper-9,
-.conf-rence-talks {
-    width: 437px !important;
-    text-align: center !important;
-}
+@media screen and (max-width: 767px) {
 
-/* Positionnement des intitulés */
-.text-wrapper-7,
-.text-wrapper-8 {
-    left: 31.5px !important;
-}
+    .deckstop .text-wrapper-7,
+    .deckstop .text-wrapper-8,
+    .deckstop .text-wrapper-9,
+    .deckstop .text-wrapper-10,
+    .deckstop .text-wrapper-11,
+    .deckstop .conf-rence-talks {
+        position: absolute !important;
+        width: 46% !important;
+        left: auto !important;
+        right: auto !important;
+        font-family: "Montserrat", sans-serif !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        color: #243b4a !important;
+        text-align: center !important;
+        line-height: 1.3 !important;
+        transform: none !important;
+    }
 
-.text-wrapper-11,
-.text-wrapper-9 {
-    left: 501.5px !important;
-}
+    /* Première rangée */
+    .deckstop .text-wrapper-7 {
+        top: 755px !important;
+        left: 2% !important;
+    }
 
-.text-wrapper-10,
-.conf-rence-talks {
-    left: 971.5px !important;
+    .deckstop .text-wrapper-11 {
+        top: 755px !important;
+        left: 52% !important;
+    }
+
+    /* Deuxième rangée */
+    .deckstop .text-wrapper-10 {
+        top: 910px !important;
+        left: 2% !important;
+    }
+
+    .deckstop .text-wrapper-8 {
+        top: 910px !important;
+        left: 52% !important;
+    }
+
+    /* Troisième rangée */
+    .deckstop .text-wrapper-9 {
+        top: 1065px !important;
+        left: 2% !important;
+    }
+
+    .deckstop .conf-rence-talks {
+        top: 1065px !important;
+        left: 52% !important;
+    }
 }
 
 }
