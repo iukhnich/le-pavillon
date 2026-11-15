@@ -887,18 +887,34 @@
 /* --- Citation version ordinateur --- */
 @media screen and (min-width: 768px) {
 
-  /* Réglage des deux traits bleus */
+  /* Conteneur des deux traits bleus */
   .deckstop .group-3 {
-    width: 100% !important;
+    position: absolute !important;
+    top: 1013px !important;
     left: 0 !important;
+    width: 100% !important;
+    height: 170px !important;
+    display: block !important;
+    z-index: 99998 !important;
   }
 
+  /* Traits bleus */
   .deckstop .group-3 .line,
   .deckstop .group-3 .line-2 {
+    position: absolute !important;
     display: block !important;
+    left: 0 !important;
     width: 100% !important;
     height: 8px !important;
     background-color: #243b4a !important;
+  }
+
+  .deckstop .group-3 .line {
+    top: 0 !important;
+  }
+
+  .deckstop .group-3 .line-2 {
+    top: 170px !important;
   }
 
   /* Citation */
