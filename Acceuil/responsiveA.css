@@ -828,13 +828,13 @@
 
 }
 
-/* --- Citation (version finale, écrase la précédente) --- */
+/* --- Citation --- */
 @media (max-width: 767px) {
 
   /* Citation */
   /* Contenu (citation + signature) : de 510px à ~598px.
      Trait du haut à 482px, trait du bas à 482 + 144 = 626px,
-     soit ~28px d'espace de chaque côté. À ajuster si besoin. */
+     soit ~28px d'espace de chaque côté.  */
   .deckstop .group-3 {
     position: absolute;
     top: 482px;
