@@ -2,7 +2,7 @@
    1. BASE GLOBALE
    ===================================================================== */
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
 
   html, body {
     width: 100%;
@@ -11,18 +11,16 @@
   }
 
   .deckstop {
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    min-height: 5080px;
-    margin: 0 !important;
+    width: 1440px;
+    min-width: 1440px;
     position: relative;
     left: 0;
-    transform: none !important;
-    transform-origin: top left;
-    overflow: hidden;
-    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    transform: none;
   }
+
+}
 /* Hauteur totale (déplacé depuis le footer) */
 .deckstop {
   min-height: 5080px;
