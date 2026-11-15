@@ -955,19 +955,6 @@
   line-height: normal;
 }
 
-.deckstop .rectangle-20 {
-  position: absolute;
-  top: 4492px;
-  left: 501px;
-  width: 437px;
-  height: 161px;
-  background-color: #6b8f82;
-  border-radius: 47px;
-  box-shadow: 0px 4px 4px #00000040;
-  display: block;
-  z-index: 2;
-}
-
 .deckstop .decouvrir-toute-la {
   position: absolute;
   top: 4521px;
