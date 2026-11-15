@@ -1266,162 +1266,186 @@
       color: white;
       white-space: normal;
     }
+}
 
+/* ==================================
+   SECTION NOUS CONTACTER
+================================== */
+
+.contact-section {
+  position: relative;
+  width: 100%;
+  padding: 35px 5%;
+  box-sizing: border-box;
+  background-color: #f8f5ef;
+  z-index: 2;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 25px 35px;
+  box-sizing: border-box;
+  background-color: #203b49;
+  border-radius: 35px;
+}
+
+/* TITRE */
+
+.contact-container h2 {
+  margin: 0 0 22px;
+  color: #f8f5ef;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* FORMULAIRE */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+}
+
+.contact-field label {
+  margin-bottom: 6px;
+  color: #f8f5ef;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.contact-field input,
+.contact-field select,
+.contact-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 11px 16px;
+  background-color: #ffffff;
+  color: #203b49;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+}
+
+.contact-field input,
+.contact-field select {
+  height: 42px;
+}
+
+.contact-field textarea {
+  min-height: 90px;
+  border-radius: 18px;
+  resize: vertical;
+}
+
+.contact-field input::placeholder,
+.contact-field textarea::placeholder {
+  color: #999999;
+}
+
+/* BOUTON */
+
+.contact-submit {
+  width: 190px;
+  max-width: 100%;
+  margin: 5px auto 0;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background-color: #e8c5bd;
+  color: #203b49;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* ==================================
+   VERSION MOBILE
+================================== */
+
+@media screen and (max-width: 767px) {
+
+  .contact-section {
+    width: 100%;
+    padding: 25px 12px;
   }
 
-  /* ===== CONTACT ET ADRESSE MOBILE ===== */
-
-  @media (max-width: 767px) {
-
-    /* Image de localisation */
-    .deckstop .IMG {
-      position: absolute;
-      top: 6170px;
-      left: 10%;
-      width: 80%;
-      height: 260px;
-      object-fit: contain;
-      border-radius: 20px;
-    }
-
-    /* Titre de l'adresse */
-    .deckstop .venez-nous-voir {
-      position: absolute;
-      top: 6460px;
-      left: 5%;
-      width: 90%;
-      font-size: 25px;
-      text-align: center;
-    }
-
-    /* Adresse */
-    .deckstop .p {
-      position: absolute;
-      top: 6510px;
-      left: 8%;
-      width: 84%;
-      font-size: 17px;
-      line-height: 1.5;
-      text-align: center;
-    }
-
-    /* Horaires */
-    .deckstop .horaires-d-ouverture {
-      position: absolute;
-      top: 6600px;
-      left: 8%;
-      width: 84%;
-      font-size: 17px;
-      line-height: 1.6;
-      text-align: center;
-    }
-
-    /* Fond bleu du formulaire */
-    .deckstop .rectangle-21 {
-      position: absolute;
-      top: 6770px;
-      left: 5%;
-      width: 90%;
-      height: 530px;
-      border-radius: 25px;
-    }
-
-    /* Titre du formulaire */
-    .deckstop .nous-conctacter {
-      position: absolute;
-      top: 6800px;
-      left: 5%;
-      width: 90%;
-      font-size: 25px;
-      text-align: center;
-    }
-
-    /* Champs du formulaire */
-    .deckstop .rectangle-22,
-    .deckstop .rectangle-24,
-    .deckstop .rectangle-25,
-    .deckstop .rectangle-26,
-    .deckstop .rectangle-27 {
-      position: absolute;
-      left: 10%;
-      width: 80%;
-      height: 48px;
-      border-radius: 25px;
-    }
-
-    .deckstop .rectangle-22 {
-      top: 6870px;
-    }
-
-    .deckstop .rectangle-24 {
-      top: 6935px;
-    }
-
-    .deckstop .rectangle-25 {
-      top: 7000px;
-    }
-
-    .deckstop .rectangle-26 {
-      top: 7065px;
-    }
-
-    .deckstop .rectangle-27 {
-      top: 7130px;
-    }
-
-    /* Textes à l'intérieur des champs */
-    .deckstop .nom-pr-nom,
-    .deckstop .text-wrapper-30,
-    .deckstop .text-wrapper-12,
-    .deckstop .text-wrapper-13,
-    .deckstop .text-wrapper-14 {
-      position: absolute;
-      left: 14%;
-      width: 72%;
-      font-size: 15px;
-      text-align: left;
-    }
-
-    .deckstop .nom-pr-nom {
-      top: 6885px;
-    }
-
-    .deckstop .text-wrapper-30 {
-      top: 6950px;
-    }
-
-    .deckstop .text-wrapper-12 {
-      top: 7015px;
-    }
-
-    .deckstop .text-wrapper-13 {
-      top: 7080px;
-    }
-
-    .deckstop .text-wrapper-14 {
-      top: 7145px;
-    }
-
-    /* Bouton envoyer */
-    .deckstop .rectangle-23 {
-      position: absolute;
-      top: 7210px;
-      left: 25%;
-      width: 50%;
-      height: 55px;
-      border-radius: 30px;
-    }
-
-    .deckstop .envoyer {
-      position: absolute;
-      top: 7225px;
-      left: 25%;
-      width: 50%;
-      font-size: 20px;
-      text-align: center;
-    }
-
+  .contact-container {
+    width: 100%;
+    max-width: none;
+    padding: 22px 16px;
+    border-radius: 25px;
   }
+
+  .contact-container h2 {
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  /* Une seule colonne sur téléphone */
+
+  .contact-row {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .contact-form {
+    gap: 14px;
+  }
+
+  .contact-field {
+    width: 100%;
+  }
+
+  .contact-field label {
+    font-size: 11px;
+    margin-left: 5px;
+  }
+
+  .contact-field input,
+  .contact-field select {
+    height: 42px;
+    font-size: 12px;
+  }
+
+  .contact-field textarea {
+    min-height: 95px;
+    font-size: 12px;
+  }
+
+  .contact-submit {
+    width: 70%;
+    padding: 12px;
+    font-size: 12px;
+  }
+
+}
+
 
 
   /* ===== FOOTER MOBILE CORRIGE ===== */
