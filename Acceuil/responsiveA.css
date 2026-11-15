@@ -1618,10 +1618,12 @@
   .deckstop .rectangle-20 {
     display: block !important;
     position: absolute !important;
-    top: 2530px !important;
+    top: 2495px !important;
     left: 52% !important;
     width: 45% !important;
     height: 60px !important;
+    margin: 0 !important;
+    padding: 0 !important;
     transform: none !important;
     background-color: #6b8f82 !important;
     border-radius: 35px !important;
@@ -1631,19 +1633,20 @@
   .deckstop .decouvrir-toute-la {
     display: flex !important;
     position: absolute !important;
-    top: 2530px !important;
+    top: 2495px !important;
     left: 52% !important;
     width: 45% !important;
     height: 60px !important;
-    align-items: center !important;
-    justify-content: center !important;
+    margin: 0 !important;
     padding: 0 8px !important;
     box-sizing: border-box !important;
+    align-items: center !important;
+    justify-content: center !important;
     transform: none !important;
     font-size: 13px !important;
     line-height: 1.2 !important;
     text-align: center !important;
-    color: #ffffff !important;
+    color: white !important;
     z-index: 21 !important;
   }
 
