@@ -1430,7 +1430,119 @@ body {
     scroll-snap-align: center;
     height: auto;    /* Supprime toute hauteur fixe qui forcerait un découpage */
   }
- 
+ /* FORMULAIRE DE CONTACT COMPLET */
+.deckstop .rectangle-21 {
+  position: absolute;
+  top: 6690px;
+  left: 100px;
+  width: 1240px;
+  height: 594px;
+  z-index: 1;
+}
+
+/* Titre */
+.deckstop .nous-conctacter {
+  position: absolute;
+  top: 6725px;
+  left: 100px;
+  width: 1240px;
+  text-align: center;
+  color: #f8f6ef;
+  font-size: 48px;
+  font-weight: 700;
+  z-index: 2;
+}
+
+/* Champ Nom et prénom */
+.deckstop .rectangle-22 {
+  top: 6835px;
+  left: 150px;
+  width: 1130px;
+  height: 56px;
+  z-index: 2;
+}
+
+.deckstop .nom-pr-nom {
+  top: 6843px;
+  left: 171px;
+  z-index: 3;
+}
+
+/* Champs de gauche */
+.deckstop .rectangle-24 {
+  top: 6920px;
+  left: 150px;
+  width: 550px;
+  height: 56px;
+  z-index: 2;
+}
+
+.deckstop .rectangle-25 {
+  top: 7000px;
+  left: 150px;
+  width: 550px;
+  height: 56px;
+  z-index: 2;
+}
+
+/* Champs de droite */
+.deckstop .rectangle-26 {
+  top: 6920px;
+  left: 730px;
+  width: 550px;
+  height: 56px;
+  z-index: 2;
+}
+
+.deckstop .rectangle-27 {
+  top: 7000px;
+  left: 730px;
+  width: 550px;
+  height: 56px;
+  z-index: 2;
+}
+
+/* Textes dans les champs */
+.deckstop .text-wrapper-30 {
+  top: 6928px;
+  left: 171px;
+  z-index: 3;
+}
+
+.deckstop .text-wrapper-13 {
+  top: 6928px;
+  left: 754px;
+  z-index: 3;
+}
+
+.deckstop .text-wrapper-12 {
+  top: 7008px;
+  left: 171px;
+  z-index: 3;
+}
+
+.deckstop .text-wrapper-14 {
+  top: 7008px;
+  left: 754px;
+  z-index: 3;
+}
+
+/* Bouton Envoyer */
+.deckstop .rectangle-23 {
+  top: 7110px;
+  left: 561px;
+  width: 317px;
+  height: 75px;
+  z-index: 2;
+}
+
+.deckstop .envoyer {
+  top: 7125px;
+  left: 561px;
+  width: 317px;
+  text-align: center;
+  z-index: 3;
+}
   
 }
 
