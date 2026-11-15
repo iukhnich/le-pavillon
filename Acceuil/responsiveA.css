@@ -642,24 +642,6 @@
   }
 }
 
-  /* Citation sous les 6 blocs */
-  .deckstop .l-art-ne-reproduit {
-    top: 1250px;
-    left: 5%;
-    width: 90%;
-    font-size: 19px;
-    text-align: center;
-    line-height: 1.5;
-  }
-
-  /* Ligne de séparation */
-  .deckstop .group-3 {
-    top: 1210px;
-    width: 100%;
-  }
-
-}
-
 /* ===== CITATION ET EVENEMENTS MOBILE ===== */
 
 @media (max-width: 767px) {
