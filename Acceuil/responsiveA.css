@@ -719,9 +719,15 @@
     margin: 0;
     background-color: #d4a85a;
   }
-
 }
 
+  /* Ligne de séparation */
+  .deckstop .group-3 {
+    top: 1210px;
+    width: 100%;
+  }
+
+}
 /* ===== CITATION ET EVENEMENTS MOBILE ===== */
 
 @media (max-width: 767px) {
@@ -1546,148 +1552,7 @@
     }
 
 
-    /* Remonter les 6 blocs dans leur nouvelle position */
-    .deckstop .rectangle-14,
-    .deckstop .rectangle-9 {
-      top: 665px;
-    }
-
-    .deckstop .text-wrapper-7,
-    .deckstop .text-wrapper-11 {
-      top: 820px;
-    }
-
-    .deckstop .rectangle-12,
-    .deckstop .rectangle-11 {
-      top: 895px;
-    }
-
-    .deckstop .text-wrapper-10,
-    .deckstop .text-wrapper-8 {
-      top: 1050px;
-    }
-
-    .deckstop .rectangle-10,
-    .deckstop .rectangle-13 {
-      top: 1125px;
-    }
-
-    .deckstop .text-wrapper-9,
-    .deckstop .conf-rence-talks {
-      top: 1280px;
-    }
-
-    /* Titre des événements après les 6 blocs */
-    .deckstop .group-4 {
-      top: 1170px;
-    }
-
-  }
-
-  /* ===== 6 BULLES OVALES MOBILE ===== */
-
-  @media (max-width: 767px) {
-
-    /* Les 6 images en forme de bulles */
-    .deckstop .rectangle-14,
-    .deckstop .rectangle-9,
-    .deckstop .rectangle-12,
-    .deckstop .rectangle-11,
-    .deckstop .rectangle-10,
-    .deckstop .rectangle-13 {
-      width: 42%;
-      height: 85px;
-      border-radius: 999px;
-      object-fit: cover;
-    }
-
-    /* Colonne gauche */
-    .deckstop .rectangle-14,
-    .deckstop .rectangle-12,
-    .deckstop .rectangle-10 {
-      left: 4%;
-    }
-
-    /* Colonne droite */
-    .deckstop .rectangle-9,
-    .deckstop .rectangle-11,
-    .deckstop .rectangle-13 {
-      left: 54%;
-    }
-
-    /* Position des 3 rangées */
-    .deckstop .rectangle-14,
-    .deckstop .rectangle-9 {
-      top: 665px;
-    }
-
-    .deckstop .rectangle-12,
-    .deckstop .rectangle-11 {
-      top: 820px;
-    }
-
-    .deckstop .rectangle-10,
-    .deckstop .rectangle-13 {
-      top: 975px;
-    }
-
-    /* ===== SOUS-TITRES DES 6 ACTIVITES : CORRECTION MOBILE ===== */
-
-@media screen and (max-width: 767px) {
-
-  .deckstop .text-wrapper-7,
-  .deckstop .text-wrapper-8,
-  .deckstop .text-wrapper-9,
-  .deckstop .text-wrapper-10,
-  .deckstop .text-wrapper-11,
-  .deckstop .conf-rence-talks {
-    position: absolute !important;
-    width: 42% !important;
-    height: auto !important;
-    padding: 0 3px !important;
-    box-sizing: border-box !important;
-    font-family: "Montserrat", sans-serif !important;
-    font-size: 14px !important;
-    font-weight: 500 !important;
-    line-height: 1.25 !important;
-    text-align: center !important;
-    white-space: normal !important;
-    overflow-wrap: break-word !important;
-    transform: none !important;
-  }
-
-  /* Première rangée */
-  .deckstop .text-wrapper-7 {
-    top: 755px !important;
-    left: 4% !important;
-  }
-
-  .deckstop .text-wrapper-11 {
-    top: 755px !important;
-    left: 54% !important;
-  }
-
-  /* Deuxième rangée */
-  .deckstop .text-wrapper-10 {
-    top: 910px !important;
-    left: 4% !important;
-  }
-
-  .deckstop .text-wrapper-8 {
-    top: 910px !important;
-    left: 54% !important;
-  }
-
-  /* Troisième rangée */
-  .deckstop .text-wrapper-9 {
-    top: 1065px !important;
-    left: 4% !important;
-  }
-
-  .deckstop .conf-rence-talks {
-    top: 1065px !important;
-    left: 54% !important;
-  }
+    
 
   @media (max-width: 767px) {
 
