@@ -1041,7 +1041,6 @@
 /* ===== CORRECTION LIGNE COLLECTION ===== */
 
 @media (max-width: 767px) {
-
   .deckstop .group-wrapper {
     position: absolute;
     top: 3300px;
@@ -1049,7 +1048,7 @@
     width: 100%;
     height: 8px;
   }
-
+}
   .deckstop .group-wrapper .group-5 {
     position: relative;
     width: 100%;
