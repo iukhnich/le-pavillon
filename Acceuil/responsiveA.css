@@ -854,7 +854,7 @@
 
   .deckstop .l-art-ne-reproduit {
     position: absolute;
-    top: 550px;
+    top: 510px;
     left: 5%;
     right: auto;
     width: 90%;
@@ -874,7 +874,7 @@
   /* Signature */
   .deckstop .text-wrapper-6 {
     position: absolute;
-    top: 600px;
+    top: 575px;
     right: 5%;
     left: auto;
     width: 90%;
