@@ -2511,81 +2511,109 @@
     }
 }
 
-/* ===== CORRECTIONS MOBILE : ARTICLES ET LOCALISATION ===== */
+/* ===== CORRECTION ESPACE ARTICLES / LOCALISATION ===== */
 
 @media (max-width: 767px) {
 
-  /* Points des articles */
-  .deckstop .articles-dots {
-    position: absolute;
-    top: 3355px;
-    left: 0;
-    width: 100%;
-  }
+    /* Articles */
+    .deckstop .articles-dots {
+        top: 3355px;
+    }
 
-  /* Image de localisation */
-  .deckstop .IMG {
-    top: 3430px !important;
-    margin-top: 0 !important;
-  }
+    /* Image de localisation */
+    .deckstop .IMG {
+        top: 3430px !important;
+        margin-top: 0 !important;
+    }
 
-  /* Titre de localisation */
-  .deckstop .venez-nous-voir {
-    top: 3710px !important;
-  }
+    /* Titre localisation */
+    .deckstop .venez-nous-voir {
+        top: 3710px !important;
+    }
 
-  /* Adresse */
-  .deckstop .p {
-    top: 3760px !important;
-  }
+    /* Adresse */
+    .deckstop .p {
+        top: 3760px !important;
+    }
 
-  /* Horaires */
-  .deckstop .horaires-d-ouverture {
-    top: 3850px !important;
-  }
-
-  /* Formulaire */
-  .deckstop .rectangle-21 {
-    top: 4000px !important;
-  }
-
-  .deckstop .nous-conctacter {
-    top: 4030px !important;
-  }
-
-  .deckstop .rectangle-22 {
-    top: 4100px !important;
-  }
-
-  .deckstop .rectangle-24 {
-    top: 4165px !important;
-  }
-
-  .deckstop .rectangle-25 {
-    top: 4230px !important;
-  }
-
-  .deckstop .rectangle-26 {
-    top: 4295px !important;
-  }
-
-  .deckstop .rectangle-27 {
-    top: 4360px !important;
-  }
-
-  .deckstop .rectangle-23 {
-    top: 4440px !important;
-  }
-
-  .deckstop .envoyer {
-    top: 4455px !important;
-  }
-
+    /* Horaires */
+    .deckstop .horaires-d-ouverture {
+        top: 3850px !important;
+    }
+  
+  /* Uniformiser les intitulés des activités */
+.text-wrapper-7,
+.text-wrapper-8,
+.text-wrapper-9,
+.text-wrapper-10,
+.text-wrapper-11,
+.conf-rence-talks {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    color: #243b4a !important;
+    text-align: center !important;
+    line-height: 1.4 !important;
 }
+ /* ===== CORRECTION DEFINITIVE DES 6 ACTIVITES ===== */
 
-/* ===== ACTIVITES : TYPOGRAPHIE MOBILE ===== */
+@media screen and (max-width: 767px) {
 
-@media (max-width: 767px) {
+    .deckstop .text-wrapper-7,
+    .deckstop .text-wrapper-8,
+    .deckstop .text-wrapper-9,
+    .deckstop .text-wrapper-10,
+    .deckstop .text-wrapper-11,
+    .deckstop .conf-rence-talks {
+        position: absolute !important;
+        width: 46% !important;
+        left: auto !important;
+        right: auto !important;
+        font-family: "Montserrat", sans-serif !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        color: #243b4a !important;
+        text-align: center !important;
+        line-height: 1.3 !important;
+        transform: none !important;
+    }
+
+    /* Première rangée */
+    .deckstop .text-wrapper-7 {
+        top: 755px !important;
+        left: 2% !important;
+    }
+
+    .deckstop .text-wrapper-11 {
+        top: 755px !important;
+        left: 52% !important;
+    }
+
+    /* Deuxième rangée */
+    .deckstop .text-wrapper-10 {
+        top: 910px !important;
+        left: 2% !important;
+    }
+
+    .deckstop .text-wrapper-8 {
+        top: 910px !important;
+        left: 52% !important;
+    }
+
+    /* Troisième rangée */
+    .deckstop .text-wrapper-9 {
+        top: 1065px !important;
+        left: 2% !important;
+    }
+
+    .deckstop .conf-rence-talks {
+        top: 1065px !important;
+        left: 52% !important;
+    }
+
+/* ===== SOUS-TITRES DES 6 ACTIVITES : CORRECTION MOBILE ===== */
+
+@media screen and (max-width: 767px) {
 
   .deckstop .text-wrapper-7,
   .deckstop .text-wrapper-8,
@@ -2602,13 +2630,13 @@
     font-size: 14px !important;
     font-weight: 500 !important;
     line-height: 1.25 !important;
-    color: #243b4a !important;
     text-align: center !important;
     white-space: normal !important;
     overflow-wrap: break-word !important;
     transform: none !important;
   }
 
+  /* Première rangée */
   .deckstop .text-wrapper-7 {
     top: 755px !important;
     left: 4% !important;
@@ -2619,6 +2647,7 @@
     left: 54% !important;
   }
 
+  /* Deuxième rangée */
   .deckstop .text-wrapper-10 {
     top: 910px !important;
     left: 4% !important;
@@ -2629,6 +2658,7 @@
     left: 54% !important;
   }
 
+  /* Troisième rangée */
   .deckstop .text-wrapper-9 {
     top: 1065px !important;
     left: 4% !important;
@@ -2639,18 +2669,35 @@
     left: 54% !important;
   }
 
-}
+  @media (max-width: 767px) {
 
-/* ===== TEXTE PROMOTIONNEL MOBILE ===== */
+
+
+  .deckstop .envoyer {
+  top: 4455px !important;
+}
+@media (min-width: 768px) {
+  html, body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .deckstop {
+    width: 1440px;
+    min-width: 1440px;
+    position: relative;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(calc(100vw / 1440));
+    transform-origin: top center;
+  }
+  /* ===== CORRECTION TEXTE PROMOTIONNEL MOBILE ===== */
 
 @media (max-width: 767px) {
 
-  .deckstop .mask-group-2 {
-    top: 1750px;
-  }
-
   .deckstop .rectangle-42 {
-    position: absolute;
     top: 1770px;
     left: 5%;
     width: 90%;
@@ -2667,19 +2714,19 @@
     margin: 0;
     padding: 0;
     transform: none;
-    display: block;
-    visibility: visible;
-    opacity: 1;
+
     font-family: "Montserrat", sans-serif;
     font-size: clamp(12px, 3.6vw, 15px);
     font-weight: 400;
     line-height: 1.35;
     text-align: center;
     color: #243b4a;
+
     box-sizing: border-box;
     z-index: 5;
   }
 
+  /* Remettre les expressions importantes en gras */
   .deckstop .profitez-de-r .text-wrapper-33 {
     font-weight: 700 !important;
   }
@@ -2689,8 +2736,7 @@
   }
 
 }
-
-/* ===== TEXTE PROMOTIONNEL ORDINATEUR ===== */
+  /* ===== CORRECTION TEXTE PROMOTIONNEL ORDINATEUR ===== */
 
 @media (min-width: 768px) {
 
@@ -2702,15 +2748,18 @@
     height: auto;
     margin: 0;
     padding: 20px;
+
     display: block;
     visibility: visible;
     opacity: 1;
+
     font-family: "Montserrat", sans-serif;
     font-size: 26px;
     font-weight: 400;
     line-height: 1.5;
     text-align: center;
     color: #243b4a;
+
     box-sizing: border-box;
     z-index: 5;
   }
@@ -2724,6 +2773,7 @@
   }
 
 }
+
 
   
 }
