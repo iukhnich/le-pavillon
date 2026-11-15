@@ -4,12 +4,6 @@
 
 @media (max-width: 767px) {
 
-  .deckstop {
-    width: 100% !important;
-    min-width: 0 !important;
-    overflow: hidden;
-  }
-
   html, body {
     width: 100%;
     margin: 0;
@@ -17,10 +11,20 @@
   }
 
   .deckstop {
-    width: 100%;
-    min-width: 0;
-    margin: 0;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    min-height: 5080px;
+    margin: 0 !important;
+    position: relative;
+    left: 0;
+    transform: none !important;
+    transform-origin: top left;
+    overflow: hidden;
+    box-sizing: border-box;
   }
+
+}
 
   /* Hauteur totale (déplacé depuis le footer) */
   .deckstop {
