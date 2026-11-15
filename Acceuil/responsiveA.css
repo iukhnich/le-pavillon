@@ -1,4 +1,3 @@
-
 /* =====================================================================
    1. BASE GLOBALE
    ===================================================================== */
@@ -853,8 +852,16 @@
     position: absolute;
     top: 510px;
     left: 5%;
+    right: auto;
     width: 90%;
+    max-width: none;
     height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transform: none;
+    text-indent: 0;
+    white-space: normal;
     font-size: 19px;
     line-height: 1.4;
     text-align: center;
@@ -875,6 +882,22 @@
 
 /* --- Citation version ordinateur --- */
 @media screen and (min-width: 768px) {
+
+  /* Traits bleus autour de la citation (texte à top: 1051px).
+     À AJUSTER : le trait du haut est à 1051 - 40 = 1011px,
+     celui du bas à 130px plus bas. Modifier seulement ces 2 valeurs. */
+  .deckstop .group-3 {
+    top: 1011px;
+    height: 130px;
+  }
+
+  .deckstop .group-3 .line {
+    top: 0;
+  }
+
+  .deckstop .group-3 .line-2 {
+    top: 130px;
+  }
 
   .deckstop p.l-art-ne-reproduit {
     position: absolute !important;
@@ -918,12 +941,14 @@
 @media (max-width: 767px) {
 
   /* Section événements */
+  /* Doit finir AVANT la galerie (qui commence à 1230px) :
+     titre ~1130px, ligne dorée ~1185px */
   .deckstop .group-4 {
     position: absolute;
-    top: 1450px;
+    top: 1100px;
     left: 0;
     width: 100%;
-    height: 150px;
+    height: 100px;
     display: block;
   }
 
@@ -935,7 +960,7 @@
   /* Titre */
   .deckstop .group-4 .les-v-nements-venir {
     position: absolute;
-    top: 35px;
+    top: 30px;
     left: 3%;
     width: 94%;
     height: auto;
@@ -948,7 +973,7 @@
   /* Ligne dorée sous les événements */
   .deckstop .group-4 .line-3 {
     position: absolute;
-    top: 130px;
+    top: 85px;
     left: 0;
     width: 100%;
     height: 8px;
@@ -1330,6 +1355,9 @@
 
     box-sizing: border-box;
     z-index: 5;
+
+    /* DÉBOGAGE : décommenter pour voir où le texte se trouve vraiment
+    outline: 3px solid red; */
   }
 
   .deckstop .profitez-de-r .text-wrapper-33 {
@@ -2415,4 +2443,4 @@
         max-width: 100%;
         overflow-x: hidden;
     }
-}
+} 
