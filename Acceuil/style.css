@@ -1454,6 +1454,7 @@ body {
     scroll-snap-align: center;
     height: auto;    /* Supprime toute hauteur fixe qui forcerait un découpage */
   }
+  
  /* FORMULAIRE DE CONTACT COMPLET */
 .deckstop .rectangle-21 {
   position: absolute;
