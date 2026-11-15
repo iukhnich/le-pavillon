@@ -1,26 +1,4 @@
-/* =====================================================================
-   LE PAVILLON - CSS RANGÉ PAR SECTIONS (ordre de la page)
-
-   1.  BASE GLOBALE (html, body, .deckstop)
-   2.  NAVBAR
-   3.  HERO D'ACCUEIL (Bienvenue + boutons)
-   4.  LES 6 BULLES OVALES
-   5.  CITATION
-   6.  TITRE « LES ÉVÉNEMENTS À VENIR »
-   7.  GALERIE ÉVÉNEMENTS (affiches + points)
-   8.  RÉDUCTIONS
-   9.  COLLECTION D'ART
-   10. ARTICLES ET PUBLICATIONS
-   11. LOCALISATION ET CONTACT
-   12. FOOTER
-   13. SECTIONS HORS .deckstop (.nos-oeuvres, articles-container, collection-container)
-
-   Règle : à l'intérieur de chaque section, l'ordre d'origine est conservé
-   (le dernier bloc gagne toujours, comme avant).
-   ===================================================================== */
-
-
-/* =====================================================================
+ =====================================================================
    1. BASE GLOBALE
    ===================================================================== */
 
