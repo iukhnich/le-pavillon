@@ -23,7 +23,10 @@
     overflow: hidden;
     box-sizing: border-box;
   }
-
+/* Hauteur totale (déplacé depuis le footer) */
+.deckstop {
+  min-height: 5080px;
+}
 }
 
 
