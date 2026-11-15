@@ -1,4 +1,26 @@
 /* =====================================================================
+   LE PAVILLON - CSS RANGÉ PAR SECTIONS (ordre de la page)
+
+   1.  BASE GLOBALE (html, body, .deckstop)
+   2.  NAVBAR
+   3.  HERO D'ACCUEIL (Bienvenue + boutons)
+   4.  LES 6 BULLES OVALES
+   5.  CITATION
+   6.  TITRE « LES ÉVÉNEMENTS À VENIR »
+   7.  GALERIE ÉVÉNEMENTS (affiches + points)
+   8.  RÉDUCTIONS
+   9.  COLLECTION D'ART
+   10. ARTICLES ET PUBLICATIONS
+   11. LOCALISATION ET CONTACT
+   12. FOOTER
+   13. SECTIONS HORS .deckstop (.nos-oeuvres, articles-container, collection-container)
+
+   Règle : à l'intérieur de chaque section, l'ordre d'origine est conservé
+   (le dernier bloc gagne toujours, comme avant).
+   ===================================================================== */
+
+
+/* =====================================================================
    1. BASE GLOBALE
    ===================================================================== */
 
@@ -24,7 +46,7 @@
 
   /* Hauteur totale (déplacé depuis le footer) */
   .deckstop {
-    min-height: 7800px;
+    min-height: 5080px;
   }
 
 }
@@ -832,12 +854,15 @@
 @media (max-width: 767px) {
 
   /* Citation */
+  /* Contenu (citation + signature) : de 510px à ~598px.
+     Trait du haut à 482px, trait du bas à 482 + 144 = 626px,
+     soit ~28px d'espace de chaque côté. À ajuster si besoin. */
   .deckstop .group-3 {
     position: absolute;
-    top: 490px;
+    top: 482px;
     left: 0;
     width: 100%;
-    height: 150px;
+    height: 144px;
   }
 
   .deckstop .group-3 .line {
@@ -845,7 +870,7 @@
   }
 
   .deckstop .group-3 .line-2 {
-    top: 150px;
+    top: 144px;
   }
 
   .deckstop .l-art-ne-reproduit {
@@ -883,27 +908,21 @@
 /* --- Citation version ordinateur --- */
 @media screen and (min-width: 768px) {
 
-  /* Traits bleus autour de la citation (texte à top: 1051px).
-     À AJUSTER : le trait du haut est à 1051 - 40 = 1011px,
-     celui du bas à 130px plus bas. Modifier seulement ces 2 valeurs. */
-  .deckstop .group-3 {
-    top: 1011px;
-    height: 130px;
-  }
-
-  .deckstop .group-3 .line {
-    top: 0;
-  }
-
+  /* Les deux traits bleus d'origine sont masqués sur ordinateur :
+     ils sont remplacés par une bordure en haut et en bas de la citation
+     (voir plus bas), donc ils sont toujours centrés autour du texte. */
+  .deckstop .group-3 .line,
   .deckstop .group-3 .line-2 {
-    top: 130px;
+    display: none;
   }
 
   .deckstop p.l-art-ne-reproduit {
     position: absolute !important;
     display: block !important;
 
-    top: 1051px !important;
+    /* top = 1051 - (bordure 8 + padding 30) pour que le texte reste
+       exactement où il était */
+    top: 1013px !important;
     left: 0 !important;
     right: 0 !important;
 
@@ -913,8 +932,12 @@
     min-height: 50px !important;
 
     margin: 0 !important;
-    padding: 0 40px !important;
+    padding: 30px 40px !important;
     box-sizing: border-box !important;
+
+    /* Traits bleus au-dessus et en dessous, toujours centrés */
+    border-top: 8px solid #243b4a !important;
+    border-bottom: 8px solid #243b4a !important;
 
     color: #000000 !important;
     font-family: "Playfair Display", serif !important;
@@ -940,27 +963,34 @@
 
 @media (max-width: 767px) {
 
-  /* Section événements */
-  /* Doit finir AVANT la galerie (qui commence à 1230px) :
-     titre ~1130px, ligne dorée ~1185px */
+  /* Section événements : doit finir AVANT la galerie (qui commence à 1230px).
+     Trait doré du haut ~1125px, titre ~1149px, trait doré du bas ~1201px.
+     Les 3 valeurs top ci-dessous règlent l'espacement. */
   .deckstop .group-4 {
     position: absolute;
-    top: 1100px;
+    top: 1125px;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 90px;
     display: block;
   }
 
-  /* Enlever la ligne qui traverse le titre */
+  /* Trait doré AU-DESSUS du titre (affiché de nouveau) */
   .deckstop .group-4 .line {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    margin: 0;
+    background-color: #d4a85a;
   }
 
-  /* Titre */
+  /* Titre entre les deux traits */
   .deckstop .group-4 .les-v-nements-venir {
     position: absolute;
-    top: 30px;
+    top: 24px;
     left: 3%;
     width: 94%;
     height: auto;
@@ -970,10 +1000,10 @@
     text-align: center;
   }
 
-  /* Ligne dorée sous les événements */
+  /* Trait doré SOUS le titre */
   .deckstop .group-4 .line-3 {
     position: absolute;
-    top: 85px;
+    top: 76px;
     left: 0;
     width: 100%;
     height: 8px;
@@ -1189,7 +1219,7 @@
 
   .deckstop>.events-dots {
     position: absolute;
-    top: 1730px;
+    top: 1620px;
     left: 0;
     width: 100%;
     display: flex;
@@ -1512,6 +1542,40 @@
 
 }
 
+/* ===== BOUTON « DÉCOUVRIR NOTRE COLLECTION » ===== */
+
+@media (max-width: 767px) {
+
+  .deckstop .rectangle-20 {
+    display: block !important;
+    position: absolute !important;
+    top: 4521px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 85% !important;
+    max-width: 350px !important;
+    height: auto !important;
+    min-height: 65px !important;
+    z-index: 20 !important;
+  }
+
+  .deckstop .decouvrir-toute-la {
+    display: block !important;
+    position: absolute !important;
+    top: 4535px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 85% !important;
+    max-width: 350px !important;
+    font-size: 18px !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+    color: #f8f6ef !important;
+    z-index: 21 !important;
+  }
+
+}
+
 /* ===== COLLECTION MOBILE FINALE (écrase les positions 3300px) ===== */
 
 @media (max-width: 767px) {
@@ -1600,40 +1664,6 @@
   .deckstop .rectangle-17,
   .deckstop .rectangle-32 {
     display: none;
-  }
-
-}
-
-/* ===== BOUTON « DÉCOUVRIR NOTRE COLLECTION » ===== */
-
-@media (max-width: 767px) {
-
-  .deckstop .rectangle-20 {
-    display: block !important;
-    position: absolute !important;
-    top: 4521px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 85% !important;
-    max-width: 350px !important;
-    height: auto !important;
-    min-height: 65px !important;
-    z-index: 20 !important;
-  }
-
-  .deckstop .decouvrir-toute-la {
-    display: block !important;
-    position: absolute !important;
-    top: 4535px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 85% !important;
-    max-width: 350px !important;
-    font-size: 18px !important;
-    line-height: 1.3 !important;
-    text-align: center !important;
-    color: #f8f6ef !important;
-    z-index: 21 !important;
   }
 
 }
@@ -2158,7 +2188,7 @@
   /* Image au-dessus des réseaux */
   .deckstop .unnamed {
     position: absolute;
-    top: 7340px;
+    top: 4620px;
     left: 50%;
     width: 100px;
     height: 100px;
@@ -2169,7 +2199,7 @@
   /* Réseaux sociaux */
   .deckstop .footer-icons {
     position: absolute;
-    top: 7470px;
+    top: 4750px;
     left: 0;
     width: 100%;
     height: 45px;
@@ -2204,25 +2234,25 @@
   }
 
   .deckstop .mentions-l-gales {
-    top: 7550px;
+    top: 4830px;
   }
 
   .deckstop .text-wrapper-27 {
-    top: 7590px;
+    top: 4870px;
   }
 
   .deckstop .text-wrapper-28 {
-    top: 7630px;
+    top: 4910px;
   }
 
   .deckstop .text-wrapper-29 {
-    top: 7670px;
+    top: 4950px;
   }
 
   /* Ligne rose */
   .deckstop .rectangle {
     position: absolute;
-    top: 7720px;
+    top: 5000px;
     left: 5%;
     width: 90%;
     height: 10px;
@@ -2443,4 +2473,4 @@
         max-width: 100%;
         overflow-x: hidden;
     }
-} 
+}
