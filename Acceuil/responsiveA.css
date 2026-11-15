@@ -1528,17 +1528,16 @@
       top: 130px;
     }
 
-    /* Citation alignée à gauche */
     .deckstop .l-art-ne-reproduit {
-      position: absolute;
-      top: 515px;
-      left: 4%;
-      width: 92%;
-      height: auto;
-      font-size: 24px;
-      line-height: 1.3;
-      text-align: left;
-    }
+  position: absolute;
+  top: 515px;
+  left: 8%;
+  width: 88%;
+  height: auto;
+  font-size: 24px;
+  line-height: 1.3;
+  text-align: left;
+}
 
     /* Signature à droite */
     .deckstop .text-wrapper-6 {
@@ -2368,12 +2367,7 @@
         top: 3850px !important;
     }
   
-
-
   @media (max-width: 767px) {
-
-
-
   .deckstop .envoyer {
   top: 4455px !important;
 }
