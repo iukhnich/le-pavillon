@@ -901,8 +901,8 @@
     /* top = 1051 - (bordure 8 + padding 30) pour que le texte reste
        exactement où il était */
     top: 1013px !important;
-    left: -80 !important;
-    right: -80 !important;
+    left: 0 !important;
+    right: 0 !important;
 
     width: 100% !important;
     max-width: none !important;
