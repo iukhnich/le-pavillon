@@ -1,16 +1,63 @@
+
+/* =====================================================================
+   1. BASE GLOBALE
+   ===================================================================== */
+
 @media (max-width: 767px) {
-.deckstop {
-  width: 100% !important;
-  min-width: 0 !important;
-  overflow: hidden;
-}
-  
+
+  .deckstop {
+    width: 100% !important;
+    min-width: 0 !important;
+    overflow: hidden;
+  }
 
   html, body {
     width: 100%;
     margin: 0;
     overflow-x: hidden;
   }
+
+  .deckstop {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+  }
+
+  /* Hauteur totale (déplacé depuis le footer) */
+  .deckstop {
+    min-height: 7800px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  html, body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .deckstop {
+    width: 1440px;
+    min-width: 1440px;
+    position: relative;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(calc(100vw / 1440));
+    transform-origin: top center;
+  }
+
+}
+
+
+/* =====================================================================
+   2. NAVBAR
+   ===================================================================== */
+
+/* --- Version 1 (75px) --- */
+@media (max-width: 767px) {
 
   /* Навигация */
 
@@ -51,6 +98,7 @@
     border-radius: 20px;
   }
 
+  /* Événements reste dans le menu déroulant */
   .navbar-links a:nth-child(3) {
     display: none;
   }
@@ -67,13 +115,170 @@
     height: 5px;
   }
 
-  /* Первый экран */
+  /* Убираем старые элементы навигации */
 
-  .deckstop {
-    width: 100%;
-    min-width: 0;
-    overflow: hidden;
+  .deckstop .text-wrapper-18,
+  .deckstop .text-wrapper-19,
+  .deckstop .text-wrapper-20,
+  .deckstop .group-2,
+  .deckstop .rectangle-40 {
+    display: none;
   }
+
+}
+
+/* --- Version 2 (90px) : écrase partiellement la version 1 --- */
+@media (max-width: 767px) {
+
+  .navbar {
+    height: 90px;
+  }
+
+  .navbar-content {
+    width: 100%;
+    height: 100%;
+    padding: 0 5%;
+    gap: 12px;
+  }
+
+  .navbar-brand {
+    gap: 12px;
+    flex-shrink: 0;
+  }
+
+  .navbar-brand img {
+    width: 35px;
+    height: 40px;
+  }
+
+  .navbar-brand span {
+    font-size: clamp(15px, 3.6vw, 24px);
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+  }
+
+  .navbar-links a {
+    height: 38px;
+    padding: 0 20px;
+    font-size: clamp(12px, 2.7vw, 18px);
+    border-radius: 25px;
+  }
+
+  .navbar-menu {
+    width: 38px;
+    gap: 6px;
+    margin-left: 10px;
+    flex-shrink: 0;
+  }
+
+  .navbar-menu span {
+    width: 38px;
+    height: 7px;
+  }
+
+}
+
+/* --- Version 3 (finale, 75px) : écrase les versions 1 et 2 --- */
+@media (max-width: 767px) {
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background: #f8f6ef;
+    z-index: 1000;
+  }
+
+  .navbar-content {
+    height: 75px;
+    padding: 0 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Logo à gauche */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .navbar-brand img {
+    width: 30px;
+    height: 35px;
+    object-fit: contain;
+  }
+
+  .navbar-brand span {
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    color: #171717;
+  }
+
+  /* Boutons artistes et œuvres */
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .navbar-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #243b4a;
+    color: white;
+    border-radius: 25px;
+    padding: 8px 13px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  /* Menu hamburger */
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    flex-shrink: 0;
+    background: transparent;
+    border: none;
+    padding: 4px;
+  }
+
+  .navbar-menu span {
+    display: block;
+    width: 27px;
+    height: 5px;
+    background: #243b4a;
+    border-radius: 5px;
+  }
+
+}
+
+
+/* =====================================================================
+   3. HERO D'ACCUEIL (Bienvenue + boutons Visiter / Contact)
+   Plusieurs blocs se corrigent les uns les autres : le dernier gagne.
+   ===================================================================== */
+
+/* --- Bloc 1 : version initiale --- */
+@media (max-width: 767px) {
+
+  /* Первый экран */
 
   .mobile-hero {
     position: relative;
@@ -177,72 +382,9 @@
     white-space: nowrap;
   }
 
-  /* Убираем старые элементы навигации */
-
-  .deckstop .text-wrapper-18,
-  .deckstop .text-wrapper-19,
-  .deckstop .text-wrapper-20,
-  .deckstop .group-2,
-  .deckstop .rectangle-40 {
-    display: none;
-  }
 }
-@media (max-width: 767px) {
 
-  .navbar {
-    height: 90px;
-  }
-
-  .navbar-content {
-    width: 100%;
-    height: 100%;
-    padding: 0 5%;
-    gap: 12px;
-  }
-
-  .navbar-brand {
-    gap: 12px;
-    flex-shrink: 0;
-  }
-
-  .navbar-brand img {
-    width: 35px;
-    height: 40px;
-  }
-
-  .navbar-brand span {
-    font-size: clamp(15px, 3.6vw, 24px);
-  }
-
-  .navbar-links {
-    display: flex;
-    gap: 20px;
-    margin-left: auto;
-  }
-
-  .navbar-links a {
-    height: 38px;
-    padding: 0 20px;
-    font-size: clamp(12px, 2.7vw, 18px);
-    border-radius: 25px;
-  }
-
-  .navbar-links a:nth-child(3) {
-    display: none;
-  }
-
-  .navbar-menu {
-    width: 38px;
-    gap: 6px;
-    margin-left: 10px;
-    flex-shrink: 0;
-  }
-
-  .navbar-menu span {
-    width: 38px;
-    height: 7px;
-  }
-}
+/* --- Bloc 2 : restauration du fond --- */
 @media (max-width: 767px) {
 
   /* Восстанавливаем фон */
@@ -287,7 +429,10 @@
     display: block;
     z-index: 3;
   }
+
 }
+
+/* --- Bloc 3 --- */
 @media (max-width: 767px) {
 
   /* Светлая карточка */
@@ -321,7 +466,10 @@
   .deckstop .mobile-hero .btn-contact {
     top: 82%;
   }
+
 }
+
+/* --- Bloc 4 --- */
 @media (max-width: 767px) {
 
   /* Исправляем положение приветственной карточки */
@@ -355,6 +503,8 @@
   }
 
 }
+
+/* --- Bloc 5 --- */
 @media (max-width: 767px) {
 
   /* Фоновое изображение */
@@ -400,7 +550,9 @@
 
 }
 
+/* --- Bloc 6 --- */
 @media (max-width: 767px) {
+
   .deckstop .mobile-hero {
     margin-left: 0;
     width: 100%;
@@ -418,14 +570,11 @@
   .deckstop .mobile-hero .bienvenue-au {
     left: 6%;
   }
-}
-@media (max-width: 767px) {
 
-  .deckstop {
-    width: 100%;
-    min-width: 0;
-    margin: 0;
-  }
+}
+
+/* --- Bloc 7 --- */
+@media (max-width: 767px) {
 
   .deckstop .mobile-hero {
     position: relative;
@@ -453,6 +602,8 @@
   }
 
 }
+
+/* --- Bloc 8 --- */
 @media (max-width: 767px) {
 
   /* Бежевая карточка */
@@ -487,6 +638,8 @@
   }
 
 }
+
+/* --- Bloc 9 (final) --- */
 @media (max-width: 767px) {
 
   /* Фотография */
@@ -515,7 +668,9 @@
 }
 
 
-/* ===== ACCUEIL : 6 BLOCS MOBILE ===== */
+/* =====================================================================
+   4. LES 6 BULLES OVALES (ACCUEIL)
+   ===================================================================== */
 
 @media (max-width: 767px) {
 
@@ -636,14 +791,15 @@
     left: 54% !important;
   }
 
-  /* Titre des événements */
-  .deckstop .group-4 {
-    top: 1170px;
-  }
 }
 
-@media (max-width: 767px) {
 
+/* =====================================================================
+   5. CITATION
+   ===================================================================== */
+
+/* --- Séparateurs autour de la citation (version 1200px) --- */
+@media (max-width: 767px) {
 
   /* Séparateurs autour de la citation */
   .deckstop .group-3 {
@@ -671,69 +827,18 @@
     top: 170px;
   }
 
-  /* Section événements */
-  .deckstop .group-4 {
+}
+
+/* --- Citation (version finale, écrase la précédente) --- */
+@media (max-width: 767px) {
+
+  /* Citation */
+  .deckstop .group-3 {
     position: absolute;
-    top: 1450px;
+    top: 490px;
     left: 0;
     width: 100%;
     height: 150px;
-    display: block;
-  }
-
-  /* Enlever la ligne qui traverse le titre */
-  .deckstop .group-4 .line {
-    display: none;
-  }
-
-  /* Titre */
-  .deckstop .group-4 .les-v-nements-venir {
-    position: absolute;
-    top: 37px;
-    left: 0;
-    width: 100%;
-    line-height: 1.3;
-    text-align: center;
-  }
-
-  /* Ligne dorée sous les événements */
-  .deckstop .group-4 .line-3 {
-    position: absolute;
-    top: 110px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    margin: 0;
-    background-color: #d4a85a;
-  }
-}
-
-  /* Ligne de séparation */
-  .deckstop .group-3 {
-    top: 1210px;
-    width: 100%;
-  }
-
-}
-
-@media (max-width: 767px) {
-
-  /* Séparateurs autour de la citation */
-  .deckstop .group-3 {
-    position: absolute;
-    top: 1200px;
-    left: 0;
-    width: 100%;
-    height: 170px;
-    display: block;
-  }
-
-  .deckstop .group-3 .line,
-  .deckstop .group-3 .line-2 {
-    position: absolute;
-    width: 100%;
-    height: 8px;
-    background-color: #243b4a;
   }
 
   .deckstop .group-3 .line {
@@ -741,8 +846,76 @@
   }
 
   .deckstop .group-3 .line-2 {
-    top: 170px;
+    top: 150px;
   }
+
+  .deckstop .l-art-ne-reproduit {
+    position: absolute;
+    top: 510px;
+    left: 5%;
+    width: 90%;
+    height: auto;
+    font-size: 19px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  /* Signature */
+  .deckstop .text-wrapper-6 {
+    position: absolute;
+    top: 575px;
+    right: 5%;
+    left: auto;
+    width: 90%;
+    font-size: 16px;
+    text-align: right;
+  }
+
+}
+
+/* --- Citation version ordinateur --- */
+@media screen and (min-width: 768px) {
+
+  .deckstop p.l-art-ne-reproduit {
+    position: absolute !important;
+    display: block !important;
+
+    top: 1051px !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 50px !important;
+
+    margin: 0 !important;
+    padding: 0 40px !important;
+    box-sizing: border-box !important;
+
+    color: #000000 !important;
+    font-family: "Playfair Display", serif !important;
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+
+    white-space: normal !important;
+    overflow: visible !important;
+    text-indent: 0 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 99999 !important;
+  }
+
+}
+
+
+/* =====================================================================
+   6. TITRE « LES ÉVÉNEMENTS À VENIR »
+   ===================================================================== */
+
+@media (max-width: 767px) {
 
   /* Section événements */
   .deckstop .group-4 {
@@ -785,8 +958,12 @@
 
 }
 
-/* ===== EVENEMENTS MOBILE - VERSION PROPRE ===== */
 
+/* =====================================================================
+   7. GALERIE ÉVÉNEMENTS (affiches + points de navigation)
+   ===================================================================== */
+
+/* --- Version verticale --- */
 @media (max-width: 767px) {
 
   .deckstop .gallerie {
@@ -877,8 +1054,6 @@
 
 }
 
-
-
 /* ===== REMONTER LES EVENEMENTS MOBILE ===== */
 
 @media (max-width: 767px) {
@@ -889,8 +1064,137 @@
 
 }
 
-/* ===== REDUCTIONS MOBILE ===== */
+/* ===== 3 AFFICHES HORIZONTALES MOBILE (version finale) ===== */
 
+@media (max-width: 767px) {
+
+  .deckstop .gallerie {
+    position: absolute;
+    top: 1230px;
+    left: 0;
+    width: 100%;
+    height: 365px;
+    display: block;
+    overflow: hidden;
+  }
+
+  /* Les trois affiches */
+  .deckstop .gallerie .img,
+  .deckstop .gallerie .rectangle-5,
+  .deckstop .gallerie .rectangle-4 {
+    position: absolute;
+    top: 0;
+    width: 43%;
+    height: 300px;
+    object-fit: contain;
+    transform: none;
+    max-width: none;
+  }
+
+  /* Atelier à gauche */
+  .deckstop .gallerie .img {
+    left: -19%;
+  }
+
+  /* Exposition au centre */
+  .deckstop .gallerie .rectangle-5 {
+    left: 28.5%;
+    width: 43%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  /* Conférence à droite */
+  .deckstop .gallerie .rectangle-4 {
+    left: 76%;
+  }
+
+  /* Boutons et leurs textes */
+  .deckstop .gallerie .div,
+  .deckstop .gallerie .rectangle-2,
+  .deckstop .gallerie .rectangle-3,
+  .deckstop .gallerie .text-wrapper,
+  .deckstop .gallerie .text-wrapper-2,
+  .deckstop .gallerie .text-wrapper-3 {
+    position: absolute;
+    top: 310px;
+    width: 43%;
+    height: 42px;
+    transform: none;
+    max-width: none;
+    border-radius: 25px;
+  }
+
+  /* Bouton atelier */
+  .deckstop .gallerie .div,
+  .deckstop .gallerie .text-wrapper {
+    left: -19%;
+  }
+
+  /* Bouton exposition */
+  .deckstop .gallerie .rectangle-2,
+  .deckstop .gallerie .text-wrapper-2 {
+    left: 28.5%;
+  }
+
+  /* Bouton conférence */
+  .deckstop .gallerie .rectangle-3,
+  .deckstop .gallerie .text-wrapper-3 {
+    left: 76%;
+  }
+
+  /* Centrer les textes */
+  .deckstop .gallerie .text-wrapper,
+  .deckstop .gallerie .text-wrapper-2,
+  .deckstop .gallerie .text-wrapper-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    z-index: 2;
+  }
+
+}
+
+/* ===== POINTS DE NAVIGATION ÉVÉNEMENTS (déplacé depuis NAVIGATION MOBILE) ===== */
+
+@media (max-width: 767px) {
+
+  .deckstop>.events-dots {
+    position: absolute;
+    top: 1730px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    z-index: 20;
+  }
+
+  .deckstop>.events-dots span {
+    display: block;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #243b4a;
+  }
+
+  .deckstop>.events-dots .active {
+    background: #d4a85a;
+    border: 2px solid #243b4a;
+    box-sizing: border-box;
+  }
+
+}
+
+
+/* =====================================================================
+   8. RÉDUCTIONS
+   ===================================================================== */
+
+/* --- Version initiale --- */
 @media (max-width: 767px) {
 
   /* Fond avec les fleurs */
@@ -940,8 +1244,110 @@
 
 }
 
-/* ===== COLLECTION D'ART MOBILE ===== */
+/* ===== ESPACEMENT EVENEMENTS ET REDUCTIONS ===== */
 
+@media (max-width: 767px) {
+
+  /* Fond fleuri */
+  .deckstop .mask-group-2 {
+    top: 1750px;
+  }
+
+  /* Rectangle beige */
+  .deckstop .rectangle-42 {
+    top: 1770px;
+  }
+
+}
+
+/* ===== CORRECTION TEXTE PROMOTIONNEL MOBILE ===== */
+
+@media (max-width: 767px) {
+
+  .deckstop .rectangle-42 {
+    top: 1770px;
+    left: 5%;
+    width: 90%;
+    height: 185px;
+    box-sizing: border-box;
+  }
+
+  .deckstop .profitez-de-r {
+    position: absolute;
+    top: 1785px;
+    left: 9%;
+    width: 82%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    transform: none;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(12px, 3.6vw, 15px);
+    font-weight: 400;
+    line-height: 1.35;
+    text-align: center;
+    color: #243b4a;
+
+    box-sizing: border-box;
+    z-index: 5;
+  }
+
+  /* Remettre les expressions importantes en gras */
+  .deckstop .profitez-de-r .text-wrapper-33 {
+    font-weight: 700 !important;
+  }
+
+  .deckstop .profitez-de-r .text-wrapper-32 {
+    font-weight: 400 !important;
+  }
+
+}
+
+/* ===== CORRECTION TEXTE PROMOTIONNEL ORDINATEUR ===== */
+
+@media (min-width: 768px) {
+
+  .deckstop .profitez-de-r {
+    position: absolute;
+    top: 3155px;
+    left: 120px;
+    width: 1200px;
+    height: auto;
+    margin: 0;
+    padding: 20px;
+
+    display: block;
+    visibility: visible;
+    opacity: 1;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    color: #243b4a;
+
+    box-sizing: border-box;
+    z-index: 5;
+  }
+
+  .deckstop .profitez-de-r .text-wrapper-33 {
+    font-weight: 700 !important;
+  }
+
+  .deckstop .profitez-de-r .text-wrapper-32 {
+    font-weight: 400 !important;
+  }
+
+}
+
+
+/* =====================================================================
+   9. COLLECTION D'ART
+   ===================================================================== */
+
+/* --- Version initiale (positions 3300px et plus) --- */
 @media (max-width: 767px) {
 
   /* Ligne de séparation */
@@ -1066,7 +1472,6 @@
     background-color: #6b8f82;
   }
 
-
   .deckstop .group-wrapper .line-2 {
     display: block;
     position: absolute;
@@ -1077,9 +1482,12 @@
     background-color: #6b8f82;
   }
 
+}
+
+/* ===== BOUTON « DÉCOUVRIR NOTRE COLLECTION » ===== */
+
 @media (max-width: 767px) {
 
-  /* Bouton Découvrir notre collection */
   .deckstop .rectangle-20 {
     display: block !important;
     position: absolute !important;
@@ -1110,556 +1518,7 @@
 
 }
 
-  /* ===== ARTICLES ET PUBLICATIONS MOBILE ===== */
-
-  @media (max-width: 767px) {
-
-    /* Lignes de séparation */
-    .deckstop .div-wrapper {
-      position: absolute;
-      top: 4570px;
-      left: 0;
-      width: 100%;
-      height: 160px;
-    }
-
-    .deckstop .div-wrapper .group-5 {
-      position: relative;
-      display: block;
-      width: 100%;
-      height: 160px;
-    }
-
-    .deckstop .div-wrapper .line,
-    .deckstop .div-wrapper .line-2 {
-      position: absolute;
-      left: 0;
-      width: 100%;
-      height: 8px;
-      background: #243b4a;
-    }
-
-    .deckstop .div-wrapper .line {
-      top: 0;
-    }
-
-    .deckstop .div-wrapper .line-2 {
-      top: 160px;
-    }
-
-    /* Titre centré */
-    .deckstop .nos-articles-et {
-      position: absolute;
-      top: 4630px;
-      left: 0;
-      width: 100%;
-      height: auto;
-      margin: 0;
-      padding: 0 12px;
-      font-size: clamp(20px, 4.5vw, 28px);
-      line-height: 1.3;
-      text-align: center;
-    }
-
-    /* Les trois images */
-    .deckstop .rectangle-30,
-    .deckstop .rectangle-29,
-    .deckstop .rectangle-31 {
-      position: absolute;
-      left: 10%;
-      width: 80%;
-      height: 320px;
-      object-fit: contain;
-      border-radius: 20px;
-    }
-
-    .deckstop .rectangle-30 {
-      top: 4790px;
-    }
-
-    .deckstop .rectangle-29 {
-      top: 5230px;
-    }
-
-    .deckstop .rectangle-31 {
-      top: 5670px;
-    }
-
-    /* Boutons sous les articles */
-    .deckstop .telecharger-le-pdf,
-    .deckstop .lire-l-histoire,
-    .deckstop .lire-l-article {
-      position: absolute;
-      left: 20%;
-      width: 60%;
-      height: 48px;
-    }
-
-    .deckstop .telecharger-le-pdf {
-      top: 5120px;
-    }
-
-    .deckstop .lire-l-histoire {
-      top: 5560px;
-    }
-
-    .deckstop .lire-l-article {
-      top: 6000px;
-    }
-
-    /* Fond des boutons */
-    .deckstop .rectangle-35,
-    .deckstop .rectangle-36 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 48px;
-      border-radius: 25px;
-      opacity: 1;
-      background-color: #243b4a;
-    }
-
-    /* Textes des boutons */
-    .deckstop .text-wrapper-15,
-    .deckstop .text-wrapper-16,
-    .deckstop .text-wrapper-17 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      text-align: center;
-      color: white;
-      white-space: normal;
-    }
-}
-  /* ===== CONTACT ET ADRESSE MOBILE ===== */
-
-  @media (max-width: 767px) {
-
-    /* Image de localisation */
-    .deckstop .IMG {
-      position: absolute;
-      top: 6170px;
-      left: 10%;
-      width: 80%;
-      height: 260px;
-      object-fit: contain;
-      border-radius: 20px;
-    }
-
-    /* Titre de l'adresse */
-    .deckstop .venez-nous-voir {
-      position: absolute;
-      top: 6460px;
-      left: 5%;
-      width: 90%;
-      font-size: 25px;
-      text-align: center;
-    }
-
-    /* Adresse */
-    .deckstop .p {
-      position: absolute;
-      top: 6510px;
-      left: 8%;
-      width: 84%;
-      font-size: 17px;
-      line-height: 1.5;
-      text-align: center;
-    }
-
-    /* Horaires */
-    .deckstop .horaires-d-ouverture {
-      position: absolute;
-      top: 6600px;
-      left: 8%;
-      width: 84%;
-      font-size: 17px;
-      line-height: 1.6;
-      text-align: center;
-    }
-
-    /* Fond bleu du formulaire */
-    .deckstop .rectangle-21 {
-      position: absolute;
-      top: 6770px;
-      left: 5%;
-      width: 90%;
-      height: 530px;
-      border-radius: 25px;
-    }
-
-    /* Titre du formulaire */
-    .deckstop .nous-conctacter {
-      position: absolute;
-      top: 6800px;
-      left: 5%;
-      width: 90%;
-      font-size: 25px;
-      text-align: center;
-    }
-
-    /* Champs du formulaire */
-    .deckstop .rectangle-22,
-    .deckstop .rectangle-24,
-    .deckstop .rectangle-25,
-    .deckstop .rectangle-26,
-    .deckstop .rectangle-27 {
-      position: absolute;
-      left: 10%;
-      width: 80%;
-      height: 48px;
-      border-radius: 25px;
-    }
-
-    .deckstop .rectangle-22 {
-      top: 6870px;
-    }
-
-    .deckstop .rectangle-24 {
-      top: 6935px;
-    }
-
-    .deckstop .rectangle-25 {
-      top: 7000px;
-    }
-
-    .deckstop .rectangle-26 {
-      top: 7065px;
-    }
-
-    .deckstop .rectangle-27 {
-      top: 7130px;
-    }
-
-    /* Textes à l'intérieur des champs */
-    .deckstop .nom-pr-nom,
-    .deckstop .text-wrapper-30,
-    .deckstop .text-wrapper-12,
-    .deckstop .text-wrapper-13,
-    .deckstop .text-wrapper-14 {
-      position: absolute;
-      left: 14%;
-      width: 72%;
-      font-size: 15px;
-      text-align: left;
-    }
-
-    .deckstop .nom-pr-nom {
-      top: 6885px;
-    }
-
-    .deckstop .text-wrapper-30 {
-      top: 6950px;
-    }
-
-    .deckstop .text-wrapper-12 {
-      top: 7015px;
-    }
-
-    .deckstop .text-wrapper-13 {
-      top: 7080px;
-    }
-
-    .deckstop .text-wrapper-14 {
-      top: 7145px;
-    }
-
-    /* Bouton envoyer */
-    .deckstop .rectangle-23 {
-      position: absolute;
-      top: 7210px;
-      left: 25%;
-      width: 50%;
-      height: 55px;
-      border-radius: 30px;
-    }
-
-    .deckstop .envoyer {
-      position: absolute;
-      top: 7225px;
-      left: 25%;
-      width: 50%;
-      font-size: 20px;
-      text-align: center;
-    }
-
-  }
-
-
-
-
-  /* ===== FOOTER MOBILE CORRIGE ===== */
-
-  @media (max-width: 767px) {
-
-    /* Image au-dessus des réseaux */
-    .deckstop .unnamed {
-      position: absolute;
-      top: 7340px;
-      left: 50%;
-      width: 100px;
-      height: 100px;
-      transform: translateX(-50%);
-      object-fit: contain;
-    }
-
-    /* Réseaux sociaux */
-    .deckstop .footer-icons {
-      position: absolute;
-      top: 7470px;
-      left: 0;
-      width: 100%;
-      height: 45px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 18px;
-    }
-
-    .deckstop .footer-icons img {
-      display: block;
-      width: 35px;
-      height: 35px;
-      object-fit: contain;
-      font-size: 0;
-      color: transparent;
-    }
-
-    /* Mentions et informations */
-    .deckstop .mentions-l-gales,
-    .deckstop .text-wrapper-27,
-    .deckstop .text-wrapper-28,
-    .deckstop .text-wrapper-29 {
-      position: absolute;
-      left: 0;
-      width: 100%;
-      height: auto;
-      margin: 0;
-      font-size: 13px;
-      line-height: 1.4;
-      text-align: center;
-    }
-
-    .deckstop .mentions-l-gales {
-      top: 7550px;
-    }
-
-    .deckstop .text-wrapper-27 {
-      top: 7590px;
-    }
-
-    .deckstop .text-wrapper-28 {
-      top: 7630px;
-    }
-
-    .deckstop .text-wrapper-29 {
-      top: 7670px;
-    }
-
-    /* Ligne rose */
-    .deckstop .rectangle {
-      position: absolute;
-      top: 7720px;
-      left: 5%;
-      width: 90%;
-      height: 10px;
-      border-radius: 20px;
-    }
-
-    /* Hauteur totale */
-    .deckstop {
-      min-height: 7800px;
-    }
-
-  }
-
- /* =====  CITATION  ===== */
-
-@media (max-width: 767px) {
-
-  /* Citation */
-  .deckstop .group-3 {
-    position: absolute;
-    top: 490px;
-    left: 0;
-    width: 100%;
-    height: 150px;
-  }
-
-  .deckstop .group-3 .line {
-    top: 0;
-  }
-
-  .deckstop .group-3 .line-2 {
-    top: 150px;
-  }
-
-  .deckstop .l-art-ne-reproduit {
-    position: absolute;
-    top: 510px;
-    left: 5%;
-    width: 90%;
-    height: auto;
-    font-size: 19px;
-    line-height: 1.4;
-    text-align: center;
-  }
-
-  /* Signature */
-  .deckstop .text-wrapper-6 {
-    position: absolute;
-    top: 575px;
-    right: 5%;
-    left: auto;
-    width: 90%;
-    font-size: 16px;
-    text-align: right;
-  }
-}
-
-  @media (max-width: 767px) {
-
-
-
-  .deckstop .envoyer {
-  top: 4455px !important;
-}
-@media (min-width: 768px) {
-  html, body {
-    width: 100%;
-    margin: 0;
-    overflow-x: hidden;
-  }
-
-  .deckstop {
-    width: 1440px;
-    min-width: 1440px;
-    position: relative;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
-    transform: scale(calc(100vw / 1440));
-    transform-origin: top center;
-
-
-/* ===== 3 AFFICHES HORIZONTALES MOBILE ===== */
-
-@media (max-width: 767px) {
-
-  .deckstop .gallerie {
-    position: absolute;
-    top: 1230px;
-    left: 0;
-    width: 100%;
-    height: 365px;
-    display: block;
-    overflow: hidden;
-  }
-
-  /* Les trois affiches */
-  .deckstop .gallerie .img,
-  .deckstop .gallerie .rectangle-5,
-  .deckstop .gallerie .rectangle-4 {
-    position: absolute;
-    top: 0;
-    width: 43%;
-    height: 300px;
-    object-fit: contain;
-    transform: none;
-    max-width: none;
-  }
-
-  /* Atelier à gauche */
-  .deckstop .gallerie .img {
-    left: -19%;
-  }
-
-
-  /* Exposition au centre */
-  .deckstop .gallerie .rectangle-5 {
-    left: 28.5%;
-    width: 43%;
-    height: 300px;
-    object-fit: contain;
-    object-position: center;
-  }
-
-
-  /* Conférence à droite */
-  .deckstop .gallerie .rectangle-4 {
-    left: 76%;
-  }
-
-  /* Boutons et leurs textes */
-  .deckstop .gallerie .div,
-  .deckstop .gallerie .rectangle-2,
-  .deckstop .gallerie .rectangle-3,
-  .deckstop .gallerie .text-wrapper,
-  .deckstop .gallerie .text-wrapper-2,
-  .deckstop .gallerie .text-wrapper-3 {
-    position: absolute;
-    top: 310px;
-    width: 43%;
-    height: 42px;
-    transform: none;
-    max-width: none;
-    border-radius: 25px;
-  }
-
-  /* Bouton atelier */
-  .deckstop .gallerie .div,
-  .deckstop .gallerie .text-wrapper {
-    left: -19%;
-  }
-
-  /* Bouton exposition */
-  .deckstop .gallerie .rectangle-2,
-  .deckstop .gallerie .text-wrapper-2 {
-    left: 28.5%;
-  }
-
-  /* Bouton conférence */
-  .deckstop .gallerie .rectangle-3,
-  .deckstop .gallerie .text-wrapper-3 {
-    left: 76%;
-  }
-
-  /* Centrer les textes */
-  .deckstop .gallerie .text-wrapper,
-  .deckstop .gallerie .text-wrapper-2,
-  .deckstop .gallerie .text-wrapper-3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 14px;
-    z-index: 2;
-  }
-}
-/* ===== ESPACEMENT EVENEMENTS ET REDUCTIONS ===== */
-
-@media (max-width: 767px) {
-
-  /* Fond fleuri */
-  .deckstop .mask-group-2 {
-    top: 1750px;
-  }
-
-  /* Rectangle beige */
-  .deckstop .rectangle-42 {
-    top: 1770px;
-  }
-
-}
-
-/* ===== COLLECTION MOBILE FINALE ===== */
+/* ===== COLLECTION MOBILE FINALE (écrase les positions 3300px) ===== */
 
 @media (max-width: 767px) {
 
@@ -1724,7 +1583,7 @@
     width: 45%;
     height: 250px;
     object-fit: cover;
-    object-position: cente top;
+    object-position: center top;
   }
 
   /* Pont japonais */
@@ -1751,7 +1610,141 @@
 
 }
 
-/* ===== TITRE ARTICLES MOBILE ===== */
+
+/* =====================================================================
+   10. ARTICLES ET PUBLICATIONS
+   ===================================================================== */
+
+/* --- Version initiale (positions 4570px et plus) --- */
+@media (max-width: 767px) {
+
+  /* Lignes de séparation */
+  .deckstop .div-wrapper {
+    position: absolute;
+    top: 4570px;
+    left: 0;
+    width: 100%;
+    height: 160px;
+  }
+
+  .deckstop .div-wrapper .group-5 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 160px;
+  }
+
+  .deckstop .div-wrapper .line,
+  .deckstop .div-wrapper .line-2 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: #243b4a;
+  }
+
+  .deckstop .div-wrapper .line {
+    top: 0;
+  }
+
+  .deckstop .div-wrapper .line-2 {
+    top: 160px;
+  }
+
+  /* Titre centré */
+  .deckstop .nos-articles-et {
+    position: absolute;
+    top: 4630px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0 12px;
+    font-size: clamp(20px, 4.5vw, 28px);
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  /* Les trois images */
+  .deckstop .rectangle-30,
+  .deckstop .rectangle-29,
+  .deckstop .rectangle-31 {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 320px;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+
+  .deckstop .rectangle-30 {
+    top: 4790px;
+  }
+
+  .deckstop .rectangle-29 {
+    top: 5230px;
+  }
+
+  .deckstop .rectangle-31 {
+    top: 5670px;
+  }
+
+  /* Boutons sous les articles */
+  .deckstop .telecharger-le-pdf,
+  .deckstop .lire-l-histoire,
+  .deckstop .lire-l-article {
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: 48px;
+  }
+
+  .deckstop .telecharger-le-pdf {
+    top: 5120px;
+  }
+
+  .deckstop .lire-l-histoire {
+    top: 5560px;
+  }
+
+  .deckstop .lire-l-article {
+    top: 6000px;
+  }
+
+  /* Fond des boutons */
+  .deckstop .rectangle-35,
+  .deckstop .rectangle-36 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    border-radius: 25px;
+    opacity: 1;
+    background-color: #243b4a;
+  }
+
+  /* Textes des boutons */
+  .deckstop .text-wrapper-15,
+  .deckstop .text-wrapper-16,
+  .deckstop .text-wrapper-17 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    white-space: normal;
+  }
+
+}
+
+/* ===== TITRE ARTICLES MOBILE (écrase les positions 4570px) ===== */
 
 @media (max-width: 767px) {
 
@@ -1900,169 +1893,325 @@
 
 }
 
-/* ===== NAVIGATION MOBILE ===== */
+
+/* =====================================================================
+   11. LOCALISATION ET CONTACT
+   ===================================================================== */
+
+/* --- Version initiale (positions 6170px et plus) --- */
+@media (max-width: 767px) {
+
+  /* Image de localisation */
+  .deckstop .IMG {
+    position: absolute;
+    top: 6170px;
+    left: 10%;
+    width: 80%;
+    height: 260px;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+
+  /* Titre de l'adresse */
+  .deckstop .venez-nous-voir {
+    position: absolute;
+    top: 6460px;
+    left: 5%;
+    width: 90%;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  /* Adresse */
+  .deckstop .p {
+    position: absolute;
+    top: 6510px;
+    left: 8%;
+    width: 84%;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  /* Horaires */
+  .deckstop .horaires-d-ouverture {
+    position: absolute;
+    top: 6600px;
+    left: 8%;
+    width: 84%;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  /* Fond bleu du formulaire */
+  .deckstop .rectangle-21 {
+    position: absolute;
+    top: 6770px;
+    left: 5%;
+    width: 90%;
+    height: 530px;
+    border-radius: 25px;
+  }
+
+  /* Titre du formulaire */
+  .deckstop .nous-conctacter {
+    position: absolute;
+    top: 6800px;
+    left: 5%;
+    width: 90%;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  /* Champs du formulaire */
+  .deckstop .rectangle-22,
+  .deckstop .rectangle-24,
+  .deckstop .rectangle-25,
+  .deckstop .rectangle-26,
+  .deckstop .rectangle-27 {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 48px;
+    border-radius: 25px;
+  }
+
+  .deckstop .rectangle-22 {
+    top: 6870px;
+  }
+
+  .deckstop .rectangle-24 {
+    top: 6935px;
+  }
+
+  .deckstop .rectangle-25 {
+    top: 7000px;
+  }
+
+  .deckstop .rectangle-26 {
+    top: 7065px;
+  }
+
+  .deckstop .rectangle-27 {
+    top: 7130px;
+  }
+
+  /* Textes à l'intérieur des champs */
+  .deckstop .nom-pr-nom,
+  .deckstop .text-wrapper-30,
+  .deckstop .text-wrapper-12,
+  .deckstop .text-wrapper-13,
+  .deckstop .text-wrapper-14 {
+    position: absolute;
+    left: 14%;
+    width: 72%;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .deckstop .nom-pr-nom {
+    top: 6885px;
+  }
+
+  .deckstop .text-wrapper-30 {
+    top: 6950px;
+  }
+
+  .deckstop .text-wrapper-12 {
+    top: 7015px;
+  }
+
+  .deckstop .text-wrapper-13 {
+    top: 7080px;
+  }
+
+  .deckstop .text-wrapper-14 {
+    top: 7145px;
+  }
+
+  /* Bouton envoyer */
+  .deckstop .rectangle-23 {
+    position: absolute;
+    top: 7210px;
+    left: 25%;
+    width: 50%;
+    height: 55px;
+    border-radius: 30px;
+  }
+
+  .deckstop .envoyer {
+    position: absolute;
+    top: 7225px;
+    left: 25%;
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+}
+
+/* ===== RAPPROCHER LE FORMULAIRE DE LA LOCALISATION ===== */
 
 @media (max-width: 767px) {
 
-  .navbar {
+  .deckstop .rectangle-21 {
+    top: 4000px !important;
+  }
+
+  .deckstop .nous-conctacter {
+    top: 4030px !important;
+  }
+
+  .deckstop .rectangle-22 {
+    top: 4100px !important;
+  }
+
+  .deckstop .rectangle-24 {
+    top: 4165px !important;
+  }
+
+  .deckstop .rectangle-25 {
+    top: 4230px !important;
+  }
+
+  .deckstop .rectangle-26 {
+    top: 4295px !important;
+  }
+
+  .deckstop .rectangle-27 {
+    top: 4360px !important;
+  }
+
+  .deckstop .rectangle-23 {
+    top: 4440px !important;
+  }
+
+  .deckstop .envoyer {
+    top: 4455px !important;
+  }
+
+}
+
+/* ===== CORRECTION ESPACE ARTICLES / LOCALISATION ===== */
+
+@media (max-width: 767px) {
+
+  /* Image de localisation */
+  .deckstop .IMG {
+    top: 3430px !important;
+    margin-top: 0 !important;
+  }
+
+  /* Titre localisation */
+  .deckstop .venez-nous-voir {
+    top: 3710px !important;
+  }
+
+  /* Adresse */
+  .deckstop .p {
+    top: 3760px !important;
+  }
+
+  /* Horaires */
+  .deckstop .horaires-d-ouverture {
+    top: 3850px !important;
+  }
+
+}
+
+
+/* =====================================================================
+   12. FOOTER
+   ===================================================================== */
+
+@media (max-width: 767px) {
+
+  /* Image au-dessus des réseaux */
+  .deckstop .unnamed {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 75px;
-    background: #f8f6ef;
-    z-index: 1000;
-  }
-
-  .navbar-content {
-    height: 75px;
-    padding: 0 4%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    box-sizing: border-box;
-  }
-
-  /* Logo à gauche */
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    text-decoration: none;
-    white-space: nowrap;
-  }
-
-  .navbar-brand img {
-    width: 30px;
-    height: 35px;
+    top: 7340px;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translateX(-50%);
     object-fit: contain;
   }
 
-  .navbar-brand span {
-    font-family: "Playfair Display", serif;
-    font-size: 17px;
-    color: #171717;
-  }
-
-  /* Boutons artistes et œuvres */
-  .navbar-links {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .navbar-links a {
+  /* Réseaux sociaux */
+  .deckstop .footer-icons {
+    position: absolute;
+    top: 7470px;
+    left: 0;
+    width: 100%;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #243b4a;
-    color: white;
-    border-radius: 25px;
-    padding: 8px 13px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    text-decoration: none;
-    white-space: nowrap;
+    gap: 18px;
   }
 
-  /* Événements reste dans le menu déroulant */
-  .navbar-links a:nth-child(3) {
-    display: none;
-  }
-  @media (max-width: 767px) {
-    .deckstop>.events-dots {
-      position: absolute;
-      top: 1730px;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      z-index: 20;
-    }
-
-    .deckstop>.events-dots span {
-      display: block;
-      width: 17px;
-      height: 17px;
-      border-radius: 50%;
-      background: #243b4a;
-    }
-
-    .deckstop>.events-dots .active {
-      background: #d4a85a;
-      border: 2px solid #243b4a;
-      box-sizing: border-box;
-    }
-  }
-  /* Menu hamburger */
-  .navbar-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    flex-shrink: 0;
-    background: transparent;
-    border: none;
-    padding: 4px;
-  }
-
-  .navbar-menu span {
+  .deckstop .footer-icons img {
     display: block;
-    width: 27px;
-    height: 5px;
-    background: #243b4a;
-    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    font-size: 0;
+    color: transparent;
   }
 
-  /* Supprimer les anciens textes superposés */
-  .deckstop .text-wrapper-18,
-  .deckstop .text-wrapper-19,
-  .deckstop .text-wrapper-20,
-  .deckstop .rectangle-40,
-  .deckstop .group-2 {
-    display: none;
+  /* Mentions et informations */
+  .deckstop .mentions-l-gales,
+  .deckstop .text-wrapper-27,
+  .deckstop .text-wrapper-28,
+  .deckstop .text-wrapper-29 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: center;
   }
+
+  .deckstop .mentions-l-gales {
+    top: 7550px;
+  }
+
+  .deckstop .text-wrapper-27 {
+    top: 7590px;
+  }
+
+  .deckstop .text-wrapper-28 {
+    top: 7630px;
+  }
+
+  .deckstop .text-wrapper-29 {
+    top: 7670px;
+  }
+
+  /* Ligne rose */
+  .deckstop .rectangle {
+    position: absolute;
+    top: 7720px;
+    left: 5%;
+    width: 90%;
+    height: 10px;
+    border-radius: 20px;
+  }
+
+  /* La hauteur totale (.deckstop min-height) est dans la section 1 */
 
 }
 
-/* MOBILES */
-@media screen and (max-width: 600px) {
 
-    .nos-oeuvres {
-        padding: 20px 5%;
-    }
+/* =====================================================================
+   13. SECTIONS HORS .deckstop (nouveau système flex / grid)
+   ===================================================================== */
 
-    .nos-oeuvres h2 {
-        font-size: 21px;
-        margin-bottom: 20px;
-    }
+/* ----- Nos oeuvres ----- */
 
-    .oeuvres-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .oeuvres-colonne {
-        width: 100%;
-    }
-
-    .oeuvres-colonne img {
-        width: 100%;
-        height: 180px;
-    }
-
-    .oeuvres-colonne:last-child {
-        display: flex;
-    }
-
-    .bouton-collection {
-        font-size: 14px;
-        padding: 12px;
-    }
-}
 /* Section Nos oeuvres */
 .nos-oeuvres {
     width: 100%;
@@ -2176,7 +2325,7 @@
     }
 }
 
-/* Section Nos articles et publications */
+/* ----- Section Nos articles et publications ----- */
 @media screen and (max-width: 600px) {
 
     .articles-container {
@@ -2221,7 +2370,7 @@
     }
 }
 
-/* Section Explorez notre collection d'art */
+/* ----- Section Explorez notre collection d'art ----- */
 @media screen and (max-width: 600px) {
 
     .collection-container {
@@ -2252,7 +2401,6 @@
         object-fit: contain;
     }
 
-
     /* Titre de la section */
     .nos-oeuvres h2 {
         font-size: 23px;
@@ -2268,206 +2416,3 @@
         overflow-x: hidden;
     }
 }
-@media (max-width: 767px) {
-
-    /* Rapprocher le formulaire de la localisation */
-    .deckstop .rectangle-21 {
-        top: 4000px !important;
-    }
-
-    .deckstop .nous-conctacter {
-        top: 4030px !important;
-    }
-
-    .deckstop .rectangle-22 {
-        top: 4100px !important;
-    }
-
-    .deckstop .rectangle-24 {
-        top: 4165px !important;
-    }
-
-    .deckstop .rectangle-25 {
-        top: 4230px !important;
-    }
-
-    .deckstop .rectangle-26 {
-        top: 4295px !important;
-    }
-
-    .deckstop .rectangle-27 {
-        top: 4360px !important;
-    }
-
-    .deckstop .rectangle-23 {
-        top: 4440px !important;
-    }
-
-    .deckstop .envoyer {
-        top: 4455px !important;
-    }
-}
-
-/* ===== CORRECTION ESPACE ARTICLES / LOCALISATION ===== */
-
-@media (max-width: 767px) {
-
-    /* Articles */
-    .deckstop .articles-dots {
-        top: 3355px;
-    }
-
-    /* Image de localisation */
-    .deckstop .IMG {
-        top: 3430px !important;
-        margin-top: 0 !important;
-    }
-
-    /* Titre localisation */
-    .deckstop .venez-nous-voir {
-        top: 3710px !important;
-    }
-
-    /* Adresse */
-    .deckstop .p {
-        top: 3760px !important;
-    }
-
-    /* Horaires */
-    .deckstop .horaires-d-ouverture {
-        top: 3850px !important;
-    }
-  
-  @media (max-width: 767px) {
-  .deckstop .envoyer {
-  top: 4455px !important;
-}
-@media (min-width: 768px) {
-  html, body {
-    width: 100%;
-    margin: 0;
-    overflow-x: hidden;
-  }
-
-  .deckstop {
-    width: 1440px;
-    min-width: 1440px;
-    position: relative;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
-    transform: scale(calc(100vw / 1440));
-    transform-origin: top center;
-  }
-  /* ===== CORRECTION TEXTE PROMOTIONNEL MOBILE ===== */
-
-@media (max-width: 767px) {
-
-  .deckstop .rectangle-42 {
-    top: 1770px;
-    left: 5%;
-    width: 90%;
-    height: 185px;
-    box-sizing: border-box;
-  }
-
-  .deckstop .profitez-de-r {
-    position: absolute;
-    top: 1785px;
-    left: 9%;
-    width: 82%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    transform: none;
-
-    font-family: "Montserrat", sans-serif;
-    font-size: clamp(12px, 3.6vw, 15px);
-    font-weight: 400;
-    line-height: 1.35;
-    text-align: center;
-    color: #243b4a;
-
-    box-sizing: border-box;
-    z-index: 5;
-  }
-
-  /* Remettre les expressions importantes en gras */
-  .deckstop .profitez-de-r .text-wrapper-33 {
-    font-weight: 700 !important;
-  }
-
-  .deckstop .profitez-de-r .text-wrapper-32 {
-    font-weight: 400 !important;
-  }
-
-}
-  /* ===== CORRECTION TEXTE PROMOTIONNEL ORDINATEUR ===== */
-
-@media (min-width: 768px) {
-
-  .deckstop .profitez-de-r {
-    position: absolute;
-    top: 3155px;
-    left: 120px;
-    width: 1200px;
-    height: auto;
-    margin: 0;
-    padding: 20px;
-
-    display: block;
-    visibility: visible;
-    opacity: 1;
-
-    font-family: "Montserrat", sans-serif;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: center;
-    color: #243b4a;
-
-    box-sizing: border-box;
-    z-index: 5;
-  }
-
-  .deckstop .profitez-de-r .text-wrapper-33 {
-    font-weight: 700 !important;
-  }
-
-  .deckstop .profitez-de-r .text-wrapper-32 {
-    font-weight: 400 !important;
-  }
-@media screen and (min-width: 768px) {
-  .deckstop p.l-art-ne-reproduit {
-    position: absolute !important;
-    display: block !important;
-
-    top: 1051px !important;
-    left: 0 !important;
-    right: 0 !important;
-
-    width: 100% !important;
-    max-width: none !important;
-    height: auto !important;
-    min-height: 50px !important;
-
-    margin: 0 !important;
-    padding: 0 40px !important;
-    box-sizing: border-box !important;
-
-    color: #000000 !important;
-    font-family: "Playfair Display", serif !important;
-    font-size: 30px !important;
-    font-weight: 400 !important;
-    line-height: 1.5 !important;
-    text-align: center !important;
-
-    white-space: normal !important;
-    overflow: visible !important;
-    text-indent: 0 !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    z-index: 99999 !important;
-  }
-}
-
