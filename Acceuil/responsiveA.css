@@ -1546,12 +1546,11 @@
     margin-right: auto;
     transform: scale(calc(100vw / 1440));
     transform-origin: top center;
-
-
+  }
+   
 /* ===== 3 AFFICHES HORIZONTALES MOBILE ===== */
 
 @media (max-width: 767px) {
-
   .deckstop .gallerie {
     position: absolute;
     top: 1230px;
@@ -1561,6 +1560,7 @@
     display: block;
     overflow: hidden;
   }
+}
 
   /* Les trois affiches */
   .deckstop .gallerie .img,
