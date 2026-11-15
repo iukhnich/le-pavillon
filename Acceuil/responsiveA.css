@@ -2774,7 +2774,39 @@
   .deckstop .profitez-de-r .text-wrapper-32 {
     font-weight: 400 !important;
   }
+@media screen and (min-width: 768px) {
+  .deckstop p.l-art-ne-reproduit {
+    position: absolute !important;
+    display: block !important;
 
+    top: 1051px !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 50px !important;
+
+    margin: 0 !important;
+    padding: 0 40px !important;
+    box-sizing: border-box !important;
+
+    color: #000000 !important;
+    font-family: "Playfair Display", serif !important;
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+
+    white-space: normal !important;
+    overflow: visible !important;
+    text-indent: 0 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 99999 !important;
+  }
+}
 }
 
 
