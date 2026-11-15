@@ -1543,6 +1543,35 @@ body {
   text-align: center;
   z-index: 3;
 }
+/* CADRE BLEU DU FORMULAIRE */
+.deckstop .rectangle-21 {
+  position: absolute !important;
+  top: 6690px !important;
+  left: 100px !important;
+  width: 1240px !important;
+  height: 594px !important;
+  background-color: #243b4a !important;
+  border-radius: 47px !important;
+  opacity: 1 !important;
+  display: block !important;
+  visibility: visible !important;
+  z-index: 1 !important;
+}
+.deckstop .nous-conctacter,
+.deckstop .rectangle-22,
+.deckstop .rectangle-23,
+.deckstop .rectangle-24,
+.deckstop .rectangle-25,
+.deckstop .rectangle-26,
+.deckstop .rectangle-27,
+.deckstop .nom-pr-nom,
+.deckstop .text-wrapper-12,
+.deckstop .text-wrapper-13,
+.deckstop .text-wrapper-14,
+.deckstop .text-wrapper-30,
+.deckstop .envoyer {
+  z-index: 2 !important;
+}
   
 }
 
