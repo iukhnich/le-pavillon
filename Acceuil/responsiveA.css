@@ -887,20 +887,25 @@
 /* --- Citation version ordinateur --- */
 @media screen and (min-width: 768px) {
 
-  /* Les deux traits bleus d'origine sont masqués sur ordinateur :
-     ils sont remplacés par une bordure en haut et en bas de la citation
-     (voir plus bas), donc ils sont toujours centrés autour du texte. */
-  .deckstop .group-3 .line,
-  .deckstop .group-3 .line-2 {
-    display: none;
+  /* Réglage des deux traits bleus */
+  .deckstop .group-3 {
+    width: 100% !important;
+    left: 0 !important;
   }
 
+  .deckstop .group-3 .line,
+  .deckstop .group-3 .line-2 {
+    display: block !important;
+    width: 100% !important;
+    height: 8px !important;
+    background-color: #243b4a !important;
+  }
+
+  /* Citation */
   .deckstop p.l-art-ne-reproduit {
     position: absolute !important;
     display: block !important;
 
-    /* top = 1051 - (bordure 8 + padding 30) pour que le texte reste
-       exactement où il était */
     top: 1013px !important;
     left: 0 !important;
     right: 0 !important;
@@ -914,9 +919,8 @@
     padding: 30px 40px !important;
     box-sizing: border-box !important;
 
-    /* Traits bleus au-dessus et en dessous, toujours centrés */
     border-top: none !important;
-border-bottom: none !important;
+    border-bottom: none !important;
 
     color: #000000 !important;
     font-family: "Playfair Display", serif !important;
