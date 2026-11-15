@@ -26,12 +26,8 @@
 
 }
 
-  /* Hauteur totale (déplacé depuis le footer) */
-  .deckstop {
-    min-height: 5080px;
-  }
 
-}
+
 
 @media (min-width: 768px) {
 
