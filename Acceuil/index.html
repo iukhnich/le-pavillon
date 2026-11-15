@@ -102,19 +102,6 @@
 <img class="rectangle-17" src="../img/Rectangle 33.png" />
 <img class="rectangle-18" src="../img/Rectangle 36.png" />
 <img class="rectangle-19" src="../img/Rectangle 39.png" />
-<div class="rectangle-20" ></div>
-<div class="rectangle-21" ></div>
-<div class="rectangle-22" ></div>
-<div class="nom-pr-nom" >Nom &amp; prénom :</div>
-<div class="rectangle-23" ></div>
-<div class="envoyer" >ENVOYER</div>
-<div class="rectangle-24" ></div>
-<div class="rectangle-25" ></div>
-<div class="text-wrapper-12" >profil :</div>
-<div class="rectangle-26" ></div>
-<div class="text-wrapper-13" >numéro de téléphone :</div>
-<div class="rectangle-27" ></div>
-<div class="text-wrapper-14" >sujet du message :</div>
 <img class="rectangle-28" src="../img/Rectangle 38.png" />
 <img class="rectangle-29" src="../img/Rectangle 45.png" />
 <img class="rectangle-30" src="../img/Rectangle 93.png" />
@@ -174,17 +161,107 @@
 <p class="nos-articles-et" ><span class="text-wrapper-23" >NOS </span>
 <span class="span" >ARTICLES</span>
 <span class="text-wrapper-23" > ET PUBLICATIONS</span></p>
-<div id="contact" class="nous-conctacter">NOUS CONCTACTER</div>
 <div class="decouvrir-toute-la" >Decouvrir toute <br/>la collection</div>
 <p class="horaires-d-ouverture" >Horaires d’ouverture : <br/>Mardi - dimanche <br/>10h à 19h</p>
 <div id="adresse" class="venez-nous-voir">VENEZ NOUS VOIR</div>
+
+<!-- SECTION NOUS CONTACTER -->
+
+<section class="contact-section" id="contact">
+
+  <div class="contact-container">
+
+    <h2>NOUS CONTACTER</h2>
+
+    <form class="contact-form">
+
+      <div class="contact-field">
+        <label for="nom">Nom & prénom</label>
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          placeholder="Nom et prénom"
+          required
+        >
+      </div>
+
+      <div class="contact-row">
+
+        <div class="contact-field">
+          <label for="email">Adresse e-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Adresse e-mail"
+            required
+          >
+        </div>
+
+        <div class="contact-field">
+          <label for="telephone">Numéro de téléphone</label>
+          <input
+            type="tel"
+            id="telephone"
+            name="telephone"
+            placeholder="Numéro de téléphone"
+          >
+        </div>
+
+      </div>
+
+      <div class="contact-row">
+
+        <div class="contact-field">
+          <label for="profil">Profil</label>
+          <select id="profil" name="profil">
+            <option value="">Choisir un profil</option>
+            <option>Particulier</option>
+            <option>Étudiant</option>
+            <option>Professionnel</option>
+            <option>Artiste</option>
+          </select>
+        </div>
+
+        <div class="contact-field">
+          <label for="sujet">Sujet du message</label>
+          <input
+            type="text"
+            id="sujet"
+            name="sujet"
+            placeholder="Sujet de votre demande"
+          >
+        </div>
+
+      </div>
+
+      <div class="contact-field">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Votre message..."
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" class="contact-submit">
+        ENVOYER
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
 <p class="p" >Adresse : 22 Rue de Verneuil, 75007 Paris, France</p>
 <p class="mentions-l-gales" ><span class="text-wrapper-25" >mentions légales</span>
 <span class="text-wrapper-26" ></span></p>
 <div class="text-wrapper-27" >politique de confidentialité</div>
 <div class="text-wrapper-28" >plan du site</div>
 <p class="text-wrapper-29" >Le Pavillon - Tous droits résérvés</p>
-<div class="text-wrapper-30" >adresse e-mail :</div>
 <img class="IMG" src="../img/IMG_5468 1.png" />
 <img class="unnamed" src="../img/unnamed 1.png" />
 <div class="footer-icons">
@@ -235,7 +312,7 @@
       burger.setAttribute('aria-label', 'Ouvrir le menu');
     });
   });
-</script>
+ </script>
 
 </body>
 </html>
