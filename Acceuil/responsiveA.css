@@ -1502,17 +1502,16 @@
       top: 130px;
     }
 
-    .deckstop .l-art-ne-reproduit {
+  .deckstop .l-art-ne-reproduit {
   position: absolute;
   top: 515px;
-  left: 8%;
-  width: 88%;
+  left: 2%;
+  width: 96%;
   height: auto;
   font-size: 24px;
   line-height: 1.3;
   text-align: left;
 }
-
     /* Signature à droite */
     .deckstop .text-wrapper-6 {
       position: absolute;
