@@ -915,8 +915,8 @@
     box-sizing: border-box !important;
 
     /* Traits bleus au-dessus et en dessous, toujours centrés */
-    border-top: 8px solid #243b4a !important;
-    border-bottom: 8px solid #243b4a !important;
+    border-top: none !important;
+border-bottom: none !important;
 
     color: #000000 !important;
     font-family: "Playfair Display", serif !important;
