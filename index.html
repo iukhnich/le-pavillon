@@ -1,12 +1,171 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Le Pavillon</title>
-  <meta http-equiv="refresh" content="0; url=./Acceuil/accueil.html">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Pavillon – Galerie d’impressionnisme</title>
+<meta name="description"
+content="Découvrez Le Pavillon, une galerie dédiée à l'impressionnisme, ses artistes, ses œuvres et ses événements.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-  <p>Redirection vers <a href="./Acceuil/accueil.html">Le Pavillon</a>...</p>
+
+<nav class="navbar" aria-label="Navigation principale">
+  <div class="navbar-content">
+    <a class="navbar-brand" href="#accueil"><img src="../img/image-2.png" alt="Logo Le Pavillon"><span>LE PAVILLON</span></a>
+    <div class="navbar-links">
+      <a href="../Artistes/artistes.html">artistes</a>
+      <a href="#oeuvres">œuvres</a>
+      <a href="#evenements">événements</a>
+    </div>
+    <button class="navbar-menu" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navbar-dropdown"><span></span><span></span><span></span></button>
+  </div>
+  <div class="navbar-dropdown" id="navbar-dropdown">
+    <a href="#accueil">accueil</a>
+    <a href="../Artistes/artistes.html">artistes</a>
+    <a href="#oeuvres">œuvres</a>
+    <a href="#evenements">événements</a>
+    <a href="#contact">contact</a>
+  </div>
+</nav>
+
+<main id="accueil">
+
+  <section class="hero" style="background-image:url('../img/image.webp')">
+    <div class="hero-card">
+      <p>Bienvenue au Pavillon, un sanctuaire dédié à la lumière et à la couleur du mouvement impressionniste. Redécouvrez la magie des maîtres de la peinture en plein air et contemplez l’instantanéité du monde révélée sur la toile.</p>
+      <div class="hero-btns">
+        <a href="#adresse" class="pill">Visiter la galerie</a>
+        <a href="#contact" class="pill">Nous contacter</a>
+      </div>
+    </div>
+    <img class="hero-photo" src="../img/Rectangle%2019.png" alt="Intérieur de la galerie">
+  </section>
+
+  <blockquote class="quote">
+    <p>“ L’ART NE REPRODUIT PAS LE VISIBLE, IL REND VISIBLE”</p>
+    <cite>M. Dechewsky</cite>
+  </blockquote>
+
+  <section class="features">
+    <figure><img src="../img/Rectangle%2095.png" alt="Atelier creatif"><figcaption>ateliers créatifs</figcaption></figure>
+    <figure><img src="../img/Rectangle%2098.png" alt="Expositions"><figcaption>expositions tournantes</figcaption></figure>
+    <figure><img src="../img/Rectangle%2097.png" alt="Entree libre"><figcaption>entrée libre pour tous</figcaption></figure>
+    <figure><img src="../img/Rectangle%2096.png" alt="Projet collaboratif"><figcaption>projet collaboratif</figcaption></figure>
+    <figure><img src="../img/Rectangle%2094.png" alt="Privatisation possible"><figcaption>privatisation possible</figcaption></figure>
+    <figure><img src="../img/Rectangle%2099.png" alt="Conférence"><figcaption>conférence &amp; talks</figcaption></figure>
+  </section>
+
+  <section id="evenements" class="band gold">
+    <h2><span class="dark">LES </span><span class="gold-txt">ÉVÉNEMENTS</span><span class="dark"> À VENIR</span></h2>
+  </section>
+  <div class="carousel events">
+    <figure><img src="../img/Rectangle%203.png" alt="Atelier peinture"><figcaption class="tag">atelier peinture</figcaption></figure>
+    <figure><img src="../img/Rectangle%207.png" alt="Exposition"><figcaption class="tag">exposition</figcaption></figure>
+    <figure><img src="../img/Rectangle%206.png" alt="Conférence d’expert"><figcaption class="tag">conférence d’expert</figcaption></figure>
+  </div>
+
+  <section class="promo" style="background-image:url('../img/Peinture 7.0 1.png')">
+    <p><b>Profitez de réductions exceptionnelles</b> pour les étudiants, les familles et les groupes. Inscrivez-vous à nos ateliers annuels et bénéficiez de <b>-20 % sur votre première session</b> !</p>
+  </section>
+
+  <section id="oeuvres" class="band green">
+    <h2>EXPLOREZ NOTRE <span class="green-txt">COLLECTION D’ART</span></h2>
+  </section>
+  <div class="collection">
+    <img src="../img/Rectangle%2032.png" alt="Peinture">
+    <img src="../img/Rectangle%2033.png" alt="Peinture">
+    <img src="../img/Rectangle%2038.png" alt="Peinture">
+    <img src="../img/Rectangle%2036.png" alt="Peinture">
+    <a href="#" class="btn-green">Découvrir toute notre collection</a>
+    <img src="../img/Rectangle%2039.png" alt="Peinture">
+    <img src="../img/Rectangle%2037.png" alt="Peinture">
+    <img src="../img/Rectangle%2035.png" alt="Peinture">
+    <img src="../img/Rectangle%2040.png" alt="Peinture">
+  </div>
+
+  <section class="band navy">
+    <h2>NOS <span class="navy-txt">ARTICLES</span> ET PUBLICATIONS</h2>
+  </section>
+  <div class="carousel articles">
+    <figure><img src="../img/Rectangle%2093.png" alt=""><a href="#" class="overlay">Télécharger le PDF</a></figure>
+    <figure><img src="../img/Rectangle%2045.png" alt=""><a href="#" class="overlay">Lire l’histoire</a></figure>
+    <figure><img src="../img/Rectangle%2046.png" alt=""><a href="#" class="overlay">Lire l’article</a></figure>
+  </div>
+
+  <section id="adresse" class="visit">
+    <img src="../img/IMG_5468-1.png" alt="Plan d’accès">
+    <div>
+      <h3>VENEZ NOUS VOIR</h3>
+      <p>Adresse : 22 Rue de Verneuil, 75007 Paris, France</p>
+      <p>Horaires d’ouverture :<br>Mardi - dimanche<br>10h à 19h</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>NOUS CONTACTER</h2>
+    <form class="contact-form">
+      <label class="sr" for="nom">Nom &amp; prénom</label>
+      <input id="nom" name="nom" placeholder="Nom &amp; prénom :" required>
+      <label class="sr" for="email">Adresse e-mail</label>
+      <input id="email" name="email" type="email" placeholder="adresse e-mail :" required>
+      <label class="sr" for="telephone">Numéro de téléphone</label>
+      <input id="telephone" name="telephone" type="tel" placeholder="numéro de téléphone :">
+      <label class="sr" for="profil">Profil</label>
+      <select id="profil" name="profil">
+        <option value="">profil :</option>
+        <option>Particulier</option><option>Étudiant</option><option>Professionnel</option><option>Artiste</option>
+      </select>
+      <label class="sr" for="sujet">Sujet du message</label>
+      <input id="sujet" name="sujet" placeholder="sujet du message :">
+      <label class="sr" for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="votre message :" required></textarea>
+      <button type="submit">ENVOYER</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <img class="logo" src="../img/unnamed-1.png" alt="Le Pavillon – Galerie d’impressionnisme">
+  <div class="icons">
+    <img src="../img/devicon_facebook.png" alt="Facebook">
+    <img src="../img/skill-icons_instagram.png" alt="Instagram">
+    <img src="../img/devicon_linkedin.png" alt="LinkedIn">
+    <img src="../img/skill-icons_gmail-light.png" alt="Email">
+    <img src="../img/selfhst_whatsapp.png" alt="WhatsApp">
+  </div>
+  <div class="legal"><a href="#">mentions légales</a><a href="#">politique de confidentialité</a><a href="#">plan du site</a><span>Le Pavillon - Tous droits réservés</span></div>
+</footer>
+
+<script>
+const burger = document.querySelector('.navbar-menu');
+const dropdown = document.querySelector('.navbar-dropdown');
+function setMenu(open) {
+  burger.classList.toggle('is-open', open);
+  dropdown.classList.toggle('is-open', open);
+  burger.setAttribute('aria-expanded', String(open));
+  burger.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+}
+burger.addEventListener('click', () => setMenu(!burger.classList.contains('is-open')));
+dropdown.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+document.addEventListener('click', e => { if (!e.target.closest('.navbar')) setMenu(false); });
+
+// Pastilles des carrousels
+document.querySelectorAll('.carousel').forEach(c => {
+  const dots = document.createElement('div');
+  dots.className = 'dots';
+  [...c.children].forEach(() => dots.appendChild(document.createElement('span')));
+  c.after(dots);
+  const upd = () => {
+    const i = Math.round(c.scrollLeft / (c.scrollWidth / c.children.length));
+    [...dots.children].forEach((d, k) => d.classList.toggle('on', k === i));
+  };
+  c.addEventListener('scroll', upd, { passive: true });
+  upd();
+});
+</script>
 </body>
 </html>
