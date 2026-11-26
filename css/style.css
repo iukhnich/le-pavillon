@@ -26,7 +26,7 @@ h2{font-weight:700;font-size:clamp(22px,3.4vw,48px);text-align:center;margin:0;c
 .navbar-dropdown a{padding:12px 0;font-size:20px;border-bottom:1px solid #0001}
 
 /* HERO */
-.hero{display:grid;grid-template-columns:1.9fr 1fr;gap:5%;align-items:center;padding:48px 3%;background-size:cover;background-position:center}
+.hero{display:grid;grid-template-columns:1.9fr 1fr;gap:5%;align-items:center;padding:48px 3%;background-image:url('../img/image.webp');background-size:cover;background-position:center}
 .hero-card{background:var(--cream);border-radius:47px;padding:clamp(18px,4vw,60px)}
 .hero-card p{font-family:var(--serif);font-size:clamp(13px,2.8vw,40px);line-height:1.4;text-align:center;margin:0 0 20px}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between}
@@ -62,7 +62,7 @@ h2{font-weight:700;font-size:clamp(22px,3.4vw,48px);text-align:center;margin:0;c
 .dots span.on{background:var(--gold);box-shadow:0 0 0 2px var(--navy) inset}
 
 /* PROMO */
-.promo{background-size:cover;background-position:center;padding:48px 3%}
+.promo{background-image:url('../img/sunflowers.webp');background-size:cover;background-position:center;padding:48px 3%}
 .promo p{margin:0;background:var(--cream);padding:clamp(14px,3vw,48px);font-family:var(--serif);font-size:clamp(12px,2.2vw,32px);text-align:center;line-height:1.4}
 
 /* COLLECTION */
