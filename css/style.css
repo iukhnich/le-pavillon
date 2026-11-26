@@ -90,8 +90,25 @@ h2{font-weight:700;font-size:clamp(22px,3.4vw,48px);text-align:center;margin:0;c
 /* FOOTER */
 footer{max-width:1440px;margin:0 auto;padding:0 3% 24px;display:grid;justify-items:start;gap:20px}
 footer .logo{width:clamp(110px,19vw,267px)}
-.icons{display:flex;gap:clamp(12px,3vw,40px)}
-.icons img{width:clamp(26px,3.6vw,52px)}
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.icons img {
+    width: clamp(26px, 3.6vw, 52px);
+    display: block;
+}
+
+.icons a {
+    display: flex;
+    cursor: pointer;
+}
+
+.icons a:hover {
+    opacity: 0.7;
+}
 .legal{width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;background:var(--rose);border-radius:47px;padding:6px 3%;font-family:var(--serif);font-size:clamp(9px,1.5vw,20px)}
 
 /* MOBILE */
