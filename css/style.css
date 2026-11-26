@@ -93,7 +93,7 @@ footer .logo{width:clamp(110px,19vw,267px)}
 .icons {
     display: flex;
     align-items: center;
-    gap: 0;
+    gap: 20px;
 }
 
 .icons img {
